@@ -92,6 +92,76 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* Activities */};
+      < div
+        className="flex flex-col "
+        style={{
+          backgroundImage: `url('/Images/Vector.png'),url('/Images/Activities.svg')`,
+          backgroundPosition: "center,right center", // first image aligned right center, second centered
+          backgroundRepeat: "no-repeat, no-repeat",
+          backgroundSize: "75%, 49%",
+          height: "700px",
+
+
+        }}
+      >
+        <h1 className="text-6xl pl-20 mt-20">To upscale your <br /><span className="[font-family:var(--font-kaushan)]">business</span> to the <br />next level</h1>;
+        <div className="w-[39%] mt-1 ml-20">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+          <p className="flex items-center gap-2 mt-3">
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
+            Project template to kick-start a new project
+          </p>
+
+          <p className="flex items-center gap-2 mt-3">
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
+            Project template to kick-start a new project
+          </p>
+
+          <p className="flex items-center gap-2 mt-3">
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
+            Communication and collaborate with your team and clients
+          </p>
+
+          <p className="flex items-center gap-2 mt-3">
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
+            Time tracking for the whole team
+          </p>
+
+        </div>
+      </div>
+
+      {/* Roadmap */}
+      <div>
+        <h1 className="text-6xl pl-20 mt-10 text-center">Our<span className="[font-family:var(--font-kaushan)]">design</span> and <br /> <span className="[font-family:var(--font-kaushan)]">development</span> approach</h1>;
+        <Image
+          src="/Images/Roadmap.svg"
+          alt="Roadmap"
+          width={1200}
+          height={1200}
+          className="mx-auto -mt-20"
+        />
+      </div>
     </div>
   );
 }
