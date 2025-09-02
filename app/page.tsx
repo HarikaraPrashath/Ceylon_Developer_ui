@@ -125,7 +125,7 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Project template to kick-start a new project
+            Clone task to speed your time to action 
           </p>
 
           <p className="flex items-center gap-2 mt-3">
