@@ -18,6 +18,7 @@ export default function Home() {
           }}
         >
 
+          {/* Navigation Bar */}
           <Navbar />
           <div className="px-4 py-2 rounded-4xl border-1 border-gray-700 bg-gray-400/20 w-[25%] text-center text-gray-200 text-xl mx-auto mt-10">
             <p>Bring your business to the best scale</p>
