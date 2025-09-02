@@ -34,7 +34,7 @@ export default function Home() {
               <Link href="/">
                 <Image
                   src="/Images/Button.png"
-                  alt="Logo"
+                  alt="button"
                   width={120}
                   height={120}
                   priority
@@ -44,7 +44,7 @@ export default function Home() {
             <div>
               <Image
                 src="/Images/Group 31.png"
-                alt="Logo"
+                alt="users"
                 width={80}
                 height={80}
                 priority
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <Image
             src="/Images/Line 4.png"
-            alt="Logo"
+            alt="Horizontal Line"
             width={200}
             height={200}
             priority
@@ -66,10 +66,30 @@ export default function Home() {
         </div>
 
       </div>
-      {/* Service */}
+      {/* Service */};
       <div>
-          <h1 className="text-4xl text-center mt-20 "><span className="[font-family:var(--font-kaushan)] px-4">Services</span>We offer</h1>
-          <p className="mt-8 text-center"> Pushing the boundaries of what&apos;s possible in the digital realm <br/> Join us on thi journey into the future of technology </p>
+        <p className="mt-8 text-center"> Pushing the boundaries of what&apos;s possible in the digital realm <br /> Join us on thi journey into the future of technology </p>
+        <div>
+          <h1 className="text-6xl text-center mt-20 "><span className="[font-family:var(--font-kaushan)] px-4">Services</span>We offer</h1>;
+
+
+          <Image
+            src="/Images/scrollerVertical.svg"
+            alt="scrollerVertical"
+            width={100}
+            height={100}
+            className="mx-auto w-[100%]"
+          />
+
+
+          <Image
+            src="/Images/Carousel-nodes.png"
+            alt="Carousel-nodes"
+            width={70}
+            height={70}
+            className="mx-auto mt-10"
+          />
+        </div>
       </div>
     </div>
   );
