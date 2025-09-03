@@ -138,7 +138,7 @@ export default function Home() {
           alt="Roadmap"
           width={900}
           height={900}
-          className="mx-auto -mt-20"
+          className="mx-auto "
         />
       </div>
     </div>
