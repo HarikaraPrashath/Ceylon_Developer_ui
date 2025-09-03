@@ -136,8 +136,8 @@ export default function Home() {
         <Image
           src="/Images/roadmap.svg"
           alt="Roadmap"
-          width={1200}
-          height={1200}
+          width={900}
+          height={900}
           className="mx-auto -mt-20"
         />
       </div>
