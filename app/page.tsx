@@ -68,11 +68,11 @@ export default function Home() {
         </div>
 
       </div>
-{/* Service */}
-<ServicesSwiper />
+      {/* Service */}
+      <ServicesSwiper />
 
-{/* Activities */}
-<div
+      {/* Activities */}
+      <div
         className="flex flex-col "
         style={{
           backgroundImage: `url('/Images/Vector.png'),url('/Images/Activities.svg')`,
@@ -134,7 +134,7 @@ export default function Home() {
       <div>
         <h1 className="text-6xl pl-20 mt-10 text-center">Our<span className="[font-family:var(--font-kaushan)]">design</span> and <br /> <span className="[font-family:var(--font-kaushan)]">development</span> approach</h1>;
         <Image
-          src="/Images/Roadmap.svg"
+          src="/Images/roadmap.svg"
           alt="Roadmap"
           width={1200}
           height={1200}
