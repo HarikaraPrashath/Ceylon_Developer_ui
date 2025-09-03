@@ -9,3 +9,7 @@ body {
 .custom-cyan {
   color: #20cac5;
 }
+@theme {
+  --color-custom-cyan: #20cac5;
+  --color-custom-cyan-400: #20cac5;
+}
