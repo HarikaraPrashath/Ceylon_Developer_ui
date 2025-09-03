@@ -134,11 +134,11 @@ export default function Home() {
       <div>
         <h1 className="text-6xl pl-20 mt-10 text-center">Our<span className="[font-family:var(--font-kaushan)]">design</span> and <br /> <span className="[font-family:var(--font-kaushan)]">development</span> approach</h1>;
         <Image
-          src="/Images/roadmap.svg"
+          src="/Images/roadMap.svg"
           alt="Roadmap"
-          width={900}
-          height={900}
-          className="mx-auto "
+          width={1000}
+          height={1000}
+          className="mx-auto -mt-10 "
         />
       </div>
     </div>
