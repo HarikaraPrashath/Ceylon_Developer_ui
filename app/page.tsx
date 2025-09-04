@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar/Navbar";
 import Image from "next/image";
 import ServicesSwiper from "./components/Home/Swiper";
+import Implement from "./components/Home/Implement";
 
 export default function Home() {
   return (
@@ -141,6 +142,8 @@ export default function Home() {
           className="mx-auto -mt-10 "
         />
       </div>
+
+      <Implement/>
     </div>
   );
 }

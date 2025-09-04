@@ -13,3 +13,14 @@ body {
   --color-custom-cyan: #20cac5;
   --color-custom-cyan-400: #20cac5;
 }
+
+.border-gradient-bottom {
+  border-width: 2px;
+  border-image: linear-gradient(to bottom, #20cac5, rgba(0,0,0)) 2;
+}
+
+
+.border-gradient-top {
+  border-width: 2px;
+  border-image: linear-gradient(to top, #20cac5, rgba(0,0,0)) 2;
+}
