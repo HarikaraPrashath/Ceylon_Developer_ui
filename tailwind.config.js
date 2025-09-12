@@ -15,5 +15,13 @@ export const theme = {
             },
         },
     },
+     screens: {
+      xs: "375px",   // ✅ Custom extra small breakpoint
+      sm: "640px",   // Default
+      md: "768px",   // Default
+      lg: "1024px",  // Default
+      xl: "1440px",  // Default
+     
+    },
 };
 export const plugins = [];

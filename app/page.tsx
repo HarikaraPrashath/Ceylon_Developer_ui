@@ -22,50 +22,74 @@ export default function Home() {
 
           {/* Navigation Bar */}
           <Navbar />
-          <div className="px-4 py-2 rounded-4xl border-1 border-gray-700 bg-gray-400/20 w-[25%] text-center text-gray-200 text-xl mx-auto mt-10">
-            <p>Bring your business to the best scale</p>
+          <div className="px-4 py-2 rounded-3xl border border-gray-700 bg-gray-400/20 w-fit text-center text-gray-200 text-xl mx-auto mt-10 whitespace-nowrap sm:text-lg xs:text-sm">
+            Bring your business to the best scale
           </div>
 
-          <div className="text-center text-9xl font-medium mt-20">
-            <p>Crafting <span className="custom-cyan">Digital</span> <br /> Excellence</p>
+
+          <div className="text-center mt-6">
+            <p className="text-4xl leading-tight font-medium sm:text-6xl lg:text-7xl xl:text-9xl xl:leading-[1.1]">
+              Crafting <span className="custom-cyan">Digital</span>
+              <br className="" />
+              <span className=""> </span>Excellence
+            </p>
           </div>
 
-          <p className="mx-auto text-lg text-center mt-10">Pushing the boundaries of what&apos;s possible in the digital realm. Join  <br />us  on this journey into the future of technology </p>
+          <p className="mx-auto text-center mt-10 max-w-2xl text-sm px-4 sm:text-base sm:px-2 lg:text-lg">
+            Pushing the boundaries of what&apos;s possible in the digital realm. Join
+            <br className=" " />
+            us on this journey into the future of technology
+          </p>
 
-          <div className="flex justify-center mt-10 space-x-6">
-            <div>
+          {/* Buttons + Users */}
+          <div className="flex flex-col-reverse items-center mt-10 space-y-3  sm:flex-row sm:space-x-6 sm:space-y-0 mx-auto">
+            {/* Learn More button (below on mobile, left on bigger screens) */}
+            <div >
               <Link href="/">
                 <Image
                   src="/Images/Button.png"
                   alt="button"
-                  width={120}
+                  width={1020}
                   height={120}
                   priority
+                  className="w-[140px] h-auto sm:w-[120px]"
                 />
               </Link>
             </div>
-            <div>
+
+            {/* Users + Trust copy (stack on mobile, row on bigger screens) */}
+            <div className="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 min-[375px]:flex-row gap-3 min-[375px]:ml-10 min-[375px]:w-[300px]">
+              {/* Users image */}
               <Image
                 src="/Images/Group 31.png"
                 alt="users"
                 width={80}
                 height={80}
                 priority
-                className="ml-2"
+                className="ml-0 w-[96px] h-auto sm:ml-2 sm:w-[80px]"
               />
+
+              {/* Trust copy */}
+              <p className="mt-0 ml-0 text-center text-sm sm:text-left sm:-mt-1.5 sm:-ml-3 sm:text-base  min-[375px]:-mt-3">
+                Trusted by over +20K <br className="block sm:hidden" />
+                people in the world
+              </p>
             </div>
-            <div>
-              <p className="-mt-1.5 -ml-3">Trust by over +20K <br /> people in the world</p>
-            </div>
+
           </div>
+
+
+
           <Image
             src="/Images/Line 4.png"
             alt="Horizontal Line"
             width={200}
             height={200}
             priority
-            className="mx-auto mt-20"
+            className="mx-auto mt-20  border-1"
           />
+
+
         </div>
 
       </div>
@@ -73,77 +97,152 @@ export default function Home() {
       <ServicesSwiper />
 
       {/* Activities */}
+
       <div
-        className="flex flex-col "
-        style={{
-          backgroundImage: `url('/Images/Vector.png'),url('/Images/Activities.svg')`,
-          backgroundPosition: "center,right center", // first image aligned right center, second centered
-          backgroundRepeat: "no-repeat, no-repeat",
-          backgroundSize: "75%, 49%",
-          height: "700px",
-
-
-        }}
+        className="
+    relative flex flex-col overflow-hidden
+    px-4 sm:px-6 md:px-8 lg:pl-20
+    py-10 sm:py-12 md:py-16 lg:py-0
+    lg:min-h-[700px]
+  "
       >
-        <h1 className="text-6xl pl-20 mt-20">To upscale your <br /><span className="[font-family:var(--font-kaushan)]">business</span> to the <br />next level</h1>;
-        <div className="w-[39%] mt-1 ml-20">
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+        {/* Desktop decorations (1440px and above) */}
+        <Image
+          src="/Images/Activities.svg"
+          alt=""
+          priority
+          width={1200}
+          height={800}
+          className="
+      hidden 2xl:block absolute right-0 top-1/2 -translate-y-1/2
+      w-[49%] h-auto pointer-events-none select-none
+    "
+        />
+        <Image
+          src="/Images/Vector.png"
+          alt=""
+          priority
+          fill
+          className="hidden 2xl:block object-contain pointer-events-none select-none"
+          style={{ objectPosition: "center" }}
+        />
+
+        {/* xs/sm/md — 2-line title */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl mt-6 text-center leading-tight lg:hidden">
+          <span className="whitespace-nowrap">
+            To upscale your <span className="[font-family:var(--font-kaushan)]">business</span>
+          </span>
+          <br />
+          <span className="whitespace-nowrap">to the next level</span>
+        </h1>
+
+        {/* lg+ — original layout */}
+        <h1 className="hidden lg:block text-6xl mt-20 leading-tight">
+          To upscale your <br />
+          <span className="[font-family:var(--font-kaushan)]">business</span> to the <br />
+          next level
+        </h1>
+
+        <div
+          className="
+      w-full sm:w-5/6 md:w-3/4 lg:w-[39%]
+      mt-4 md:mt-6
+    "
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.
+          </p>
+
           <p className="flex items-center gap-2 mt-3">
-            <Image
-              src="/Images/TikButton.png"
-              alt="Tick icon"
-              width={20}
-              height={20}
-            />
+            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
             Project template to kick-start a new project
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image
-              src="/Images/TikButton.png"
-              alt="Tick icon"
-              width={20}
-              height={20}
-            />
+            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
             Clone task to speed your time to action
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image
-              src="/Images/TikButton.png"
-              alt="Tick icon"
-              width={20}
-              height={20}
-            />
+            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
             Communication and collaborate with your team and clients
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image
-              src="/Images/TikButton.png"
-              alt="Tick icon"
-              width={20}
-              height={20}
-            />
+            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
             Time tracking for the whole team
           </p>
 
+          {/* Show Activities.svg below points on smaller screens */}
+          <div className="mt-6 lg:hidden flex justify-center md:w-[900px] sm:w-[700px]  xs:w-[300px]">
+            <Image
+              src="/Images/Activities.svg"
+              alt="Activities"
+              width={800}
+              height={600}
+              className="w-full sm:w-[90%] md:w-[80%] h-auto"
+            />
+          </div>
         </div>
       </div>
 
       {/* Roadmap */}
       <div>
-        <h1 className="text-6xl pl-20 mt-10 text-center">Our<span className="[font-family:var(--font-kaushan)]">design</span> and <br /> <span className="[font-family:var(--font-kaushan)]">development</span> approach</h1>;
-        <Image
-          src="/Images/roadmap.png"
-          alt="Roadmap"
-          width={1000}
-          height={1000}
-          className="mx-auto -mt-10 "
-        />
+        {/* Text: fixed formatting across all sizes (no responsive variants used) */}
+        <h1
+          className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  mt-10 text-center"
+        >
+          Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
+          <span className="[font-family:var(--font-kaushan)]">development</span> approach
+        </h1>
+
+        {/* Reserve consistent space for the image block to prevent layout shifts */}
+        <div className="mx-auto mt-10 w-full max-w-[1000px]">
+          {/* Desktop/Laptop: lg and up (≥1024px, includes 1440px+) */}
+          <Image
+            src="/Images/roadmap.png"
+            alt="Roadmap"
+            width={1000}
+            height={1000}
+            className="block lg:block hidden"
+            priority
+          />
+
+          {/* Tablet: md (≥768px and <1024px) */}
+          <Image
+            src="/Images/roadmap2.png"
+            alt="Roadmap 2"
+            width={1000}
+            height={1000}
+            className="hidden md:block lg:hidden"
+            priority
+          />
+
+          {/* Small: sm (≥640px and <768px) */}
+          <Image
+            src="/Images/roadmap1.png"
+            alt="Roadmap 1"
+            width={1000}
+            height={1000}
+            className="hidden sm:block md:hidden"
+            priority
+          />
+
+          {/* Extra small: <640px (covers 375px and below) */}
+          <Image
+            src="/Images/roadmap3.png"
+            alt="Roadmap 3"
+            width={1000}
+            height={1000}
+            className="block sm:hidden"
+            priority
+          />
+        </div>
       </div>
 
-      <Implement/>
+
+      <Implement />
     </div>
   );
 }

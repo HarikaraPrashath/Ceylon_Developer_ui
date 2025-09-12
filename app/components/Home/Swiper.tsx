@@ -74,6 +74,7 @@ const services = [
 export default function ServicesSwiper() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [visibleRange, setVisibleRange] = useState(1);
 
   const extendedServices = [...services, ...services, ...services];
   const totalItems = services.length;
@@ -89,6 +90,27 @@ export default function ServicesSwiper() {
       setTimeout(() => setCurrentIndex(totalItems), 500);
     }
   }, [currentIndex, totalItems]);
+
+  // responsive visible range
+  useEffect(() => {
+    const updateVisibleRange = () => {
+      const width = window.innerWidth;
+      if (width < 641) {
+        // xs, sm
+        setVisibleRange(0);
+      } else if (width < 1024) {
+        // md, lg, xl
+        setVisibleRange(1);
+      } else {
+        // 2xl
+        setVisibleRange(2);
+      }
+    };
+
+    updateVisibleRange();
+    window.addEventListener("resize", updateVisibleRange);
+    return () => window.removeEventListener("resize", updateVisibleRange);
+  }, []);
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => prev - 1);
@@ -108,9 +130,11 @@ export default function ServicesSwiper() {
     setTimeout(() => setIsAutoPlaying(true), 5000);
   };
 
+
   return (
-    <section className="py-20 px-4 bg-black min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* decorations using your custom cyan */}
+    // xs/sm use px-2; md+ can widen
+    <section className="-pt-90 px-2 sm:px-2  bg-black min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* decorations (unchanged) */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-40 h-40 border border-custom-cyan rounded-lg rotate-12"></div>
         <div className="absolute top-32 right-20 w-32 h-32 border border-custom-cyan rounded-lg -rotate-12"></div>
@@ -119,15 +143,17 @@ export default function ServicesSwiper() {
         <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-custom-cyan rounded-lg rotate-[30deg]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-7xl mx-auto relative w-full">
         <div className="text-center mb-16">
-          <p className="mt-8">
-            Pushing the boundaries of what&apos;s possible in the digital realm <br /> Join us on this journey into the
-            future of technology
-          </p>
           <h1 className="text-6xl text-center mt-20">
-            <span className="[font-family:var(--font-kaushan)] px-4">Services</span>We offer
+            <span className="[font-family:var(--font-kaushan)] px-4">Services</span>
+            <br className="block xs:hidden sm:hidden" />
+            <span className="block xs:inline sm:inline">We offer</span>
           </h1>
+          <p className="mt-8 xs:px-20 sm:px-20">
+            Pushing the boundaries of what&apos;s possible in the digital realm <br />
+            Join us on this journey into the future of technology
+          </p>
         </div>
 
         {/* swiper container */}
@@ -138,8 +164,8 @@ export default function ServicesSwiper() {
               style={{ transformStyle: "preserve-3d" }}
             >
               {extendedServices.map((service, index) => {
-                const position = index - currentIndex;        // -2, -1, 0, +1, +2
-                const isVisible = Math.abs(position) <= 2;
+                const position = index - currentIndex;
+                const isVisible = Math.abs(position) <= visibleRange;
                 if (!isVisible) return null;
 
                 const isCenter = position === 0;
@@ -150,21 +176,38 @@ export default function ServicesSwiper() {
                 const scale = isCenter ? 1 : 0.8;
                 const opacity = isCenter ? 1 : Math.abs(position) === 1 ? 0.7 : 0.4;
 
-            
                 const offsetY =
                   position === 0 ? 90 : Math.abs(position) === 1 ? 30 : 10;
 
                 return (
                   <div
                     key={`${service.id}-${index}`}
-                    className="absolute top-1/2 left-1/2 w-80 h-80 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out"
+                    /* Full-width card on xs/sm/md; fixed width again on lg+ */
+                    className="
+                      absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                      h-80 transition-all duration-500 ease-out
+                      w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)] md:w-72 lg:w-80
+                      lg:w-80
+                    "
                     style={{
                       transform: `translateX(${translateX}px) translateY(${offsetY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
                       opacity,
                       zIndex: isCenter ? 10 : 5 - Math.abs(position),
                     }}
                   >
-                    <div className="bg-gray-900/60 backdrop-blur-sm border border-custom-cyan/40 rounded-2xl p-6 h-full flex flex-col hover:border-custom-cyan/60 transition-all duration-300 hover:bg-gray-900/70 group cursor-pointer">
+                    {/* Strong, full border treatment on xs/sm/md; original look on lg+ */}
+                    <div
+                      className="
+                        w-full h-full p-6
+                        bg-gray-900/60 backdrop-blur-sm
+                        border border-custom-cyan/60
+                        md:border-custom-cyan/60
+                        lg:border-custom-cyan/20
+                        rounded-2xl flex flex-col
+                        hover:border-custom-cyan/60 hover:bg-gray-900/70
+                        transition-all duration-300 group cursor-pointer
+                      "
+                    >
                       <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
                         {service.icon}
                       </div>
@@ -183,7 +226,8 @@ export default function ServicesSwiper() {
             </div>
           </div>
         </div>
-        {/* dot */}
+
+        {/* dots */}
         <div className="flex justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-55">
           {services.map((_, index) => (
             <button
@@ -191,8 +235,8 @@ export default function ServicesSwiper() {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${currentIndex % totalItems === index
-                ? "bg-custom-cyan scale-125"
-                : "bg-gray-600 hover:bg-gray-500"
+                  ? "bg-custom-cyan scale-125"
+                  : "bg-gray-600 hover:bg-gray-500"
                 }`}
               aria-label={`Go to slide ${index + 1}`}
             />
