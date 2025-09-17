@@ -275,14 +275,13 @@ export default function Home() {
 
       {/* Get in touch */}
 
-      <div className="mt-20 mx-5 ">
+      <div className="mt-40 mx-5 ">
 
         <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
 
           {/* Left section */}
           <div className=" lg:w-[40%]  xl:ml-10">
-            <h1 className="max-[371px]:text-4xl text-center 
-            max-[371px]:mt-5 sm:text-4xl md:text-5xl 2xl:text-6xl  xl:text-5xl">
+            <h1 className="max-[371px]:text-4xl text-center max-[371px]:mt-5 sm:text-4xl md:text-5xl 2xl:text-6xl  xl:text-5xl">
               Get
               <span className="[font-family:var(--font-kaushan)] pr-2">Touch</span>
             </h1>

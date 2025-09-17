@@ -2,7 +2,7 @@
 export const content = [
   "./app/**/*.{js,ts,jsx,tsx}",
   "./components/**/*.{js,ts,jsx,tsx}",
-  "./pages/**/*.{js,ts,jsx,tsx}", // if you have /pages
+  "./pages/**/*.{js,ts,jsx,tsx}", 
 ];
 export const theme = {
   extend: {
@@ -16,11 +16,11 @@ export const theme = {
     },
   },
   screens: {
-    xs: "375px", // ✅ Custom extra small breakpoint
-    sm: "640px", // Default
-    md: "768px", // Default
-    lg: "1024px", // Default
-    xl: "1440px", // Default
+    xs: "375px", 
+    sm: "640px", 
+    md: "768px", 
+    lg: "1024px", 
+    xl: "1440px"
   },
 };
 export const plugins = [];

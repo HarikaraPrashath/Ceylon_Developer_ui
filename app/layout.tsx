@@ -31,7 +31,6 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} ${kaushan.variable} antialiased`}
       >
-       
         {children}
         <Footer/>
       </body>
