@@ -285,8 +285,8 @@ export default function Home() {
               Get
               <span className="[font-family:var(--font-kaushan)] pr-2">Touch</span>
             </h1>
-            <p className="m-5 text-center xl:text-2xl xl:text-start">We're here to support you! Feel free to reach out for assistance, feedback, or any questions.</p>
-            <h1 className="text-lg xl:text-4xl ml-4">Let's Talk About:</h1>
+            <p className="m-5 text-center xl:text-2xl xl:text-start">We&apos;re here to support you! Feel free to reach out for assistance, feedback, or any questions.</p>
+            <h1 className="text-lg xl:text-4xl ml-4">Let&apos;s Talk About:</h1>
 
             <div className="space-y-5 mt-7 xl:ml-5">
               <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[250px] xl:w-[400px]">
@@ -361,7 +361,7 @@ export default function Home() {
           <span className="[font-family:var(--font-kaushan)] pr-2">Manage</span> your team like a pro?
         </h1>
 
-        <p className="text-center mt-6 xl:text-3xl ">Pushing the boundaries of what's possible in the digital real. Join us this journey into the future of technology</p>
+        <p className="text-center mt-6 xl:text-3xl ">Pushing the boundaries of what&apos;s possible in the digital real. Join us this journey into the future of technology</p>
 
         <div className="bg-custom-cyan text-black w-30 text-xl xl:text-3xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
           <button type="button">

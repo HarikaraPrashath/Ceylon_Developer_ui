@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 const testimonials = [
@@ -90,7 +91,7 @@ const Review = () => {
                         Why Customers <span className="italic font-normal">love</span> working with us
                     </h2>
                     <p className="text-gray-400 text-lg leading-relaxed">
-                        Hear directly from customers about their experiences and how webdone has made a difference.
+                        Hear directly from customers about their experiences and how web done has made a difference.
                     </p>
                 </div>
 
@@ -103,7 +104,7 @@ const Review = () => {
                         >
                             {/* Header (image + name) */}
                             <div className="flex gap-4 mb-3">
-                                <img
+                                <Image
                                     src={testimonial.avatar || "/placeholder.svg"}
                                     alt={testimonial.name}
                                     className="w-12 h-12 rounded-full object-cover flex-shrink-0"

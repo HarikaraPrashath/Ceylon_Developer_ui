@@ -1,62 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
 
 const Worlflow = () => {
   return (
     <div>
-      {/* <div>
-      <div className='flex max-[376px]:flex-row-reverse  '>
-        <div className='flex-[40%] border-2'>
-           <Image
-                  src="/Images/Group 681.png"
-                  alt="cureveLine"
-                  width={1000}
-                  height={1000}
-                  className="w-[2000px] mx-auto"
-                  priority
-                />
-        </div>
-        <div
-          className='flex-[60%] border-2'
-        >
-           <Image
-                  src="/Images/Group 669.png"
-                  alt="cureveLine"
-                  width={1000}
-                  height={1000}
-                  className="w-[2000px] mx-auto"
-                  priority
-                />
-          
-        </div>
-      </div>
-      <div className='flex max-[376px]:flex-row-reverse'>
-       <div className='flex-[60%] border-2'>
-          <Image
-                  src="/Images/Group 212.png"
-                  alt="cureveLine"
-                  width={1000}
-                  height={1000}
-                  className="w-[2000px] mx-auto"
-                  priority
-                />
-        </div>
-        <div
-          className='flex-[40%] border-2'
-        >
-           <Image
-                  src="/Images/Group 679.png"
-                  alt="cureveLine"
-                  width={1000}
-                  height={1000}
-                  className="w-[2000px] mx-auto"
-                  priority
-                />
-        </div>
-      </div>
+      {/* Desktop View */}
 
-    </div> */}
-
+      {/* Mobile and Tab view */}
       <div>
         <div
           className="relative  border-gray-800 border-2 mx-5 rounded-3xl flex flex-col justify-center mt-6 items-start p-6 text-white bg-cover bg-center"

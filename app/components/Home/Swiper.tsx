@@ -112,18 +112,6 @@ export default function ServicesSwiper() {
     return () => window.removeEventListener("resize", updateVisibleRange);
   }, []);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => prev - 1);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 5000);
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => prev + 1);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 5000);
-  };
-
   const goToSlide = (index: number) => {
     setCurrentIndex(totalItems + index);
     setIsAutoPlaying(false);
