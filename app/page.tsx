@@ -16,7 +16,7 @@ export default function Home() {
         <div
           className="relative  flex flex-col h-[30%] text-white"
           style={{
-            backgroundImage: `linear-gradient(to right, rgba(33,164,164,0.6), rgba(0,0,0,0.2)),url('/Images/Glow.png'), url('/Images/Vector.png')`,
+           backgroundImage: `url('/Images/Glow.png'), url('/Images/Vector.png')`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover, 80%",
