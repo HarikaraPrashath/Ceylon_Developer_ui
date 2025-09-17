@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 import BrandIdentity from "../components/About/BrandIdentity";
 
-const page = () => {
+const Page = () => {
   const [activeTab, setActiveTab] = useState("mission");
 
   const content = {
@@ -40,7 +40,7 @@ const page = () => {
       </div>
       <div className="px-5">
         <p className=" text-center w-80 mx-auto mt-5">
-          Pushing the boundaries of hat's possible in the digital realm.Join us
+          Pushing the boundaries of hat&apos;s possible in the digital realm.Join us
           on this journey into the future of technology
         </p>
 
@@ -298,10 +298,10 @@ const page = () => {
         </div>
 
         {/* The identity of our brand */}
-        {/* <BrandIdentity/> */}
+        <BrandIdentity/>
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
