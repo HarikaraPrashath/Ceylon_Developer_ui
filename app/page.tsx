@@ -16,20 +16,18 @@ export default function Home() {
         <div
           className="relative  flex flex-col h-[30%] text-white"
           style={{
-            backgroundImage: `url('/Images/Glow.png'), url('/Images/Vector.png')`,
+            backgroundImage: `linear-gradient(to right, rgba(33,164,164,0.6), rgba(0,0,0,0.2)),url('/Images/Glow.png'), url('/Images/Vector.png')`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover, 80%",
             height: "600px, 600px",
           }}
         >
-
           {/* Navigation Bar */}
-           <Navbar />
+          <Navbar />
           <div className="px-4 py-2 rounded-3xl border border-gray-700 bg-gray-400/20 w-fit text-center text-gray-200 text-xl mx-auto mt-10 whitespace-nowrap sm:text-lg xs:text-sm">
             Bring your business to the best scale
           </div>
-
 
           <div className="text-center mt-6">
             <p className="text-4xl leading-tight font-medium sm:text-6xl lg:text-7xl xl:text-9xl xl:leading-[1.1]">
@@ -40,7 +38,8 @@ export default function Home() {
           </div>
 
           <p className="mx-auto text-center mt-10 max-w-2xl text-sm px-4 sm:text-base sm:px-2 lg:text-lg">
-            Pushing the boundaries of what&apos;s possible in the digital realm. Join
+            Pushing the boundaries of what&apos;s possible in the digital realm.
+            Join
             <br className=" " />
             us on this journey into the future of technology
           </p>
@@ -48,7 +47,7 @@ export default function Home() {
           {/* Buttons + Users */}
           <div className="flex flex-col-reverse items-center mt-10 space-y-3  sm:flex-row sm:space-x-6 sm:space-y-0 mx-auto">
             {/* Learn More button (below on mobile, left on bigger screens) */}
-            <div >
+            <div>
               <Link href="/">
                 <Image
                   src="/Images/Button.png"
@@ -79,10 +78,7 @@ export default function Home() {
                 people in the world
               </p>
             </div>
-
           </div>
-
-
 
           <Image
             src="/Images/Line 4.png"
@@ -92,10 +88,7 @@ export default function Home() {
             priority
             className="mx-auto mt-20  border-1"
           />
-
-
         </div>
-
       </div>
       {/* Service */}
       <ServicesSwiper />
@@ -134,7 +127,8 @@ export default function Home() {
         {/* xs/sm/md — 2-line title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl mt-6 text-center leading-tight lg:hidden">
           <span className="whitespace-nowrap">
-            To upscale your <span className="[font-family:var(--font-kaushan)]">business</span>
+            To upscale your{" "}
+            <span className="[font-family:var(--font-kaushan)]">business</span>
           </span>
           <br />
           <span className="whitespace-nowrap">to the next level</span>
@@ -143,7 +137,8 @@ export default function Home() {
         {/* lg+ — original layout */}
         <h1 className="hidden lg:block text-6xl mt-20 leading-tight">
           To upscale your <br />
-          <span className="[font-family:var(--font-kaushan)]">business</span> to the <br />
+          <span className="[font-family:var(--font-kaushan)]">business</span> to
+          the <br />
           next level
         </h1>
 
@@ -154,27 +149,48 @@ export default function Home() {
     "
         >
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua invidunt ut labore.
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
             Project template to kick-start a new project
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
             Clone task to speed your time to action
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
             Communication and collaborate with your team and clients
           </p>
 
           <p className="flex items-center gap-2 mt-3">
-            <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} />
+            <Image
+              src="/Images/TikButton.png"
+              alt="Tick icon"
+              width={20}
+              height={20}
+            />
             Time tracking for the whole team
           </p>
 
@@ -194,11 +210,13 @@ export default function Home() {
       {/* Roadmap */}
       <div>
         {/* Text: fixed formatting across all sizes (no responsive variants used) */}
-        <h1
-          className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  mt-10 text-center"
-        >
-          Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
-          <span className="[font-family:var(--font-kaushan)]">development</span> approach
+        <h1 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  mt-10 text-center">
+          Our <span className="[font-family:var(--font-kaushan)]">design</span>{" "}
+          and <br />
+          <span className="[font-family:var(--font-kaushan)]">
+            development
+          </span>{" "}
+          approach
         </h1>
 
         {/* Reserve consistent space for the image block to prevent layout shifts */}
@@ -245,7 +263,6 @@ export default function Home() {
         </div>
       </div>
 
-
       <Implement />
       {/* line  */}
       <Image
@@ -269,30 +286,38 @@ export default function Home() {
         priority
       />
 
-
-
       <Technologies />
 
       {/* Get in touch */}
 
       <div className="mt-40 mx-5 ">
-
         <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
-
           {/* Left section */}
           <div className=" lg:w-[40%]  xl:ml-10">
             <h1 className="max-[371px]:text-4xl text-center max-[371px]:mt-5 sm:text-4xl md:text-5xl 2xl:text-6xl  xl:text-5xl">
               Get
-              <span className="[font-family:var(--font-kaushan)] pr-2">Touch</span>
+              <span className="[font-family:var(--font-kaushan)] pr-2">
+                Touch
+              </span>
             </h1>
-            <p className="m-5 text-center xl:text-2xl xl:text-start">We&apos;re here to support you! Feel free to reach out for assistance, feedback, or any questions.</p>
+            <p className="m-5 text-center xl:text-2xl xl:text-start">
+              We&apos;re here to support you! Feel free to reach out for
+              assistance, feedback, or any questions.
+            </p>
             <h1 className="text-lg xl:text-4xl ml-4">Let&apos;s Talk About:</h1>
 
             <div className="space-y-5 mt-7 xl:ml-5">
               <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[250px] xl:w-[400px]">
                 <div className="rounded-full p-1 bg-custom-cyan">
                   {/* arrow icon */}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
@@ -302,7 +327,14 @@ export default function Home() {
 
               <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[230px] xl:w-[370px]">
                 <div className="rounded-full p-1 bg-custom-cyan">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
@@ -312,7 +344,14 @@ export default function Home() {
 
               <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[240px] xl:w-[400px]">
                 <div className="rounded-full p-1 bg-custom-cyan">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
@@ -325,13 +364,31 @@ export default function Home() {
           {/* Right section (form) */}
           <div className="border-2 border-custom-cyan/60 py-5 px-5 rounded-2xl lg:w-1/2 lg:ml-20">
             <h1 className="text-xl mb-2 xl:text-5xl">Get a quote</h1>
-            <p className="text-base text-gray-300 xl:text-2xl">Fill up the form and our Team will get back to you within 24 hours.</p>
+            <p className="text-base text-gray-300 xl:text-2xl">
+              Fill up the form and our Team will get back to you within 24
+              hours.
+            </p>
 
             <form className="mt-5 space-y-5">
-              <input type="text" placeholder="Name" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
-              <input type="email" placeholder="Email" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
-              <input type="text" placeholder="Subject" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
-              <textarea placeholder="Your message" className="bg-gray-500 h-27 w-full rounded-xl py-2 px-4 xl:text-3xl"></textarea>
+              <input
+                type="text"
+                placeholder="Name"
+                className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl"
+              />
+              <textarea
+                placeholder="Your message"
+                className="bg-gray-500 h-27 w-full rounded-xl py-2 px-4 xl:text-3xl"
+              ></textarea>
 
               <button
                 type="submit"
@@ -342,14 +399,10 @@ export default function Home() {
             </form>
           </div>
         </div>
-
-
-
       </div>
 
       {/* Review part */}
       <Review />
-
 
       {/* helping service */}
       <Help />
@@ -358,18 +411,21 @@ export default function Home() {
       <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-10 px-4 mx-6 mt-15 rounded-2xl sm:mx-26 sm:px-10 xl:mx-100 xl:pt-6">
         <h1 className="max-[376px]:text-4xl text-center max-[376px]:mt-5 sm:text-4xl md:text-5xl xl:text-7xl">
           Ready to
-          <span className="[font-family:var(--font-kaushan)] pr-2">Manage</span> your team like a pro?
+          <span className="[font-family:var(--font-kaushan)] pr-2">
+            Manage
+          </span>{" "}
+          your team like a pro?
         </h1>
 
-        <p className="text-center mt-6 xl:text-3xl ">Pushing the boundaries of what&apos;s possible in the digital real. Join us this journey into the future of technology</p>
+        <p className="text-center mt-6 xl:text-3xl ">
+          Pushing the boundaries of what&apos;s possible in the digital real.
+          Join us this journey into the future of technology
+        </p>
 
         <div className="bg-custom-cyan text-black w-30 text-xl xl:text-3xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
-          <button type="button">
-            Get Start
-          </button>
+          <button type="button">Get Start</button>
         </div>
       </div>
-
     </div>
   );
 }

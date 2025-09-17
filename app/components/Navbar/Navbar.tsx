@@ -85,13 +85,11 @@ const Navbar = () => {
         >
           {menuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
-    
       </div>
-      
 
       {/* Mobile Menu (drawer-style with bg) */}
       {menuOpen && (
-  <div className="absolute top-16 left-0 w-full bg-black/95 backdrop-blur-md text-white flex flex-col items-center space-y-6 py-8 z-50 shadow-lg rounded-b-2xl border-t border-gray-700">
+        <div className="absolute top-16 left-0 w-full bg-black/95 backdrop-blur-md text-white flex flex-col items-center space-y-6 py-8 z-50 shadow-lg rounded-b-2xl border-t border-gray-700">
           <Link
             href="/"
             className="hover:text-gray-400 text-lg"
