@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Image from "next/image";
 import ServicesSwiper from "./components/Home/Swiper";
 import Implement from "./components/Home/Implement";
+import Worlflow from "./components/Home/Worlflow";
+import Technologies from "./components/Home/Technologies";
+import Review from "./components/Home/Review";
+import Help from "./components/Home/Help";
 
 export default function Home() {
   return (
@@ -21,7 +25,7 @@ export default function Home() {
         >
 
           {/* Navigation Bar */}
-          <Navbar />
+           <Navbar />
           <div className="px-4 py-2 rounded-3xl border border-gray-700 bg-gray-400/20 w-fit text-center text-gray-200 text-xl mx-auto mt-10 whitespace-nowrap sm:text-lg xs:text-sm">
             Bring your business to the best scale
           </div>
@@ -243,6 +247,129 @@ export default function Home() {
 
 
       <Implement />
+      {/* line  */}
+      <Image
+        src="/Images/cureveLine.png"
+        alt="cureveLine"
+        width={1000}
+        height={1000}
+        className="w-[2000px] mx-auto"
+        priority
+      />
+
+      <Worlflow />
+
+      {/* line  */}
+      <Image
+        src="/Images/cureveLine.png"
+        alt="cureveLine"
+        width={1000}
+        height={1000}
+        className="w-[2000px] mx-auto"
+        priority
+      />
+
+
+
+      <Technologies />
+
+      {/* Get in touch */}
+
+      <div className="mt-40 mx-5 ">
+
+        <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
+
+          {/* Left section */}
+          <div className=" lg:w-[40%]  xl:ml-10">
+            <h1 className="max-[371px]:text-4xl text-center max-[371px]:mt-5 sm:text-4xl md:text-5xl 2xl:text-6xl  xl:text-5xl">
+              Get
+              <span className="[font-family:var(--font-kaushan)] pr-2">Touch</span>
+            </h1>
+            <p className="m-5 text-center xl:text-2xl xl:text-start">We're here to support you! Feel free to reach out for assistance, feedback, or any questions.</p>
+            <h1 className="text-lg xl:text-4xl ml-4">Let's Talk About:</h1>
+
+            <div className="space-y-5 mt-7 xl:ml-5">
+              <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[250px] xl:w-[400px]">
+                <div className="rounded-full p-1 bg-custom-cyan">
+                  {/* arrow icon */}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </div>
+                <p className="text-lg pl-3 xl:text-3xl">Customer Experience</p>
+              </div>
+
+              <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[230px] xl:w-[370px]">
+                <div className="rounded-full p-1 bg-custom-cyan">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </div>
+                <p className="text-lg pl-3 xl:text-3xl">Quality and Trust</p>
+              </div>
+
+              <div className="flex flex-row items-center bg-gray-700 px-3 py-2 rounded-3xl w-full sm:w-[240px] xl:w-[400px]">
+                <div className="rounded-full p-1 bg-custom-cyan">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </div>
+                <p className="text-lg pl-3 xl:text-3xl">Dependable Service</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right section (form) */}
+          <div className="border-2 border-custom-cyan/60 py-5 px-5 rounded-2xl lg:w-1/2 lg:ml-20">
+            <h1 className="text-xl mb-2 xl:text-5xl">Get a quote</h1>
+            <p className="text-base text-gray-300 xl:text-2xl">Fill up the form and our Team will get back to you within 24 hours.</p>
+
+            <form className="mt-5 space-y-5">
+              <input type="text" placeholder="Name" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
+              <input type="email" placeholder="Email" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
+              <input type="text" placeholder="Subject" className="bg-gray-500 w-full rounded-xl py-2 px-4 xl:text-3xl" />
+              <textarea placeholder="Your message" className="bg-gray-500 h-27 w-full rounded-xl py-2 px-4 xl:text-3xl"></textarea>
+
+              <button
+                type="submit"
+                className=" xl:text-3xl w-full text-center bg-custom-cyan rounded-xl py-2 text-lg text-black hover:bg-custom-cyan/80 transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      {/* Review part */}
+      <Review />
+
+
+      {/* helping service */}
+      <Help />
+
+      {/* Manage the team */}
+      <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-10 px-4 mx-6 mt-15 rounded-2xl sm:mx-26 sm:px-10 xl:mx-100 xl:pt-6">
+        <h1 className="max-[376px]:text-4xl text-center max-[376px]:mt-5 sm:text-4xl md:text-5xl xl:text-7xl">
+          Ready to
+          <span className="[font-family:var(--font-kaushan)] pr-2">Manage</span> your team like a pro?
+        </h1>
+
+        <p className="text-center mt-6 xl:text-3xl ">Pushing the boundaries of what's possible in the digital real. Join us this journey into the future of technology</p>
+
+        <div className="bg-custom-cyan text-black w-30 text-xl xl:text-3xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
+          <button type="button">
+            Get Start
+          </button>
+        </div>
+      </div>
+
     </div>
   );
 }
