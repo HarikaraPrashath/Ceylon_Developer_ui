@@ -107,7 +107,9 @@ const Review = () => {
                                 <Image
                                     src={testimonial.avatar || "/placeholder.svg"}
                                     alt={testimonial.name}
-                                    className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                                    width={48} 
+                                    height={48}
+                                    className="rounded-full object-cover flex-shrink-0"
                                 />
 
                                 <div className="flex-1 min-w-0">

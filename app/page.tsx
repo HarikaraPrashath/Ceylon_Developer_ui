@@ -265,7 +265,7 @@ export default function Home() {
         alt="cureveLine"
         width={1000}
         height={1000}
-        className="w-[2000px] mx-auto"
+        className="w-[2000px] mx-auto mb-10"
         priority
       />
 
