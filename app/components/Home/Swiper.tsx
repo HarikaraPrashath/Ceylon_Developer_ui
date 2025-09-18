@@ -288,7 +288,7 @@ export default function ServicesSwiper() {
         </div>
 
         {/* dots */}
-        <div className="flex justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-55">
+        <div className="flex justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-55 xl:ml-160 max-[376px]:ml-45">
           {services.map((_, index) => (
             <button
               type="button"
