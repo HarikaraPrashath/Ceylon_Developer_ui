@@ -4,6 +4,9 @@ import Navbar from "../components/Navbar/Navbar";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import BrandIdentity from "../components/About/BrandIdentity";
+import Card from "../components/About/Card";
+import { ArrowUpRight  } from "lucide-react";
+
 
 const Page = () => {
   const [activeTab, setActiveTab] = useState("mission");
@@ -40,8 +43,8 @@ const Page = () => {
       </div>
       <div className="px-5">
         <p className=" text-center w-80 mx-auto mt-5">
-          Pushing the boundaries of hat&apos;s possible in the digital realm.Join us
-          on this journey into the future of technology
+          Pushing the boundaries of hat&apos;s possible in the digital
+          realm.Join us on this journey into the future of technology
         </p>
 
         <div className="flex flex-col">
@@ -298,7 +301,27 @@ const Page = () => {
         </div>
 
         {/* The identity of our brand */}
-        <BrandIdentity/>
+        <BrandIdentity />
+
+        <Card />
+
+        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2 mx-6 mt-15 rounded-2xl text-3xl ">
+          <h1 className=" text-center ">
+            Ready to
+            <span className="[font-family:var(--font-kaushan)] pl-2">
+              Manage
+            </span>{" "}
+            your team like a pro?
+          </h1>
+          <p className="text-center mt-6 text-lg ">
+          Pushing the boundaries of what&apos;s possible in the digital real.
+          Join us this journey into the future of technology
+        </p>
+         <div className="bg-custom-cyan w-35 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
+        <button type="button">Book a call</button>
+        <ArrowUpRight  />
+      </div>
+        </div>
       </div>
     </div>
   );

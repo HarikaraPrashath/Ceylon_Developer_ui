@@ -425,6 +425,8 @@ export default function Home() {
         <div className="bg-custom-cyan text-black w-30 text-xl xl:text-3xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
           <button type="button">Get Start</button>
         </div>
+
+        
       </div>
     </div>
   );
