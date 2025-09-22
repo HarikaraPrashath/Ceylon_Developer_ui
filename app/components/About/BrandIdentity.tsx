@@ -65,9 +65,9 @@ const BrandIdentity = () => {
       </div>
 
       {/* split container */}
-      <div className="flex flex-row sm:mx-12 ">
+      <div className="flex flex-row sm:gap-3 sm:mx-auto md:mx-10 sm:-mr-10 ">
         <div
-          className="border-1 rounded-xl w-38 h-55 sm:w-58 sm:h-75 mx-auto mt-8 border-custom-cyan "
+          className="border-1 rounded-xl w-38 h-55 sm:w-78 sm:h-75 mx-auto mt-8 border-custom-cyan md:w-60"
           style={{
             boxShadow: "inset 0 0 15px rgba(0, 255, 255, 0.6)",
           }}
@@ -85,12 +85,12 @@ const BrandIdentity = () => {
           </div>
         </div>
         <div
-          className="border-1 rounded-xl w-38 h-55 mx-auto mt-8 border-custom-cyan sm:w-58 sm:h-75"
+          className="border-1 rounded-xl w-38 h-55 mx-auto mt-8 border-custom-cyan sm:w-78 sm:h-75 md:w-60"
           style={{
             boxShadow: "inset 0 0 15px rgba(0, 255, 255, 0.6)",
           }}
         >
-          <div className=" px-2 py-2">
+          <div className=" px-2 py-2  md:ml-5">
             <h1 className="pl-1  text-lg pt-10 sm:pl-3">Reviewed on:</h1>
             <Image
               src="/Images/Search Engine.png"

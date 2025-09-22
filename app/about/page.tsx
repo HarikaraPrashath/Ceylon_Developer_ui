@@ -27,7 +27,7 @@ const Page = () => {
   return (
     <div>
       <div
-        className="relative  flex flex-col h-[30%] text-white"
+        className="relative  flex flex-col h-[30%] text-white "
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
           backgroundPosition: "bottom,bottom,center",
@@ -40,7 +40,7 @@ const Page = () => {
 
         <h1 className="text-6xl mt-10 text-center">About</h1>
       </div>
-      <div className="px-5">
+      <div className="px-5 sm:mx-20 md:mx-20">
         <p className=" text-center w-80 mx-auto mt-5 sm:w-120">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
@@ -92,13 +92,13 @@ const Page = () => {
               width={800}
               height={800}
               priority
-              className="mx-auto mt-10  border-1  w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] "
+              className="mx-auto mt-10  border-1  w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px]"
             />
           </div>
         </div>
 
-        <h1 className="text-4xl text-center mt-10 sm:text-5xl">
-          Why Choose{" "}
+        <h1 className="text-4xl text-center mt-10 sm:text-5xl md:text-4xl ">
+          Why Choose{" "} 
           <span className="[font-family:var(--font-kaushan)] pr-2">
             Ceylon Developers?
           </span>{" "}
@@ -108,7 +108,7 @@ const Page = () => {
           {/* container 1 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 p-[1px] sm:w-110 bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 p-[1px] sm:w-110 md:120 bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -142,7 +142,7 @@ const Page = () => {
           {/* container 2 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 md:120 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -176,7 +176,7 @@ const Page = () => {
           {/* container 3 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 md:120 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -210,7 +210,7 @@ const Page = () => {
           {/* container 4 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 p-[1px] md:120 bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -308,8 +308,8 @@ const Page = () => {
 
         <Card />
 
-        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2  mt-15 rounded-2xl text-3xl sm:w-105 mx-auto ">
-          <h1 className=" text-center sm:w-72 mx-auto ">
+        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2  mt-15 rounded-2xl text-3xl sm:w-105 mx-auto  md:w-140">
+          <h1 className=" text-center sm:w-72 mx-auto md:w-90 ">
             Ready to
             <span className="[font-family:var(--font-kaushan)] pl-2">
               Manage
@@ -331,7 +331,7 @@ const Page = () => {
               Get Start
             </button>
 
-            <ArrowUpRight />
+            <ArrowUpRight className="sm:hidden" />
           </div>
         </div>
       </div>
