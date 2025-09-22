@@ -5,8 +5,7 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 import BrandIdentity from "../components/About/BrandIdentity";
 import Card from "../components/About/Card";
-import { ArrowUpRight  } from "lucide-react";
-
+import { ArrowUpRight } from "lucide-react";
 
 const Page = () => {
   const [activeTab, setActiveTab] = useState("mission");
@@ -30,8 +29,8 @@ const Page = () => {
       <div
         className="relative  flex flex-col h-[30%] text-white"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
-          backgroundPosition: "center",
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
+          backgroundPosition: "bottom,bottom,center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover, 100%",
           height: "500px, 600px",
@@ -42,7 +41,7 @@ const Page = () => {
         <h1 className="text-6xl mt-10 text-center">About</h1>
       </div>
       <div className="px-5">
-        <p className=" text-center w-80 mx-auto mt-5">
+        <p className=" text-center w-80 mx-auto mt-5 sm:w-120">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>
@@ -93,23 +92,23 @@ const Page = () => {
               width={800}
               height={800}
               priority
-              className="mx-auto mt-10  border-1  w-[350px] h-[252px]"
+              className="mx-auto mt-10  border-1  w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] "
             />
           </div>
         </div>
 
-        <h1 className="text-4xl text-center mt-10">
+        <h1 className="text-4xl text-center mt-10 sm:text-5xl">
           Why Choose{" "}
           <span className="[font-family:var(--font-kaushan)] pr-2">
             Ceylon Developers?
           </span>{" "}
         </h1>
 
-        <div>
+        <div className="mx-auto flex flex-col items-center">
           {/* container 1 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 p-[1px] sm:w-110 bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -143,7 +142,7 @@ const Page = () => {
           {/* container 2 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -177,7 +176,7 @@ const Page = () => {
           {/* container 3 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -211,7 +210,7 @@ const Page = () => {
           {/* container 4 */}
           <div className=" ">
             {/*outer-line*/}
-            <div className="rounded-3xl w-84 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
+            <div className="rounded-3xl w-84 sm:w-110 p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  mt-10">
               <div className="rounded-[calc(1.5rem-1px)] p-2 bg-white dark:bg-black">
                 {/*inner-line*/}
                 <div className="rounded-3xl p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900 ">
@@ -247,7 +246,7 @@ const Page = () => {
         <div>
           <div>
             {/* Tabs */}
-            <div className="mt-10 flex flex-row gap-4">
+            <div className="mt-10 sm:gap-8 flex flex-row gap-4">
               <button
                 type="button"
                 onClick={() => setActiveTab("mission")}
@@ -284,8 +283,12 @@ const Page = () => {
             </div>
 
             {/* Dynamic Content */}
-            <h1 className="text-xl w-60 mt-5">{content[activeTab].title}</h1>
-            <p className="w-90 text-base mt-5">{content[activeTab].text}</p>
+            <h1 className="text-xl w-60 mt-5 sm:w-90">
+              {content[activeTab].title}
+            </h1>
+            <p className="w-90 text-base mt-5 sm:w-140">
+              {content[activeTab].text}
+            </p>
           </div>
           {/* Image Placement */}
           <div className="">
@@ -295,7 +298,7 @@ const Page = () => {
               width={200}
               height={200}
               priority
-              className="mx-auto mt-5 w-80"
+              className="mx-auto mt-5 w-80 sm:mt-8 sm:w-110"
             />
           </div>
         </div>
@@ -305,22 +308,31 @@ const Page = () => {
 
         <Card />
 
-        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2 mx-6 mt-15 rounded-2xl text-3xl ">
-          <h1 className=" text-center ">
+        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2  mt-15 rounded-2xl text-3xl sm:w-105 mx-auto ">
+          <h1 className=" text-center sm:w-72 mx-auto ">
             Ready to
             <span className="[font-family:var(--font-kaushan)] pl-2">
               Manage
             </span>{" "}
             your team like a pro?
           </h1>
-          <p className="text-center mt-6 text-lg ">
-          Pushing the boundaries of what&apos;s possible in the digital real.
-          Join us this journey into the future of technology
-        </p>
-         <div className="bg-custom-cyan w-35 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
-        <button type="button">Book a call</button>
-        <ArrowUpRight  />
-      </div>
+          <p className="text-center mt-6 text-lg sm:px-8">
+            Pushing the boundaries of what&apos;s possible in the digital real.
+            Join us this journey into the future of technology
+          </p>
+          <div className="bg-custom-cyan w-35 sm:w-45 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
+            {/* Visible only on mobile (<640px) */}
+            <button type="button" className="block sm:hidden">
+              Book a call
+            </button>
+
+            {/* Visible only on small screens and above (≥640px) */}
+            <button type="button" className="hidden sm:block">
+              Get Start
+            </button>
+
+            <ArrowUpRight />
+          </div>
         </div>
       </div>
     </div>
