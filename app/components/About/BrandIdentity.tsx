@@ -167,7 +167,7 @@ const BrandIdentity = () => {
       </div>
 
       {/* for desktop view */}
-      <div className="xl:hidden lg:block">
+      <div className="xl:hidden lg:block max-w-[1440px]  ">
         <div>
           <h1 className=" text-4xl text-center mt-10">
             The identity of{" "}
@@ -329,7 +329,7 @@ const BrandIdentity = () => {
       </div>
 
       {/* xl screen size show */}
-      <div className="hidden xl:block ">
+      <div className="hidden xl:block max-w-[1440px]  ">
         
           <div className="flex flex-row gap-2 justify-center  ">
             <div className=" w-160 mt-10">
@@ -339,15 +339,15 @@ const BrandIdentity = () => {
                   our brand
                 </span>{" "}
               </h1>
-              <p className="  text-start  mt-3 text-lg w-110 2xl:ml-200 ">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-                nihil. Esse ut aperiam officia iure. Blanditiis incidunt.
+              <p className="  text-start  mt-3 text-lg w-110 2xl:ml-210 2xl:w-70 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.<span className="2xl:hidden"> Earum,
+                nihil. Esse ut aperiam officia iure. Blanditiis incidunt.</span>
               </p>
             </div>
 
             {/* cost efficiency container */}
             <div
-              className="border-1 rounded-xl w-120 h-82  mt-8 border-custom-cyan  px-3 "
+              className="border-1 rounded-xl w-120 h-82  mt-8 border-custom-cyan  px-3 max-w-[1440px] "
               style={{
                 boxShadow: "inset 0 0 15px rgba(0, 255, 255, 0.6)",
               }}
@@ -371,16 +371,16 @@ const BrandIdentity = () => {
                     Requires less upfront investment than traditional CRM
                     systems.
                   </p>
-                  <div className="flex flex-row pt-8">
+                  <div className="flex flex-row pt-8 ">
                     <Image
                       src="/Images/BoxUser.png"
                       alt="img"
                       width={1020}
                       height={120}
                       priority
-                      className="w-17 h-8  "
+                      className="w-17 h-8 2xl:mt-13 "
                     />
-                    <div className=" text-xs w-35 ml-2 pt-1 bg-custom-cyan text-black mx-auto px-1 rounded-sm text-center ">
+                    <div className=" text-xs w-35 ml-2 pt-1 bg-custom-cyan text-black mx-auto px-1 rounded-sm text-center 2xl:mt-13 ">
                       <button type="button" className="text-lg  font-semibold">
                         Get Proposal
                       </button>

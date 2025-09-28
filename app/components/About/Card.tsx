@@ -146,7 +146,7 @@ const Card = () => {
       </div>
     </div>
      <div className="hidden xl:block">
-      <h1 className="text-5xl xl:w-150  ml-60 xl:ml-80 text-center mt-10 ">
+      <h1 className="text-5xl xl:w-150  ml-60 xl:ml-80 text-center mt-10 xl:text-4xl 2xl:ml-100">
         Discover our{" "}
         <span className="[font-family:var(--font-kaushan)] pr-2 ">
           talented{" "}

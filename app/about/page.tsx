@@ -97,7 +97,7 @@ const Page = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl text-center mt-10 sm:text-5xl md:text-4xl lg:text-5xl">
+        <h1 className="text-4xl text-center mt-10 sm:text-5xl md:text-4xl lg:text-5xl xl:text-4xl">
           Why Choose{" "}
           <span className="[font-family:var(--font-kaushan)] pr-2">
             Ceylon Developers?
