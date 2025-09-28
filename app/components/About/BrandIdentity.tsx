@@ -4,7 +4,7 @@ import React from "react";
 
 const BrandIdentity = () => {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto px-4">
       <div className="lg:hidden">
         {/* mobile and tab view */}
         <div>
@@ -329,7 +329,7 @@ const BrandIdentity = () => {
       </div>
 
       {/* xl screen size show */}
-      <div className="hidden xl:block">
+      <div className="hidden xl:block ">
         
           <div className="flex flex-row gap-2 justify-center  ">
             <div className=" w-160 mt-10">

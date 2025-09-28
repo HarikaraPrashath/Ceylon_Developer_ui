@@ -83,22 +83,22 @@ const testimonials = [
 
 const Review = () => {
   return (
-    <section className="bg-black text-white py-16 px-6">
+    <section className="bg-black text-white py-16 px-6 sm:mx-5">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            Why Customers <span className="italic font-normal">love</span>{" "}
+        <div className="text-center  mb-12 ">
+          <h2 className="text-3xl mb-4 text-balance">
+            Why Customers <span className="[font-family:var(--font-kaushan)] pr-2">love</span>{" "}
             working with us
           </h2>
-          <p className="text-gray-400 text-lg leading-relaxed">
+          <p className="text-gray-400 text-lg leading-relaxed ">
             Hear directly from customers about their experiences and how web
             done has made a difference.
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:mx-10 ">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}

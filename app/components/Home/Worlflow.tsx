@@ -5,7 +5,7 @@ const Worlflow = () => {
     <div>
       {/* Desktop View */}
       <div className="hidden lg:block">
-        <div className="flex flex-row-reverse justify-center mt-6">
+        <div className="flex flex-row-reverse justify-center mt-6  lg:mx-40">
           <div
             className="relative  border-gray-800 border-2 mx-5 rounded-3xl flex flex-col justify-center items-start p-6 text-white bg-cover bg-center"
             style={{
@@ -13,10 +13,11 @@ const Worlflow = () => {
               backgroundPosition: "left",
               backgroundRepeat: "no-repeat",
               backgroundSize: "70%",
-              height: "310px",
+              height: "209px",
+              width:"550px"
             }}
           >
-            <div className="w-60 flex flex-col  -mt-40 md:w-80 ml-70">
+            <div className="w-60 flex flex-col  -mt-40 md:w-80 ml-45 lg:mt-1 ">
               <h1 className=" font-bold text-3xl">Analytics & Reporting</h1>
               <p className="mt-2 max-w-md text-sm">
                 Generate real-time reports, identify key performance indicators,
@@ -32,7 +33,7 @@ const Worlflow = () => {
               backgroundPosition: "bottom,bottom",
               backgroundRepeat: "no-repeat",
               backgroundSize: "70%,100%",
-              height: "310px",
+              height: "209px",
             }}
           >
             <div className="w-35 sm:w-60  p-3 flex flex-col ">
@@ -45,7 +46,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse mt-6 gap-6">
+        <div className="flex flex-row-reverse mt-6 gap-6 lg:-mr-43 lg:mx-10 ">
           <div
             className=" relative  border-gray-800 border-2 w-80  rounded-3xl mr-70 text-white "
             style={{
@@ -53,10 +54,10 @@ const Worlflow = () => {
               backgroundPosition: "top",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100%,100%",
-              height: "310px",
+              height: "209px",
             }}
           >
-            <div className="w-70  p-3 flex flex-col mt-32 ">
+            <div className="w-70  p-3 flex flex-col mt-32 lg:-mt-1 ">
               <h1 className=" font-bold text-3xl">Developer Mindset</h1>
               <p className="mt-2 max-w-md text-sm">
                 Stay curious embrace challenges, and keep learning to grow as a
@@ -66,16 +67,16 @@ const Worlflow = () => {
           </div>
 
           <div
-            className="relative w-160 border-gray-800 border-2  rounded-3xl flex flex-col justify-center   mb-7 items-start p-6 text-white "
+            className="relative w-120 border-gray-800 border-2  rounded-3xl flex flex-col justify-center   mb-7 items-start p-6 text-white "
             style={{
               backgroundImage: `radial-gradient(circle at bottom, rgba(33,164,164,0.6), rgba(0,0,0,0.2)), url('/Images/Group 212.png')`,
               backgroundPosition: "bottom,right bottom",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100%,70%",
-              height: "310px",
+              height: "209px"
             }}
           >
-            <div className="w-60 flex flex-col  -mt-20 ">
+            <div className="w-100 flex flex-col  -mt-40 lg:pt-30 ">
               <h1 className="text-3xl font-bold ">Your Workflow</h1>
               <p className="mt-2 max-w-md text-sm ">
                 Automate repetitive tasks and streamline your workflow with our
@@ -87,7 +88,7 @@ const Worlflow = () => {
         </div>
       </div>
       {/* Mobile and Tab view */}
-      <div className="block lg:hidden">
+      <div className="block lg:hidden md:mx-10 sm:mx-10">
         <div
           className="relative  border-gray-800 border-2 mx-5 rounded-3xl flex flex-col justify-center mt-6 items-start p-6 text-white bg-cover bg-center"
           style={{
@@ -161,7 +162,7 @@ const Worlflow = () => {
             height: "200px",
           }}
         >
-          <div className="w-60 flex flex-col  -mt-20 md:w-80 md:ml-70">
+          <div className="w-60 flex flex-col  -mt-20 md:w-80 md:ml-70 ">
             <h1 className="text-sm font-bold md:text-3xl">Your Workflow</h1>
             <p className="mt-2 max-w-md text-xs md:text-sm">
               Automate repetitive tasks and streamline your workflow with our

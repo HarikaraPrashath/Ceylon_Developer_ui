@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Card = () => {
   return (
-   <div>
+   <div className="max-w-[1440px] mx-auto px-4">
      <div className="xl:hidden">
       <h1 className="text-4xl text-center mt-10 sm:text-5xl">
         Discover our{" "}

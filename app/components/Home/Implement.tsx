@@ -46,6 +46,7 @@ const Implement = () => {
         max-[376px]:h-auto max-[376px]:rounded-xl
         max-[376px]:shadow-[0_8px_24px_rgba(0,0,0,0.35)]
         max-[376px]:bg-gradient-to-br max-[376px]:from-[#2b2b2b] max-[376px]:to-[#111111]
+        md:w-50 md:gap-1
       `}
     >
       <div className="h-full w-full rounded-sm max-[376px]:rounded-xl max-[376px]:py-6">
@@ -85,21 +86,21 @@ const Implement = () => {
         <div className="flex flex-col justify-between w-full lg:w-[35%]">
           {/* Small We (mobile only) */}
           <div className="block sm:hidden text-center ">
-            <h1 className="[font-family:var(--font-kaushan)] text-5xl mb-2">
+            <h1 className="[font-family:var(--font-kaushan)] text-4xl mb-2">
               We
             </h1>
           </div>
 
           <div className="flex items-center justify-center">
             {/* Big We (tablet & desktop only) */}
-            <div className="hidden sm:block">
-              <h1 className="[font-family:var(--font-kaushan)] ml-20 mb-15  text-6xl text-center mt-12 px-3">
+            <div className="hidden sm:block  w-20">
+              <h1 className="[font-family:var(--font-kaushan)] ml-20 mb-15  text-5xl text-center mt-12 xl:ml-40">
                 We
               </h1>
             </div>
 
             {/* Flex row with arrows + items */}
-            <div className="flex items-center justify-center space-x-4 text-5xl font-bold w-90% sm:flex sm:gap-4 sm:w-full">
+            <div className="flex items-center justify-center space-x-6 text-5xl font-bold w-90% sm:flex sm:gap-4 sm:w-full xl:ml-40 ">
               {/* Left Arrow */}
               <button
                 type="button"
@@ -114,7 +115,7 @@ const Implement = () => {
                 {items.map((item, i) => (
                   <h1
                     key={i}
-                    className={`transition-colors duration-300 ${
+                    className={`transition-colors duration-300 text-4xl ${
                       i === index ? "text-cyan-400" : "text-gray-500"
                     }`}
                   >
@@ -134,22 +135,21 @@ const Implement = () => {
             </div>
           </div>
 
-          <p className="pl-10 mt-8">
+          <p className=" mt-8 text-center sm:w-100 mx-auto xl:ml-20 lg:w-90">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            sapiente, qui, porro molestiae soluta illum similique, et totam ad
-            aut iure esse quaerat id quis!
+            sapiente, qui, porro molestiae soluta illum 
           </p>
         </div>
 
         {/* ≥1024px: 3 cards in a row */}
-        <div className="hidden lg:grid grid-cols-3 gap-6 w-[60%]">
+        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 ">
           {cards.map((c, i) => (
             <Card key={`lg-${i}`} {...c} />
           ))}
         </div>
       </div>
       {/* ≥768 and <1024: 3 cards in one horizontal row (as requested) */}
-      <div className="hidden md:grid lg:hidden grid-cols-3 gap-6 px-6">
+      <div className="hidden md:grid lg:hidden  grid-cols-3  px-1 md:ml-20">
         {cards.map((c, i) => (
           <Card key={`md-${i}`} {...c} />
         ))}

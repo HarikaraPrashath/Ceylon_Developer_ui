@@ -194,17 +194,20 @@ export default function ServicesSwiper() {
       </div>
 
       <div className="max-w-7xl mx-auto relative w-full">
-        <div className="text-center mb-16">
-          <h1 className="text-6xl text-center mt-20">
-            <span className="[font-family:var(--font-kaushan)] px-4">
-              Services
-            </span>
-            <br className="block xs:hidden sm:hidden" />
-            <span className="block xs:inline sm:inline">We offer</span>
-          </h1>
-          <p className="mt-8 xs:px-20 sm:px-20">
+        <div className="text-center ">
+
+
+            {" "}
+            <h1 className="text-center mt-10 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-4xl sm:text-4xl text-4xl max-[640px]:flex max-[640px]:flex-col ">
+              <span className="[font-family:var(--font-kaushan)] px-4">
+                Services
+              </span>
+              <span >We offer</span>
+            </h1>
+        
+
+          <p className="mt-6 xl:w-100 text-sm mx-auto lg:w-115 md:w-114 sm:w-115 max-[640px]:w-70">
             Pushing the boundaries of what&apos;s possible in the digital realm{" "}
-            <br />
             Join us on this journey into the future of technology
           </p>
         </div>
@@ -246,8 +249,7 @@ export default function ServicesSwiper() {
                     className="
                       absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                       h-80 transition-all duration-500 ease-out
-                      w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)] md:w-72 lg:w-80
-                      lg:w-80
+                      w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)] 
                     "
                     style={{
                       transform: `translateX(${translateX}px) translateY(${offsetY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
@@ -266,6 +268,7 @@ export default function ServicesSwiper() {
                         rounded-2xl flex flex-col
                         hover:border-custom-cyan/60 hover:bg-gray-900/70
                         transition-all duration-300 group cursor-pointer
+                        sm:w-130 sm:mx-auto  sm:-mt-15 sm:h-50 md:w-77 md:h-75
                       "
                     >
                       <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -288,7 +291,7 @@ export default function ServicesSwiper() {
         </div>
 
         {/* dots */}
-        <div className="flex justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-55 xl:ml-160 max-[376px]:ml-45">
+        <div className="flex justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-55 xl:ml-160 max-[376px]:ml-45 sm:-mt-20 sm:pl-50 md:mt-2 md:ml-65 xl:pr-54">
           {services.map((_, index) => (
             <button
               type="button"

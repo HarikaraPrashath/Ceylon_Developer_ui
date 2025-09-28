@@ -14,6 +14,7 @@ const Navbar = () => {
     md:w-[80%] md:h-16 md:bg-black/20 
     md:px-4 md:mx-auto md:mt-10 md:rounded-3xl md:border md:border-gray-700
     xs:border-1 border-b-1
+    max-w-[1440px]
   "
     >
       {/* Logo */}
@@ -26,7 +27,7 @@ const Navbar = () => {
       />
 
       {/* Navigation Links (hidden on md & below) */}
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex ">
         <ul className="flex text-white text-xl space-x-6 ml-5">
           <li>
             <Link className="cursor-pointer hover:text-gray-400" href="/">
@@ -34,7 +35,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:text-gray-400" href="/">
+            <Link className="cursor-pointer hover:text-gray-400" href="/CaseStudies">
               Case Studies
             </Link>
           </li>
@@ -98,7 +99,7 @@ const Navbar = () => {
             Company
           </Link>
           <Link
-            href="/"
+            href="/CaseStudies"
             className="hover:text-gray-400 text-lg"
             onClick={() => setMenuOpen(false)}
           >
