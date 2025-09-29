@@ -4,8 +4,8 @@ const Worlflow = () => {
   return (
     <div>
       {/* Desktop View */}
-      <div className="hidden lg:block">
-        <div className="flex flex-row-reverse justify-center mt-6  lg:mx-40">
+      <div className="hidden lg:block max-w-[1440px]">
+        <div className="flex flex-row-reverse justify-center mt-6  lg:mx-40 xl:pl-22  ">
           <div
             className="relative  border-gray-800 border-2 mx-5 rounded-3xl flex flex-col justify-center items-start p-6 text-white bg-cover bg-center"
             style={{
@@ -18,7 +18,7 @@ const Worlflow = () => {
             }}
           >
             <div className="w-60 flex flex-col  -mt-40 md:w-80 ml-45 lg:mt-1 ">
-              <h1 className=" font-bold text-3xl">Analytics & Reporting</h1>
+              <h1 className=" font-bold text-2xl">Analytics & Reporting</h1>
               <p className="mt-2 max-w-md text-sm">
                 Generate real-time reports, identify key performance indicators,
                 and make data-driven decisions for continuous improvement.
@@ -37,7 +37,7 @@ const Worlflow = () => {
             }}
           >
             <div className="w-35 sm:w-60  p-3 flex flex-col ">
-              <h1 className=" font-bold text-3xl">Project</h1>
+              <h1 className=" font-bold text-2xl">Project</h1>
               <p className="mt-2 max-w-md text-sm ">
                 Easily organize tasks, set deadlines, and track progress in
                 real-time with Ease.
@@ -46,7 +46,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse mt-6 gap-6 lg:-mr-43 lg:mx-10 ">
+        <div className="flex flex-row-reverse mt-6 gap-6 lg:-mr-43 lg:mx-10 xl:pr-19 ">
           <div
             className=" relative  border-gray-800 border-2 w-80  rounded-3xl mr-70 text-white "
             style={{
@@ -58,7 +58,7 @@ const Worlflow = () => {
             }}
           >
             <div className="w-70  p-3 flex flex-col mt-32 lg:-mt-1 ">
-              <h1 className=" font-bold text-3xl">Developer Mindset</h1>
+              <h1 className=" font-bold text-2xl">Developer Mindset</h1>
               <p className="mt-2 max-w-md text-sm">
                 Stay curious embrace challenges, and keep learning to grow as a
                 developer
@@ -77,7 +77,7 @@ const Worlflow = () => {
             }}
           >
             <div className="w-100 flex flex-col  -mt-40 lg:pt-30 ">
-              <h1 className="text-3xl font-bold ">Your Workflow</h1>
+              <h1 className="text-2xl font-bold ">Your Workflow</h1>
               <p className="mt-2 max-w-md text-sm ">
                 Automate repetitive tasks and streamline your workflow with our
                 powerful automation features. Reduce manual effort, eliminate
@@ -87,6 +87,14 @@ const Worlflow = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
       {/* Mobile and Tab view */}
       <div className="block lg:hidden md:mx-10 sm:mx-10">
         <div

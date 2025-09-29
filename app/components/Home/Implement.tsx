@@ -91,7 +91,7 @@ const Implement = () => {
             </h1>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center ">
             {/* Big We (tablet & desktop only) */}
             <div className="hidden sm:block  w-20">
               <h1 className="[font-family:var(--font-kaushan)] ml-20 mb-15  text-5xl text-center mt-12 xl:ml-40">
@@ -142,7 +142,7 @@ const Implement = () => {
         </div>
 
         {/* ≥1024px: 3 cards in a row */}
-        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 ">
+        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 lg:gap-5">
           {cards.map((c, i) => (
             <Card key={`lg-${i}`} {...c} />
           ))}

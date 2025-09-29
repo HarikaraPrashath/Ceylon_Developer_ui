@@ -34,7 +34,7 @@ const Help = () => {
   ];
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat sm:mx-6 lg:mx-20"
+      className="relative bg-cover bg-center bg-no-repeat "
       style={{
         backgroundImage: "url('/Images/fAqBg.png')",
         backgroundPosition: "right center",
@@ -43,7 +43,7 @@ const Help = () => {
         backgroundColor: "rgba(0,0,0,0.6)",
       }}
     >
-      <h1 className="max-[376px]:text-4xl text-center max-[376px]:mt-5 sm:text-3xl md:text-4xl 2xl:text-4xl 2xl:mt-20 mx-5 lg:text-3xl ">
+      <h1 className="max-[376px]:text-4xl text-center max-[376px]:mt-5 sm:text-3xl  2xl:text-4xl md:text-3xl 2xl:text-4xl 2xl:mt-20 mx-5 lg:text-3xl ">
         How
         <span className="[font-family:var(--font-kaushan)] pr-2">
           Ceylon Developers
@@ -55,7 +55,7 @@ const Help = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-transparent mx-2 rounded-xl p-3 sm:mx-4 2xl:text-4xl 2xl:mx-80 sm:text-xl max-[376px]:text-xl max-[376px]:mx-3 border-2 border-green-950"
+            className="bg-transparent mx-2 rounded-xl p-3 lg: border-2 border-green-950 text-sm mx-5 sm:mx-10 sm:text-lg md:mx-15 lg:mx-48"
           >
             {/* Question */}
             <div

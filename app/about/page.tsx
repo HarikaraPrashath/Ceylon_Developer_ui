@@ -33,20 +33,20 @@ const Page = () => {
           backgroundPosition: "bottom,bottom,center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover, 100%",
-          height: "500px, 600px",
+          height: "100px",
         }}
       >
         <Navbar />
 
-        <h1 className="text-6xl mt-10 text-center">About</h1>
+        <h1 className="text-4xl mt-10text-center font-semibold  text-center pt-20 lg:text-5xl ">About</h1>
       </div>
-      <div className="px-5 sm:mx-20 md:mx-20">
-        <p className=" text-center w-80 mx-auto mt-5 sm:w-120">
+      <div className="px-5 sm:mx-20 md:mx-20 md:mt-20 text-sm md:text-lg">
+        <p className=" text-center w-70 mx-auto mt-30 sm:w-120 md:mt-50">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>
 
-        <div className="mt-7 flex flex-col lg:flex-row-reverse lg:justify-center">
+        <div className="mt-7 flex flex-col lg:flex-row-reverse lg:justify-center md:gap-5">
           {/* flex content place */}
           <div className="lg:w-90">
             <h1 className="text-4xl text-center mt-10">
