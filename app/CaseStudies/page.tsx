@@ -21,7 +21,7 @@ const page = () => {
         >
           <Navbar />
 
-          <h1 className="text-4xl mt-10text-center font-semibold  text-center pt-20">
+          <h1 className="text-4xl mt-10  font-semibold  text-center pt-20">
             Case Studies
           </h1>
         </div>
