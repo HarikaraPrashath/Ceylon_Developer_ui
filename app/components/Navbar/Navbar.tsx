@@ -11,8 +11,8 @@ const Navbar = () => {
     <div
       className="
     flex justify-between items-center p-3
-    md:w-[80%] md:h-16 md:bg-black/20 
-    md:px-4 md:mx-auto md:mt-10 md:rounded-3xl md:border md:border-gray-700
+    sm:w-[80%] sm:h-12 sm:bg-black/20 
+    sm:px-4 sm:mx-auto sm:mt-10 sm:rounded-3xl sm:border sm:border-gray-700
     xs:border-1 border-b-1
     max-w-[1440px]
   "
@@ -24,18 +24,22 @@ const Navbar = () => {
         width={120}
         height={120}
         priority
+        className="md:w-30"
       />
 
       {/* Navigation Links (hidden on md & below) */}
       <div className="hidden lg:flex ">
-        <ul className="flex text-white text-xl space-x-6 ml-5">
+        <ul className="flex text-white text-lg space-x-6 ml-5">
           <li>
             <Link className="cursor-pointer hover:text-gray-400" href="/">
               Company
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:text-gray-400" href="/CaseStudies">
+            <Link
+              className="cursor-pointer hover:text-gray-400"
+              href="/CaseStudies"
+            >
               Case Studies
             </Link>
           </li>
@@ -58,10 +62,10 @@ const Navbar = () => {
       </div>
 
       {/* Book a Call button (hidden on xs, visible on md+) */}
-      <div className="hidden md:block">
+      <div className="hidden sm:block">
         <button
           type="button"
-          className="cursor-pointer -mr-9 mb-2"
+          className="cursor-pointer -mr-9 mb-2 "
           title="Book a Call"
           aria-label="Book a Call"
         >
@@ -70,13 +74,13 @@ const Navbar = () => {
             alt="Book a Call"
             width={200}
             height={180}
+            className="sm:w-40 sm:mr-1"
             priority
           />
         </button>
       </div>
-
       {/* Mobile Menu Button (visible on xs) */}
-      <div className="md:hidden flex items-center space-x-3 ">
+      <div className="sm:hidden flex items-center space-x-3 ">
         <Sun size={24} className="text-white" />
         <button
           type="button"
@@ -88,9 +92,19 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu (drawer-style with bg) */}
+      {/* Mobile Menu (slide from top) */}
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black/95 backdrop-blur-md text-white flex flex-col items-center space-y-6 py-8 z-50 shadow-lg rounded-b-2xl border-t border-gray-700">
+        <div className="absolute top-0 left-0 w-full bg-black/95 backdrop-blur-md text-white flex flex-col items-center space-y-6 py-10 z-50 shadow-lg rounded-b-2xl border-b border-gray-700 animate-slideDown">
+          {/* Close Button inside popup (top-right) */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen(false)}
+            className="absolute top-4 right-4 text-white"
+            aria-label="Close Menu"
+          >
+            <X size={30} />
+          </button>
+
           <Link
             href="/"
             className="hover:text-gray-400 text-lg"
