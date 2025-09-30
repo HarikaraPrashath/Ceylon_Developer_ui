@@ -6,6 +6,7 @@ import Implement from "./components/Home/Implement";
 import Worlflow from "./components/Home/Worlflow";
 import Review from "./components/Home/Review";
 import Help from "./components/Home/Help";
+import Technologies from "./components/Home/Technologies";
 
 const page = () => {
   return (
@@ -245,139 +246,143 @@ const page = () => {
           priority
         />
 
-      <div className="mt-10 md:mx-5 xl:mt-15 lg:mx-30">
-        <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
-          {/* Left section */}
-          <div className=" lg:w-[40%]  xl:ml-10">
-            <h1 className="text-4xl text-center max-[371px]:mt-5 sm:text-3xl md:text-4xl 2xl:text-4xl  xl:text-4xl">
-              Get
-              <span className="[font-family:var(--font-kaushan)] pr-2">
-                Touch
-              </span>
-            </h1>
-            <p className="m-5 text-center xl:text-xl xl:text-start">
-              We&apos;re here to support you! Feel free to reach out for
-              assistance, feedback, or any questions.
-            </p>
-            <h1 className=" ml-4 md:ml-10 sm:ml-10">Let&apos;s Talk About:</h1>
+        <Technologies />
 
-            <div className="space-y-5 mt-7 xl:ml-5 mx-10">
-              <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
-                <div className="rounded-full p-1 bg-custom-cyan">
-                  {/* arrow icon */}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </div>
-                <p className=" pl-3 ">Customer Experience</p>
-              </div>
+        <div className="mt-10 md:mx-5 xl:mt-15 lg:mx-30">
+          <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
+            {/* Left section */}
+            <div className=" lg:w-[40%]  xl:ml-10">
+              <h1 className="text-4xl text-center max-[371px]:mt-5 sm:text-3xl md:text-4xl 2xl:text-4xl  xl:text-4xl">
+                Get
+                <span className="[font-family:var(--font-kaushan)] pr-2">
+                  Touch
+                </span>
+              </h1>
+              <p className="m-5 text-center xl:text-xl xl:text-start">
+                We&apos;re here to support you! Feel free to reach out for
+                assistance, feedback, or any questions.
+              </p>
+              <h1 className=" ml-4 md:ml-10 sm:ml-10">
+                Let&apos;s Talk About:
+              </h1>
 
-              <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
-                <div className="rounded-full p-1 bg-custom-cyan">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
+              <div className="space-y-5 mt-7 xl:ml-5 mx-10">
+                <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
+                  <div className="rounded-full p-1 bg-custom-cyan">
+                    {/* arrow icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className=" pl-3 ">Customer Experience</p>
                 </div>
-                <p className="pl-3">Quality and Trust</p>
-              </div>
 
-              <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
-                <div className="rounded-full p-1 bg-custom-cyan">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
+                <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
+                  <div className="rounded-full p-1 bg-custom-cyan">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="pl-3">Quality and Trust</p>
                 </div>
-                <p className="pl-3">Dependable Service</p>
+
+                <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
+                  <div className="rounded-full p-1 bg-custom-cyan">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="pl-3">Dependable Service</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Right section (form) */}
-          <div className="border-2 border-custom-cyan/60 py-5 px-5 rounded-2xl lg:w-1/2 lg:ml-20 md:mx-10 mx-4 sm:mx-10">
-            <h1 className="text-lg mb-2 ">Get a quote</h1>
-            <p className="text-base text-gray-300 xl:text-xl">
-              Fill up the form and our Team will get back to you within 24
-              hours.
-            </p>
+            {/* Right section (form) */}
+            <div className="border-2 border-custom-cyan/60 py-5 px-5 rounded-2xl lg:w-1/2 lg:ml-20 md:mx-10 mx-4 sm:mx-10">
+              <h1 className="text-lg mb-2 ">Get a quote</h1>
+              <p className="text-base text-gray-300 xl:text-xl">
+                Fill up the form and our Team will get back to you within 24
+                hours.
+              </p>
 
-            <form className="mt-5 space-y-5">
-              <input
-                type="text"
-                placeholder="Name"
-                className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
-              />
-              <textarea
-                placeholder="Your message"
-                className="bg-gray-500 h-20 w-full rounded-xl py-2 px-4 text-sm "
-              ></textarea>
+              <form className="mt-5 space-y-5">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="bg-gray-500 w-full rounded-xl py-2 px-4 text-sm"
+                />
+                <textarea
+                  placeholder="Your message"
+                  className="bg-gray-500 h-20 w-full rounded-xl py-2 px-4 text-sm "
+                ></textarea>
 
-              <button
-                type="submit"
-                className=" xl:text-lg xl:font-semibold w-full text-center bg-custom-cyan rounded-xl py-2 text-sm text-black hover:bg-custom-cyan/80 transition"
-              >
-                Send Message
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className=" xl:text-lg xl:font-semibold w-full text-center bg-custom-cyan rounded-xl py-2 text-sm text-black hover:bg-custom-cyan/80 transition"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-       <Review />
+        <Review />
 
-       <Help/>
+        <Help />
 
-           <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-10 px-4 mx-6 mt-15 rounded-2xl sm:mx-26 sm:px-10 xl:mx-60 xl:pt-6">
-        <h1 className="max-[376px]:text-3xl text-center max-[376px]:mt-5 sm:text-3xl md:text-4xl xl:text-4xl">
-          Ready to
-          <span className="[font-family:var(--font-kaushan)] pr-2">
-            Manage
-          </span>{" "}
-          your team like a pro?
-        </h1>
+        <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-10 px-4 mx-6 mt-15 rounded-2xl sm:mx-26 sm:px-10 xl:mx-60 xl:pt-6">
+          <h1 className="max-[376px]:text-3xl text-center max-[376px]:mt-5 sm:text-3xl md:text-4xl xl:text-4xl">
+            Ready to
+            <span className="[font-family:var(--font-kaushan)] pr-2">
+              Manage
+            </span>{" "}
+            your team like a pro?
+          </h1>
 
-        <p className="text-center mt-6 xl:text-xl ">
-          Pushing the boundaries of what&apos;s possible in the digital real.
-          Join us this journey into the future of technology
-        </p>
+          <p className="text-center mt-6 xl:text-xl ">
+            Pushing the boundaries of what&apos;s possible in the digital real.
+            Join us this journey into the future of technology
+          </p>
 
-        <div className="bg-custom-cyan text-black w-30  xl:text-xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
-          <button type="button">Get Start</button>
+          <div className="bg-custom-cyan text-black w-30  xl:text-xl text-center mx-auto m-5 rounded-lg py-1 font-semibold xl:w-40 xl:mt-10">
+            <button type="button">Get Start</button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

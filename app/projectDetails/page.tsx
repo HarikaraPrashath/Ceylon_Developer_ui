@@ -215,7 +215,7 @@ const page = () => {
                 priority
               />
             </div>
-             <div className="md:flex md:flex-row md gap-20 lg:justify-around xl:justify-start xl:gap-40">
+             <div className="md:flex md:flex-row md gap-20 lg:justify-around xl:justify-start xl:gap-10">
              <div>
                <Image
                 src="/Images/works.png"
