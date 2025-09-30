@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
