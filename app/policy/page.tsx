@@ -18,12 +18,12 @@ const page = () => {
       >
         <Navbar />
 
-        <h1 className="text-4xl   font-semibold  text-center mt-10 ">
+        <h1 className="xl:text-5xl text-4xl font-semibold  text-center mt-20 ">
           Privacy Policy
         </h1>
       </div>
-      <div className="px-5  text-sm">
-        <p className=" text-center w-100 mx-auto  max-w-[1440px] ">
+      <div className="px-5 xl:mt-20 ">
+        <p className=" text-center w-100 mx-auto xl:w-120  max-w-[1440px] ">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>

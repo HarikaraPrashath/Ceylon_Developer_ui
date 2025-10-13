@@ -23,11 +23,11 @@ const page = () => {
       >
         <Navbar />
 
-        <h1 className="text-4xl mt-10  font-semibold lg:text-5xl lg:-mt-2  text-center pt-20">
+        <h1 className="text-4xl xl:mt-5  font-semibold lg:text-5xl lg:-mt-2  text-center pt-20">
           Project Details
         </h1>
       </div>
-      <div className="px-5 mt-30">
+      <div className="px-5 mt-30 xl:mt-30">
         <p className="text-sm text-center w-70 mx-auto  sm:pt-10 md:pt-20 md:w-80 lg:w-120 lg:text-lg ">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
