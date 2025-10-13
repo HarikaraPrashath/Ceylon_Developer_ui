@@ -1,198 +1,87 @@
 import Image from "next/image";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const Technologies = () => {
   return (
     <div className="max-w-[1440px]">
-      {/* Technology work with */}
-      <h1 className="mx-auto text-center w-70 text-3xl sm:w-90 xl:ml-130 max-w-[1280px]">
+      {/* Heading */}
+      <h1 className="mx-auto text-center text-3xl sm:w-90 xl:ml-130 max-w-[1440px]">
         <span className="[font-family:var(--font-kaushan)] pr-2">
           Technologies
         </span>{" "}
         we work with
       </h1>
 
-      <div className=" lg:ml-35 xl:ml-90 max-w-[1440px] ">
-        {/* 1st row */}
-      <div className="flex gap-2 mt-4 ml-4 sm:ml-14">
-        <div className=" border rounded-sm mt-2 border-gray-600 ">
-          <Image
-            src="/Images/Image.png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
+      <div className="lg:ml-35 xl:mx-40 max-w-[1440px]">
+        {/* ✅ Row 1 - Left to Right */}
+        <Marquee speed={40} pauseOnHover gradient={false}>
+          <div className="flex gap-4 ml-4 sm:ml-14  mt-5">
+            {["Image.png", "Image (1).png", "Image (2).png", "Image (3).png", "Image (4).png"].map(
+              (img, index) => (
+                <div
+                  key={index}
+                  className="border rounded-sm border-gray-600 flex items-center justify-center"
+                >
+                  <Image
+                    src={`/Images/${img}`}
+                    alt="curveLine"
+                    width={900}
+                    height={900}
+                    className="w-24 sm:w-32 px-2 py-1"
+                    priority
+                  />
+                </div>
+              )
+            )}
+          </div>
+        </Marquee>
 
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (1).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (4).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
+        {/* ✅ Row 2 - Right to Left */}
+        <Marquee speed={50} pauseOnHover direction="right" gradient={false}>
+          <div className="flex gap-4 ml-4 sm:ml-14  mt-5">
+            {["Image (8).png", "Image (7).png", "Image (6).png", "Image (5).png", "Image.png"].map(
+              (img, index) => (
+                <div
+                  key={index}
+                  className="border rounded-sm border-gray-600 flex items-center justify-center"
+                >
+                  <Image
+                    src={`/Images/${img}`}
+                    alt="curveLine"
+                    width={900}
+                    height={900}
+                    className="w-24 sm:w-32 px-2 py-1"
+                    priority
+                  />
+                </div>
+              )
+            )}
+          </div>
+        </Marquee>
 
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (3).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (7).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600 hidden 2xl:block">
-          <Image
-            src="/Images/Image (7).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-      </div>
-
-      {/* 2nd row */}
-      <div className="flex gap-2 mt-2 mr-4 sm:ml-5 2xl:-ml-50">
-          <div className=" border rounded-sm mt-2 border-gray-600 hidden 2xl:block">
-          <Image
-            src="/Images/Image (2).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (5).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (6).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (7).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (8).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (4).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        
-      </div>
-
-      {/* 3rd row */}
-      <div className="flex gap-2 mt-4 ml-4 sm:ml-14 md:hidden">
-        <div className=" border rounded-sm mt-2 border-gray-600 ">
-          <Image
-            src="/Images/Image.png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (1).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (4).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-
-        <div className=" border rounded-sm mt-2 border-gray-600">
-          <Image
-            src="/Images/Image (3).png"
-            alt="cureveLine"
-            width={900}
-            height={900}
-            className="w-25 px-2 py-1 sm:w-32"
-            priority
-          />
-        </div>
-      </div>
+        {/* ✅ Row 3 - Left to Right again */}
+        <Marquee speed={35} pauseOnHover gradient={false}>
+          <div className="flex gap-4 ml-4 sm:ml-14 sm:hidden mt-5">
+            {["Image (3).png", "Image (4).png", "Image (1).png", "Image (7).png", "Image.png"].map(
+              (img, index) => (
+                <div
+                  key={index}
+                  className="border rounded-sm border-gray-600 flex items-center justify-center"
+                >
+                  <Image
+                    src={`/Images/${img}`}
+                    alt="curveLine"
+                    width={900}
+                    height={900}
+                    className="w-24 sm:w-32 px-2 py-1"
+                    priority
+                  />
+                </div>
+              )
+            )}
+          </div>
+        </Marquee>
       </div>
     </div>
   );

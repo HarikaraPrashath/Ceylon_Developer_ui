@@ -25,7 +25,7 @@ const Page = () => {
     },
   };
   return (
-    <div>
+    <div className="xl:mx-32">
       <div
         className="relative  flex flex-col h-[30%] text-white "
         style={{
@@ -33,15 +33,15 @@ const Page = () => {
           backgroundPosition: "bottom,bottom,center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover, 100%",
-          height: "100px",
+          height: "200px",
         }}
       >
         <Navbar />
 
-        <h1 className="text-4xl mt-10text-center font-semibold  text-center pt-20 lg:text-5xl ">About</h1>
+        <h1 className="text-4xl   font-semibold  text-center mt-20 lg:text-5xl ">About</h1>
       </div>
       <div className="px-5 sm:mx-20 md:mx-20 md:mt-20 text-sm md:text-lg">
-        <p className=" text-center w-70 mx-auto mt-30 sm:w-120 md:mt-50">
+        <p className=" text-center w-70 mx-auto  sm:w-120 ">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>
@@ -255,33 +255,30 @@ const Page = () => {
               <button
                 type="button"
                 onClick={() => setActiveTab("mission")}
-                className={`w-25 rounded-md py-1 px-1 text-center ${
-                  activeTab === "mission"
+                className={`w-35 rounded-md py-1 px-1 text-center ${activeTab === "mission"
                     ? "bg-custom-cyan text-black"
                     : "bg-gray-600 text-white"
-                }`}
+                  }`}
               >
                 Our Mission
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("vision")}
-                className={`w-25 rounded-md py-1 px-1 text-center ${
-                  activeTab === "vision"
+                className={`w-25 rounded-md py-1 px-1 text-center ${activeTab === "vision"
                     ? "bg-custom-cyan text-black"
                     : "bg-gray-600 text-white"
-                }`}
+                  }`}
               >
                 Our Vision
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("goal")}
-                className={`w-25 rounded-md py-1 px-1 text-center ${
-                  activeTab === "goal"
+                className={`w-25 rounded-md py-1 px-1 text-center ${activeTab === "goal"
                     ? "bg-custom-cyan text-black"
                     : "bg-gray-600 text-white"
-                }`}
+                  }`}
               >
                 Our Goal
               </button>

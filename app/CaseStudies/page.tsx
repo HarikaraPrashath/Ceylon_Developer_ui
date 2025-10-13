@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div>
+    <div className="xl:mx-32">
       {/* Mobile version only */}
       <div className="sm:hidden">
         <div
@@ -16,17 +16,17 @@ const page = () => {
             backgroundPosition: "bottom,bottom,center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover, 100%",
-            height: "100px",
+            height: "200px",
           }}
         >
           <Navbar />
 
-          <h1 className="text-4xl mt-10  font-semibold  text-center pt-20">
+          <h1 className="text-4xl mt-10  font-semibold  text-center ">
             Case Studies
           </h1>
         </div>
-        <div className="px-5 mt-30">
-          <p className="text-sm text-center w-70 mx-auto">
+        <div className="px-5 ">
+          <p className="text-sm text-center w-70 mx-auto -mt-10">
             Pushing the boundaries of hat&apos;s possible in the digital
             realm.Join us on this journey into the future of technology
           </p>
@@ -37,7 +37,7 @@ const page = () => {
                 src="/Images/case.png"
                 alt="Case Studies image"
                 width={1000}
-                height={1000}
+                height={600}
                 className="w-[2000px] mx-auto mb-10"
                 priority
               />

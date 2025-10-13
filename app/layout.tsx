@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Kaushan_Script } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer/Footer";
+import { ThemeProvider } from "next-themes";
 
 const geistMono = Inter({
   variable: "--font-inter",
@@ -27,8 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistMono.variable} ${kaushan.variable} antialiased`}>
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          enableSystem={true}
+          defaultTheme="system"
+        >
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

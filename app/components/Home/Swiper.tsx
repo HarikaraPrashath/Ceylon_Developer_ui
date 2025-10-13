@@ -198,7 +198,7 @@ export default function ServicesSwiper() {
 
 
             {" "}
-            <h1 className="text-center lg:-mt-100 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-100 ">
+            <h1 className="text-center lg:-mt-100 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-8  0 ">
               <span className="[font-family:var(--font-kaushan)] px-4">
                 Services
               </span>

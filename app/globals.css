@@ -24,3 +24,18 @@ body {
   border-width: 2px;
   border-image: linear-gradient(to top, #20cac5, rgba(0,0,0)) 2;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
