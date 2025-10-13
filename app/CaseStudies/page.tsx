@@ -26,7 +26,7 @@ const page = () => {
           </h1>
         </div>
         <div className="px-5 ">
-          <p className="text-sm text-center w-70 mx-auto -mt-10">
+          <p className="text-sm text-center w-70 mx-auto ">
             Pushing the boundaries of hat&apos;s possible in the digital
             realm.Join us on this journey into the future of technology
           </p>
@@ -175,9 +175,9 @@ const page = () => {
         </div>
       </div>
       {/* Desktop and Tab Version */}
-      <div>
+      <div className="hidden xl:block">
         <div
-          className="relative  flex flex-col h-[50%] text-white "
+          className="relative  flex flex-col h-[50%] text-white  "
           style={{
             backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
             backgroundPosition: "bottom,bottom,center",
