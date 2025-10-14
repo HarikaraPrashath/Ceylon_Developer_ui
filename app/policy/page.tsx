@@ -22,8 +22,8 @@ const page = () => {
           Privacy Policy
         </h1>
       </div>
-      <div className="px-5 xl:mt-20 ">
-        <p className=" text-center w-100 mx-auto xl:w-120  max-w-[1440px] ">
+      <div className="px-5 xl:mt-20  ">
+        <p className=" text-center sm:w-120 mx-auto w-80 sm:mt-10   max-w-[1440px] ">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>

@@ -54,7 +54,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:text-gray-400" href="/">
+            <Link className="cursor-pointer hover:text-gray-400" href="/career">
               Career
             </Link>
           </li>
@@ -134,7 +134,7 @@ const Navbar = () => {
             Service
           </Link>
           <Link
-            href="/"
+            href="/career"
             className="hover:text-gray-400 text-lg"
             onClick={() => setMenuOpen(false)}
           >
