@@ -46,7 +46,7 @@ const page = () => {
           <div className="flex flex-col-reverse items-center mt-10 space-y-3  sm:flex-row  sm:space-y-0 mx-auto ">
             {/* Learn More button (below on mobile, left on bigger screens) */}
             <div className="bg-custom-cyan text-black w-30 rounded-sm text-center py-1.5 mt-5 sm:mb-5 text-sm">
-              <button type="submit" className="font-semibold">
+              <button type="submit" className="font-semibold cursor-pointer px-4">
                 Learn more
               </button>
             </div>
@@ -57,11 +57,12 @@ const page = () => {
               <Image
                 src="/Images/Group 31.png"
                 alt="users"
-                width={80}
-                height={80}
+                width={90}
+                height={90}
+                layout="fixed"
                 priority
-                className="ml-0 w-[96px] h-auto sm:ml-2 sm:w-[80px]"
               />
+
 
               {/* Trust copy */}
               <p className="mt-0 ml-0 text-center text-sm sm:text-left sm:-mt-1.5 sm:-ml-3 sm:text-base  min-[375px]:-mt-3">

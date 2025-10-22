@@ -150,7 +150,7 @@ const page = () => {
             </div>
 
             {/* final section */}
-            <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-5 px-4 mx-3 mt-15 rounded-2xl ">
+            <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-2  pt-5 px-4 mx-3 mt-15 rounded-2xl">
               <h1 className=" text-center  text-2xl">
                 We&apos;re eager to
                 <span className="[font-family:var(--font-kaushan)] pr-2">

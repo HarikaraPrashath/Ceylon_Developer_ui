@@ -254,6 +254,28 @@ const page = () => {
 
             <div className="text-center mt-4">  <button type="button" className="bg-custom-cyan px-4 py-2 rounded-lg mt-2 text-black font-semibold cursor-pointer">Explore More</button></div>
           </div>
+      
+       <div className="bg-gradient-to-b from-gray-900 to-gray-950 py-4 px-2 mt-15 rounded-2xl">
+       <h1 className="text-center mx-5 text-2xl">
+          Take the
+            <span className="[font-family:var(--font-kaushan)] pl-2">
+              Next Step
+            </span>{" "}
+           in Your Career
+          </h1>
+          <p className="text-center mt-6 text-sm  mx-3 ">
+            Pushing the boundaries of what&apos;s possible in the digital real.
+            Join us this journey into the future of technology
+          </p>
+          <div className="bg-custom-cyan w-35 sm:w-45 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
+            {/* Visible only on mobile (<640px) */}
+            <button type="button" className="block sm:hidden">
+              Book a call
+            </button>
+
+           
+          </div>
+        </div>
         </div>
       </div>
     </div>

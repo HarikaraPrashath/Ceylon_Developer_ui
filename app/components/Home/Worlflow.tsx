@@ -4,8 +4,8 @@ const Worlflow = () => {
   return (
     <div>
       {/* Desktop View */}
-      <div className="hidden lg:block max-w-[1440px]">
-        <div className="flex flex-row-reverse justify-center mt-6  lg:mx-40 xl:pl-22  ">
+      <div className="hidden lg:block max-w-[1440px] xl:ml-16">
+        <div className="flex flex-row-reverse justify-center mt-6  ">
           <div
             className="relative  border-gray-800 border-2 mx-5 rounded-3xl flex flex-col justify-center items-start p-6 text-white bg-cover bg-center"
             style={{
@@ -46,7 +46,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse mt-6 gap-6 lg:-mr-43 lg:mx-10 xl:pr-19 ">
+        <div className="flex flex-row-reverse mt-6 gap-6  -lg:px-10">
           <div
             className=" relative  border-gray-800 border-2 w-80  rounded-3xl mr-70 text-white "
             style={{
@@ -67,7 +67,7 @@ const Worlflow = () => {
           </div>
 
           <div
-            className="relative w-120 border-gray-800 border-2  rounded-3xl flex flex-col justify-center   mb-7 items-start p-6 text-white "
+            className="relative w-140 border-gray-800 border-2  rounded-3xl flex flex-col justify-center   mb-7 items-start p-6 text-white  "
             style={{
               backgroundImage: `radial-gradient(circle at bottom, rgba(33,164,164,0.6), rgba(0,0,0,0.2)), url('/Images/Group 212.png')`,
               backgroundPosition: "bottom,right bottom",

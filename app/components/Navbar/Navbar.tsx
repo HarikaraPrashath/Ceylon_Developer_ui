@@ -14,6 +14,7 @@ const Navbar = () => {
     sm:w-[80%] sm:h-12 sm:bg-black/20 
     sm:px-4 sm:mx-auto sm:mt-10 sm:rounded-3xl sm:border sm:border-gray-700
     xs:border-1 border-b-1
+    xl:w-[70%]
     max-w-[1440px]
   "
     >
