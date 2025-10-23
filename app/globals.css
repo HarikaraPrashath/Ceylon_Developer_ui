@@ -39,3 +39,71 @@ body {
   width: max-content;
   animation: scroll 40s linear infinite;
 }
+
+.title {
+  font-size: 2.25rem; /* 4xl */
+  font-weight: 600;   /* semibold */
+  text-align: center;
+  margin-top: 5rem;   /* mt-20 */
+  max-width: 1440px;  /* same layout width consistency */
+  margin-left: auto;  /* centers the title horizontally */
+  margin-right: auto;
+
+  /* Responsive for large screens */
+  @media (min-width: 1024px) {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+.sub-title-div {
+  padding-left: 1.25rem;   /* px-5 */
+  padding-right: 1.25rem;
+
+  margin-left: 0;          /* base */
+  margin-right: 0;
+  margin-top: 0;
+  font-size: 0.875rem;     /* text-sm */
+  line-height: 1.5rem;
+  max-width: 1440px;       /* keeps content readable and centered */
+  margin-left: auto;       /* center horizontally */
+  margin-right: auto;
+
+  /* Small screens and up */
+  @media (min-width: 640px) {
+    margin-left: 5rem;     /* sm:mx-20 */
+    margin-right: 5rem;
+  }
+
+  /* Medium screens and up */
+  @media (min-width: 768px) {
+    margin-left: 5rem;     /* md:mx-20 */
+    margin-right: 5rem;
+    margin-top: 5rem;      /* md:mt-20 */
+    font-size: 1.125rem;   /* md:text-lg */
+    line-height: 1.75rem;
+  }
+}
+
+
+.paragraphy-push {
+  text-align: center;
+  width: 17.5rem;          /* w-70 (70 * 0.25rem = 17.5rem = 280px) */
+  margin-left: auto;       /* mx-auto */
+  margin-right: auto;
+  max-width: 1440px;       /* same as max-w-[1440px] for layout consistency */
+
+  /* For small screens and up */
+  @media (min-width: 640px) {
+    width: 30rem;          /* sm:w-120 (120 * 0.25rem = 30rem = 480px) */
+  }
+}
+
+.head-banner-layout {
+  position: relative;        /* relative */
+  display: flex;             /* flex */
+  flex-direction: column;    /* flex-col */
+  height: 30%;               /* h-[30%] */
+  color: white;              /* text-white */
+  margin-left: auto;         /* centers horizontally */
+  margin-right: auto;        /* centers horizontally */
+}

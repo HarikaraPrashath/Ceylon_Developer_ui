@@ -13,7 +13,7 @@ const page = () => {
   return (
     <div className="">
       <div
-        className="relative  flex flex-col h-[30%] text-white "
+        className="head-banner-layout"
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
           backgroundPosition: "bottom,bottom,center",
@@ -24,18 +24,18 @@ const page = () => {
       >
         <Navbar />
 
-        <h1 className=" text-4xl font-semibold  text-center mt-20 ">
+        <h1 className="title">
           Career
         </h1>
       </div>
-      <div className="px-5 xl:mt-20  ">
-        <p className=" text-center text-xs mx-auto w-80 sm:mt-10   max-w-[1440px] ">
+      <div className="sub-title-div">
+        <p className="paragraphy-push">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>
 
         {/* main content */}
-        <div className="mt-10 mx-4 sm:text-[1rem] md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] sm:mx-15 lg:mx-50">
+        <div className="mt-10 mx-4 sm:text-[1rem] md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] sm:mx-15 xl:mx-50 lg:mx-[0.1rem] ">
           <div className="lg:flex lg:flex-row">
             <div className="text-center mt-8 sm:text-start sm:w-[60%]  ">
               <h1 className="text-2xl lg:text-[2.5rem] lg:w-100 ">
@@ -159,7 +159,7 @@ const page = () => {
           </div>
 
           {/* steps showcase  for desktop view */}
-          <div className="hidden md:flex md:mx-auto md:justify-center lg:gap-10 xl:gap-20 2xl:gap-32">
+          <div className="hidden md:flex md:mx-auto md:justify-center lg:gap-10 xl:gap-20 2xl:gap-32 ">
             <div>
               <div className="mt-55 mr-7">
                 {/*outer-line*/}
@@ -237,15 +237,7 @@ const page = () => {
               </div>
             </div>
 
-
-
           </div>
-
-
-
-
-
-
 
           {/* show case the role of position */}
           <div className="text-center mt-8 mb-6  ">
@@ -260,7 +252,9 @@ const page = () => {
             </h1>
           </div>
 
-          <div className="lg:grid lg:grid-cols-2 lg:mx-20  max-w-[1440px] ">
+
+        {/* vacancy job cards */}
+          <div className="lg:grid lg:grid-cols-2 max-w-[1440px] ">
             <div className="mt-7">
               {/*outer-line*/}
               <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem]  lg:w-[25rem] md:max-auto p-[1px] bg-gradient-to-t from-gray-600 to-gray-200  ">

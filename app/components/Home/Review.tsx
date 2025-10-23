@@ -17,7 +17,8 @@ const testimonials = [
     handle: "@mike_tech",
     maker: "Saas-maker",
     avatar: "/Images/pic-2.png",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+
   },
   {
     id: 3,
@@ -43,7 +44,8 @@ const testimonials = [
     handle: "@mike_tech",
     maker: "Saas-maker",
     avatar: "/Images/pic-5.png",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+
   },
   {
     id: 6,
@@ -60,7 +62,8 @@ const testimonials = [
     handle: "@mike_tech",
     maker: "Saas-maker",
     avatar: "/Images/pic-4.png",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+
   },
   {
     id: 8,
@@ -77,7 +80,7 @@ const testimonials = [
     handle: "@mike_tech",
     maker: "Saas-maker",
     avatar: "/Images/pic-1.png",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
 
@@ -102,7 +105,7 @@ const Review = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="border-2 py-4 px-4 rounded-xl border-green-950 bg-gray-900 flex flex-col max-h-min"
+              className="border-2 py-4 px-4 rounded-xl border-green-950 bg-gray-900 flex flex-col "
             >
               {/* Header (image + name) */}
               <div className="flex gap-4 mb-3">

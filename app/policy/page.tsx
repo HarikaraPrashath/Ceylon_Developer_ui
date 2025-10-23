@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="">
       <div
-        className="relative  flex flex-col h-[30%] text-white "
+        className="head-banner-layout"
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
           backgroundPosition: "bottom,bottom,center",
@@ -18,12 +18,12 @@ const page = () => {
       >
         <Navbar />
 
-        <h1 className="xl:text-5xl text-4xl font-semibold  text-center mt-20 ">
+        <h1 className="title">
           Privacy Policy
         </h1>
       </div>
-      <div className="px-5 xl:mt-20  ">
-        <p className=" text-center sm:w-120 mx-auto w-80 sm:mt-10   max-w-[1440px] ">
+      <div className="sub-title-div ">
+        <p className="paragraphy-push">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>

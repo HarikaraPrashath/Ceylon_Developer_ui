@@ -7,14 +7,15 @@ import Worlflow from "./components/Home/Worlflow";
 import Review from "./components/Home/Review";
 import Help from "./components/Home/Help";
 import Technologies from "./components/Home/Technologies";
+import { ArrowRight } from 'lucide-react';
 
 const page = () => {
   return (
-    <div className="mx-auto text-white max-w-[1440px]">
+    <div className="mx-auto xl:mx-3 text-white max-w-[1440px]">
       <div className=" bg-black items-center ">
         {/* Container with multiple backgrounds */}
         <div
-          className="relative  flex flex-col "
+          className="relative flex flex-col "
           style={{
             backgroundImage: `url('/Images/Glow.png'), url('/Images/Vector.png')`,
             backgroundPosition: "center",
@@ -269,53 +270,26 @@ const page = () => {
 
               <div className="space-y-5 mt-7 xl:ml-5 mx-10">
                 <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
-                  <div className="rounded-full p-1 bg-custom-cyan">
+                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
                     {/* arrow icon */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
+                    <ArrowRight/>
                   </div>
+
                   <p className=" pl-3 ">Customer Experience</p>
                 </div>
 
                 <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
-                  <div className="rounded-full p-1 bg-custom-cyan">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
+                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
+                    {/* arrow icon */}
+                    <ArrowRight/>
                   </div>
                   <p className="pl-3">Quality and Trust</p>
                 </div>
 
                 <div className="flex flex-row items-center bg-gray-700  py-2 rounded-3xl w-full sm:w-max xl:w-max px-5 ">
-                  <div className="rounded-full p-1 bg-custom-cyan">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
+                   <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
+                    {/* arrow icon */}
+                    <ArrowRight/>
                   </div>
                   <p className="pl-3">Dependable Service</p>
                 </div>

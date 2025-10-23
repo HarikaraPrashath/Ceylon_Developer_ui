@@ -9,21 +9,21 @@ const page = () => {
   return (
     <div>
       <div
-        className="relative  flex flex-col h-[30%] text-white"
+        className="head-banner-layout"
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
           backgroundPosition: "bottom,bottom,center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover, 100%",
-          height: "500px, 600px mt-20",
+          height: "200px",
         }}
       >
         <Navbar />
 
-        <h1 className="text-4xl mt-10 text-center font-semibold sm:mt-15 ">Contact Us</h1>
+        <h1 className="title">Contact Us</h1>
       </div>
-      <div className="px-5 sm:mx-[2rem] mx-5 xl:mx-[10rem]">
-        <p className=" text-center w-80 mx-auto mt-5 sm:w-120">
+      <div className="sub-title-div ">
+        <p className="paragraphy-push">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>

@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div className="max-w-[1440px] mx-auto">
       <div
-        className="relative  flex flex-col h-[50%] text-white "
+        className="head-banner-layout"
         style={{
           backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
           backgroundPosition: "bottom,bottom,center",
@@ -23,7 +23,7 @@ const page = () => {
       >
         <Navbar />
 
-        <h1 className="text-4xl xl:mt-5  font-semibold lg:text-5xl lg:-mt-2  text-center pt-20">
+        <h1 className="title">
           Project Details
         </h1>
       </div>

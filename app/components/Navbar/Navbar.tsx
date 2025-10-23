@@ -45,13 +45,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:text-gray-400" href="/">
+            <Link className="cursor-pointer hover:text-gray-400" href="/contact">
               Contact
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:text-gray-400" href="/">
-              Service
+            <Link className="cursor-pointer hover:text-gray-400" href="/policy">
+              Policy
             </Link>
           </li>
           <li>
