@@ -3,15 +3,79 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, Sun } from "lucide-react"; // hamburger & close icons
+import { P } from "framer-motion/dist/types.d-Cjd591yU";
 
 const PNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-between px-2 text-2xl my-2 border-b-[0.1px] pb-2">
-     <div>
+    <div
+      className="
+    flex justify-between items-center p-3 
+    sm:w-[80%] sm:h-12 sm:bg-black/20 
+    sm:px-4 sm:mx-auto sm:mt-10 sm:rounded-3xl sm:border sm:border-gray-700
+    xs:border-1 border-b-1
+    xl:w-[70%]
+    max-w-[1440px]
+  "
+    >
+      {/* Logo */}
+      <h1 className="text-3xl">
         Portfolio
-     </div>
+      </h1>
+
+      {/* Navigation Links (hidden on md & below) */}
+      <div className="hidden lg:flex ">
+        <ul className="flex text-white text-lg space-x-6 ml-5">
+          <li>
+            <Link className="cursor-pointer hover:text-gray-400" href="/">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="cursor-pointer hover:text-gray-400"
+              href="/CaseStudies"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link className="cursor-pointer hover:text-gray-400" href="/contact">
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link className="cursor-pointer hover:text-gray-400" href="/policy">
+              Achievements
+            </Link>
+          </li>
+          <li>
+            <Link className="cursor-pointer hover:text-gray-400" href="/career">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      {/* Book a Call button (hidden on xs, visible on md+) */}
+      <div className="hidden sm:block">
+        <button
+          type="button"
+          className="cursor-pointer -mr-9 mb-2 "
+          title="Book a Call"
+          aria-label="Book a Call"
+        >
+          <Image
+            src="/Images/portfolio.png"
+            alt="Book a Call"
+            width={200}
+            height={180}
+            className="sm:w-44 "
+            priority
+          />
+        </button>
+      </div>
       {/* Mobile Menu Button (visible on xs) */}
       <div className="sm:hidden flex items-center space-x-3 ">
         <Sun size={24} className="text-white" />
@@ -43,35 +107,35 @@ const PNavbar = () => {
             className="hover:text-gray-400 text-lg"
             onClick={() => setMenuOpen(false)}
           >
-            Company
+            About
           </Link>
           <Link
             href="/CaseStudies"
             className="hover:text-gray-400 text-lg"
             onClick={() => setMenuOpen(false)}
           >
-            Case Studies
+            Projects
           </Link>
           <Link
             href="/"
+            className="hover:text-gray-400 text-lg"
+            onClick={() => setMenuOpen(false)}
+          >
+            Skills
+          </Link>
+          <Link
+            href="/"
+            className="hover:text-gray-400 text-lg"
+            onClick={() => setMenuOpen(false)}
+          >
+            Achievements
+          </Link>
+          <Link
+            href="/career"
             className="hover:text-gray-400 text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Contact
-          </Link>
-          <Link
-            href="/"
-            className="hover:text-gray-400 text-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            Service
-          </Link>
-          <Link
-            href="/"
-            className="hover:text-gray-400 text-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            Career
           </Link>
 
           {/* Book a Call inside menu */}
@@ -94,4 +158,5 @@ const PNavbar = () => {
     </div>
   );
 };
+
 export default PNavbar;
