@@ -37,28 +37,29 @@ const Implement = () => {
     borderClass: string;
     body: string;
   }) => (
+    // mobile view
     <div
       className={`
         relative rounded-sm ${borderClass} p-[1px]
-        bg-gradient-to-b from-gray-700 to-black/10 w-full h-80
+        dark:bg-gradient-to-b from-gray-700 to-black/10 w-full h-50 md:h-70
 
-        /* ≤376px: stacked style */
-        max-[376px]:h-auto max-[376px]:rounded-xl
-        max-[376px]:shadow-[0_8px_24px_rgba(0,0,0,0.35)]
-        max-[376px]:bg-gradient-to-br max-[376px]:from-[#2b2b2b] max-[376px]:to-[#111111]
+        /* ≤374px: stacked style */
+        max-[374px]:h-auto max-[376px]:rounded-xl
+        max-[374px]:shadow-[0_8px_24px_rgba(0,0,0,0.35)]
+        dark:max-[374px]:bg-gradient-to-br max-[374px]:from-[#2b2b2b] max-[374px]:to-[#111111]
         md:w-50 md:gap-1
       `}
     >
-      <div className="h-full w-full rounded-sm max-[376px]:rounded-xl max-[376px]:py-6">
-        <h1 className="text-center font-medium mt-4 max-[376px]:mt-0 max-[376px]:text-white max-[376px]:font-semibold">
+      <div className="h-full w-full rounded-sm max-[374px]:rounded-xl max-[374px]:py-2">
+        <h1 className="text-center font-medium mt-4 max-[376px]:mt-0 max-[374px]:text-white max-[374px]:font-semibold dark:text-white text-black">
           {title}
         </h1>
-        <p className="text-center mt-5 px-4 xs:mt-3 max-[376px]:text-gray-300 max-[376px]:text-sm max-[376px]:leading-6">
+        <p className="text-center mt-5 px-4 xs:mt-3 max-[376px]:text-gray-300 max-[374px]:text-sm max-[376px]:leading-6 ">
           {body}
         </p>
         <button
           type="button"
-          className="flex items-center justify-center gap-2 text-custom-cyan mx-auto mt-4 max-[376px]:mt-5 max-[376px]:font-semibold"
+          className="flex items-center justify-center gap-2 text-custom-cyan mx-auto mt-4 max-[374px]:mt-5 max-[376px]:font-semibold"
         >
           <p>Get Started</p>
           <svg
@@ -105,7 +106,7 @@ const Implement = () => {
               <button
                 type="button"
                 onClick={prevItem}
-                className="text-white hover:text-cyan-400"
+                className="text-black "
               >
                 <ChevronLeft size={32} />
               </button>
@@ -128,21 +129,21 @@ const Implement = () => {
               <button
                 type="button"
                 onClick={nextItem}
-                className="text-white hover:text-cyan-400"
+                className="text-black"
               >
                 <ChevronRight size={32} />
               </button>
             </div>
           </div>
 
-          <p className=" mt-8 text-center sm:w-100 mx-auto xl:ml-20 lg:w-90">
+          <p className=" mt-8 text-center sm:w-100 mx-auto xl:ml-20 lg:w-90 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
             sapiente, qui, porro molestiae soluta illum 
           </p>
         </div>
 
         {/* ≥1024px: 3 cards in a row */}
-        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 lg:gap-5">
+        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 ">
           {cards.map((c, i) => (
             <Card key={`lg-${i}`} {...c} />
           ))}
@@ -163,7 +164,7 @@ const Implement = () => {
         onNext={nextItem}
       />
       {/* ≤376px: show all 3 stacked vertically */}
-      <div className="hidden max-[376px]:flex flex-col items-center gap-7 px-4 ">
+      <div className="hidden max-[376px]:flex flex-col items-center gap-7 px-4  ">
         {cards.map((c, i) => (
           <div key={`xs-${i}`} className="w-[89%]">
             <Card {...c} />
@@ -188,7 +189,7 @@ function MobileCarousel({
 }) {
   if (!visible) return null;
   return (
-    <div className="block md:hidden md:h-[100px] max-[376px]:hidden px-6 ">
+    <div className="block md:hidden md:h-[100px] max-[376px]:hidden px-6  ">
       <div className="w-full">
         <div className="">
           <div className="">
@@ -199,14 +200,14 @@ function MobileCarousel({
                 <div
                   className={`
                     relative rounded-sm ${cards[index].borderClass} p-[1px]
-                    bg-gradient-to-b from-gray-700 to-black/10 w-full h-80 md:h-10 sm:h-[200px] sm:w-[80%] sm:mx-auto
+                    dark:bg-gradient-to-b from-gray-700 to-black/10 w-full h-80 md:h-10 sm:h-[200px] sm:w-[80%] sm:mx-auto 
                   `}
                 >
                   <div className="h-full w-full rounded-sm ">
-                    <h1 className="text-center font-medium mt-4">
+                    <h1 className="text-center font-medium mt-4 dark:text-white text-black">
                       {cards[index].title}
                     </h1>
-                    <p className="text-center mt-5 px-4">{cards[index].body}</p>
+                    <p className="text-center mt-5 px-4 ">{cards[index].body}</p>
                     <button
                       type="button"
                       className="flex items-center justify-center gap-2 text-custom-cyan mx-auto mt-4"

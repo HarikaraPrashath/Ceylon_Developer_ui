@@ -154,18 +154,14 @@ export default function ServicesSwiper() {
     }
   }, [currentIndex, totalItems]);
 
-  // responsive visible range
   useEffect(() => {
     const updateVisibleRange = () => {
       const width = window.innerWidth;
       if (width < 641) {
-        // xs, sm
         setVisibleRange(0);
       } else if (width < 1024) {
-        // md, lg, xl
         setVisibleRange(1);
       } else {
-        // 2xl
         setVisibleRange(2);
       }
     };
@@ -182,39 +178,32 @@ export default function ServicesSwiper() {
   };
 
   return (
-    // xs/sm use px-2; md+ can widen
-    <section className="-pt0 px-2 sm:px-2  bg-black min-h-screen flex items-center justify-center relative overflow-hidden  ">
-      {/* decorations (unchanged) */}
-      <div className="absolute inset-0 opacity-5 ">
+    <section className="-pt0 px-2 sm:px-2 bg-white dark:bg-black min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-40 h-40 border border-custom-cyan rounded-lg rotate-12"></div>
         <div className="absolute top-32 right-20 w-32 h-32 border border-custom-cyan rounded-lg -rotate-12"></div>
-        <div className="absolute bottom-20 left-1/4 w-24 h-24  border border-custom-cyan rounded-lg rotate-45"></div>
+        <div className="absolute bottom-20 left-1/4 w-24 h-24 border border-custom-cyan rounded-lg rotate-45"></div>
         <div className="absolute bottom-40 right-1/3 w-36 h-36 border border-custom-cyan rounded-lg -rotate-6"></div>
         <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-custom-cyan rounded-lg rotate-[30deg]"></div>
       </div>
 
-      <div className=" mx-auto relative w-full max-w-[1440px] ">
-        <div className="text-center ">
-
-
-            {" "}
-            <h1 className="text-center lg:-mt-100 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-8  0 ">
-              <span className="[font-family:var(--font-kaushan)] px-4">
-                Services
-              </span>
-              <span >We offer</span>
-            </h1>
-        
-
-          <p className="mt-6 xl:w-100 text-sm mx-auto lg:w-115 md:w-114 sm:w-115 max-[640px]:w-70">
+      <div className="mx-auto relative w-full max-w-[1440px] lg:mt-110 xl:-mt-5">
+        <div className="text-center">
+          {" "}
+          <h1 className="text-center lg:-mt-100 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-8">
+            <span className="[font-family:var(--font-kaushan)] px-4 text-gray-900 dark:text-gray-100">
+              Services
+            </span>
+            <span className="text-gray-900 dark:text-gray-100">We offer</span>
+          </h1>
+          <p className="mt-6 xl:w-100 text-sm mx-auto lg:w-115 md:w-114 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300">
             Pushing the boundaries of what&apos;s possible in the digital realm{" "}
             Join us on this journey into the future of technology
           </p>
         </div>
 
-        {/* swiper container */}
         <div
-          className="relative h-96 flex items-center justify-center -mt-20 sm:mt-5  "
+          className="relative h-96 flex items-center justify-center -mt-20 sm:mt-5"
           style={{ perspective: "1000px" }}
         >
           <div className="relative w-full h-full flex items-center justify-center">
@@ -245,12 +234,10 @@ export default function ServicesSwiper() {
                 return (
                   <div
                     key={`${service.id}-${index}`}
-                    /* Full-width card on xs/sm/md; fixed width again on lg+ */
                     className="
                       absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                       h-80 transition-all duration-500 ease-out
                       w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)] 
-                      
                     "
                     style={{
                       transform: `translateX(${translateX}px) translateY(${offsetY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
@@ -258,19 +245,18 @@ export default function ServicesSwiper() {
                       zIndex: isCenter ? 10 : 5 - Math.abs(position),
                     }}
                   >
-                    {/* Strong, full border treatment on xs/sm/md; original look on lg+ */}
                     <div
                       className="
                         w-full h-full p-6
-                        bg-gray-900/60 backdrop-blur-sm
-                        border border-custom-cyan/60
-                        md:border-custom-cyan/60
-                        lg:border-custom-cyan/20
+                        bg-white/70 dark:bg-gray-900/60 backdrop-blur-sm
+                        border border-custom-cyan/30 dark:border-custom-cyan/60
+                        md:border-custom-cyan/30 dark:md:border-custom-cyan/60
+                        lg:border-custom-cyan/20 dark:lg:border-custom-cyan/40
                         rounded-2xl flex flex-col
-                        hover:border-custom-cyan/60 hover:bg-gray-900/70
+                        hover:bg-white/80 dark:hover:bg-gray-900/70
+                        hover:border-custom-cyan/60
                         transition-all duration-300 group cursor-pointer
-                        sm:w-130 sm:mx-auto  sm:-mt-15 sm:h-50 md:w-77 md:h-75
-                        
+                        sm:w-130 sm:mx-auto sm:-mt-15 sm:h-50 md:w-77 md:h-75
                       "
                     >
                       <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -280,7 +266,7 @@ export default function ServicesSwiper() {
                         <h3 className="text-lg font-semibold text-custom-cyan-400 mb-3 group-hover:text-custom-cyan transition-colors duration-300">
                           {service.title}
                         </h3>
-                        <p className="text-gray-300 leading-relaxed text-sm">
+                        <p className="leading-relaxed text-sm text-gray-700 dark:text-gray-300">
                           {service.description}
                         </p>
                       </div>
@@ -292,7 +278,6 @@ export default function ServicesSwiper() {
           </div>
         </div>
 
-        {/* dots */}
         <div className="flex 3xl:hidden justify-center space-x-3 bottom-4 left-1/2 -translate-x-1/2 mt-20 ml-45 sm:-mt-20 sm:ml-80 lg:mt-10 lg:ml-130 xl:ml-175">
           {services.map((_, index) => (
             <button
@@ -302,7 +287,7 @@ export default function ServicesSwiper() {
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 currentIndex % totalItems === index
                   ? "bg-custom-cyan scale-125"
-                  : "bg-gray-600 hover:bg-gray-500"
+                  : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

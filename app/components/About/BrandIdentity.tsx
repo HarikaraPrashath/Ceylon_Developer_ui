@@ -8,7 +8,7 @@ const BrandIdentity = () => {
       <div className="lg:hidden">
         {/* mobile and tab view */}
         <div>
-          <h1 className="sm:text-5xl text-4xl text-center mt-10">
+          <h1 className="sm:text-2xl  text-3xl text-center mt-10">
             The identity of{" "}
             <span className="[font-family:var(--font-kaushan)] pr-2">
               our brand
@@ -333,7 +333,7 @@ const BrandIdentity = () => {
         
           <div className="flex flex-row gap-2 justify-center  ">
             <div className=" w-160 mt-10">
-              <h1 className=" text-4xl  mt-10 text-start 2xl:text-6xl ">
+              <h1 className=" text-4xl  mt-10 text-start 2xl:text-5xl ">
                 The identity of{" "}
                 <span className="[font-family:var(--font-kaushan)] pr-2">
                   our brand

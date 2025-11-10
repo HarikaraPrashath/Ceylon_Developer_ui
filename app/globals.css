@@ -2,10 +2,6 @@
 
 
 
-body {
-  @apply bg-black text-white;
-}
-
 .custom-cyan {
   color: #20cac5;
 }

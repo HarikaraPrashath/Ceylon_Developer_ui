@@ -1,14 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import BrandIdentity from "../components/About/BrandIdentity";
 import Card from "../components/About/Card";
 import { ArrowUpRight } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Page = () => {
+  const { theme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
+
+  // wait until client to know actual theme
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Before mount we don't know light/dark for sure, so don't render hero yet.
+    // You could return a skeleton if you want, but null = no double-banner flash.
+    return null;
+  }
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const isDark = currentTheme === "dark";
 
   const content = {
     mission: {
@@ -25,21 +42,39 @@ const Page = () => {
     },
   };
   return (
-    <div className="">
-      <div
-        className="head-banner-layout "
-        style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
-          backgroundPosition: "bottom,bottom,center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover, 100%",
-          height: "200px",
-        }}
-      >
-        <Navbar />
-
-        <h1 className="title">About</h1>
-      </div>
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen border-4 border-white dark:border-hidden">
+      {isDark ? (
+        <div
+          className="head-banner-layout h-[200px] bg-cover bg-bottom"
+          style={{
+            backgroundImage: `
+              linear-gradient(to top, rgba(0,0,0,0.98), rgba(0,0,0,0.2)),
+              url('/Images/mask3.png'),
+              url('/Images/Glow (1).png'),
+              url('/Images/gauze-10 1.png')
+            `,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom,bottom,center",
+            backgroundSize: "cover,100%",
+          }}
+        >
+          <Navbar />
+          <h1 className="title text-white">About</h1>
+        </div>
+      ) : (
+        <div
+          className="head-banner-layout h-[200px] bg-cover bg-center bg-white"
+          style={{
+            backgroundImage: `url('/Images/Glow (1).png')`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <Navbar />
+          <h1 className="title text-black">About</h1>
+        </div>
+      )}
 
       <div className="sub-title-div">
         <p className="paragraphy-push">
@@ -67,19 +102,19 @@ const Page = () => {
 
               <div>
                 <div className="flex gap-4 mt-4">
-                  <div className="text-black rounded-full bg-custom-cyan ">
+                  <div className="text-black rounded-full bg-custom-cyan w-6 h-6 ">
                     <Check className="p-1" />
                   </div>{" "}
                   <p className="">Advanced Ai Foundation</p>
                 </div>
                 <div className="flex gap-4 mt-4">
-                  <div className="text-black rounded-full bg-custom-cyan ">
+                  <div className="text-black rounded-full bg-custom-cyan w-6 h-6">
                     <Check className="p-1" />
                   </div>{" "}
                   <p className="">Purpose-Driven</p>
                 </div>
                 <div className="flex gap-4 mt-4">
-                  <div className="text-black rounded-full bg-custom-cyan ">
+                  <div className="text-black rounded-full bg-custom-cyan w-6 h-6">
                     <Check className="p-1" />
                   </div>{" "}
                   <p className="">Continuous Evolution</p>
@@ -87,16 +122,28 @@ const Page = () => {
               </div>
             </div>
             {/* image placement */}
-            <div className="">
+            <div className="mx-auto mt-10">
+              {/* Light mode image */}
               <Image
-                src="/Images/Container.png"
-                alt="Container image"
+                src="/Images/Container-light.png"
+                alt="Light mode container"
                 width={800}
                 height={800}
                 priority
-                className="mx-auto mt-10  border-1  w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px]"
+                className="block dark:hidden border w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px]"
+              />
+
+              {/* Dark mode image */}
+              <Image
+                src="/Images/Container.png"
+                alt="Dark mode container"
+                width={800}
+                height={800}
+                priority
+                className="hidden dark:block border w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px]"
               />
             </div>
+
           </div>
 
           <h1 className="text-4xl text-center mt-10 sm:text-5xl md:text-4xl lg:text-5xl xl:text-4xl">
@@ -311,20 +358,21 @@ const Page = () => {
           <BrandIdentity />
 
           <Card />
-
-          <div className="bg-gradient-to-b from-gray-800 to-gray-950 py-4   px-2  mt-15 rounded-2xl text-3xl sm:w-105 mx-auto  md:w-140 lg:w-160 xl:w-200">
-            <h1 className=" text-center sm:w-72 mx-auto md:w-90 lg:w-100 xl:w-120 xl:text-5xl">
+          <div className="bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-6 px-4 mx-3 mt-10 rounded-2xl sm:w-[520px] sm:mx-auto lg:w-[640px] xl:w-[760px] transition-colors duration-300">
+            <h1 className="text-center text-2xl lg:text-3xl text-gray-800 dark:text-white">
               Ready to
               <span className="[font-family:var(--font-kaushan)] pl-2">
                 Manage
               </span>{" "}
               your team like a pro?
             </h1>
-            <p className="text-center mt-6 text-lg sm:px-8">
+
+            <p className="text-center mt-6 text-gray-700 dark:text-gray-300 w-[240px] sm:w-[360px] mx-auto text-sm">
               Pushing the boundaries of what&apos;s possible in the digital real.
               Join us this journey into the future of technology
             </p>
-            <div className="bg-custom-cyan w-35 sm:w-45 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
+
+            <div className="bg-custom-cyan text-black dark:text-gray-900 w-[120px] text-center mx-auto mt-6 rounded-lg py-2 font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
               {/* Visible only on mobile (<640px) */}
               <button type="button" className="block sm:hidden">
                 Book a call
@@ -338,6 +386,7 @@ const Page = () => {
               <ArrowUpRight className="sm:hidden" />
             </div>
           </div>
+
         </div>
       </div>
     </div>

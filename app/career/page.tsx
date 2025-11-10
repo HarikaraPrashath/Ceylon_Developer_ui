@@ -1,411 +1,254 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import { Podcast } from 'lucide-react';
-import { MapPin } from 'lucide-react';
-import { Clock12 } from 'lucide-react';
-import { ChartSpline } from 'lucide-react';
-import { ChartArea } from 'lucide-react';
-import { BriefcaseBusiness } from 'lucide-react';
+import { Podcast, MapPin, Clock12, ChartSpline, ChartArea, BriefcaseBusiness } from "lucide-react";
+import { useTheme } from "next-themes";
 
+const Page = () => {
+  const { theme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-const page = () => {
+  if (!mounted) return null;
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const isDark = currentTheme === "dark";
   return (
-    <div className="">
-      <div
-        className="head-banner-layout"
-        style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0,0,0,0.2)),url('/Images/mask3.png'),url('/Images/Glow (1).png'),url('/Images/gauze-10 1.png')`,
-          backgroundPosition: "bottom,bottom,center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover, 100%",
-          height: "200px",
-        }}
-      >
-        <Navbar />
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen border-4 border-white dark:border-hidden">
+      {/* HERO SECTION */}
+      {isDark ? (
+        <div
+          className="head-banner-layout"
+          style={{
+            backgroundImage: `
+              linear-gradient(to top, rgba(0,0,0,0.98), rgba(0,0,0,0.2)),
+              url('/Images/mask3.png'),
+              url('/Images/Glow (1).png'),
+              url('/Images/gauze-10 1.png')
+            `,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom,bottom,center",
+            backgroundSize: "cover,100%",
+          }}
+        >
+          <Navbar />
+          <h1 className="title text-white">Case Studies</h1>
+        </div>
+      ) : (
+        <div
+          className="head-banner-layout bg-white"
+          style={{
+            backgroundImage: `url('/Images/Glow (1).png')`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <Navbar />
+          <h1 className="title text-black">Career</h1>
+        </div>
+      )}
 
-        <h1 className="title">
-          Career
-        </h1>
-      </div>
       <div className="sub-title-div">
-        <p className="paragraphy-push">
-          Pushing the boundaries of hat&apos;s possible in the digital
-          realm.Join us on this journey into the future of technology
+        <p className="paragraphy-push text-gray-700 dark:text-gray-300">
+          Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology.
         </p>
 
         {/* main content */}
         <div className="mt-10 mx-4 sm:text-[1rem] md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] sm:mx-15 xl:mx-50 lg:mx-[0.1rem] ">
           <div className="lg:flex lg:flex-row">
-            <div className="text-center mt-8 sm:text-start sm:w-[60%]  ">
-              <h1 className="text-2xl lg:text-[2.5rem] lg:w-100 ">
-                <span className="">
-                  Discover Why
-                  <span className="[font-family:var(--font-kaushan)] px-2">
-                    Ceylon Developers
-                  </span>
-                </span>
-                <span className="">is the Premier Destination for Advancing Your</span>
-                <span className="[font-family:var(--font-kaushan)] px-2">Career
-                </span>
+            <div className="text-center mt-8 sm:text-start sm:w-[60%]">
+              <h1 className="text-2xl lg:text-[2.5rem]">
+                Discover Why{" "}
+                <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Ceylon Developers</span> is the Premier Destination for Advancing Your{" "}
+                <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Career</span>
               </h1>
             </div>
 
-
             <div className="lg:w-200">
-              <ul className="mt-6 ">
+              <ul className="mt-6">
                 <li className="my-2 text-lg lg:text-[1.2rem]">We are growing fast</li>
                 <li className="my-2 text-lg lg:text-[1.2rem]">Flexible hours</li>
-                <li className="my-2 text-lg lg:text-[1.2rem]">Work from anywhere.</li>
+                <li className="my-2 text-lg lg:text-[1.2rem]">Work from anywhere</li>
                 <li className="my-2 text-lg lg:text-[1.2rem]">Paid vacations</li>
               </ul>
 
-              <p className="text-xs mt-3 lg:text-[1.3rem] sm:w-[70%] lg:w-[110%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien eget mi proin sed. </p>
+              <p className="text-xs mt-3 lg:text-[1.3rem] sm:w-[70%] lg:w-[110%] text-gray-700 dark:text-gray-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
 
               <div className="mt-2 text-center sm:mt-[1rem] sm:text-start">
-                <button type="button" className="bg-custom-cyan cursor-pointer text-black py-2 px-3 rounded-lg ">About Company</button>
+                <button
+                  type="button"
+                  className="bg-custom-cyan hover:bg-cyan-400 cursor-pointer text-black py-2 px-3 rounded-lg font-semibold transition"
+                >
+                  About Company
+                </button>
               </div>
             </div>
-
           </div>
+
+          {/* Hiring Process Title */}
           <div className="text-center mt-8 mb-3 xl:mt-20">
             <h1 className="text-3xl sm:text-[2rem] sm:w-[60%] mx-auto">
-              <span className="">
-                Our
-                <span className="[font-family:var(--font-kaushan)] px-2">
-                  Streamlined
-                </span>
-              </span>
-              <span className="">Hiring Process</span>
+              Our <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Streamlined</span> Hiring Process
             </h1>
           </div>
 
-          {/* steps showcase  for mobile and tab view */}
+          {/* hiring steps (mobile/tablet view) */}
           <div className="flex sm:mx-auto sm:justify-center md:hidden">
-            <div className="flex flex-col justify-start  mt-25  mr-4 gap-8 sm:mt-20">
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
+            <div className="flex flex-col justify-start mt-25 mr-4 gap-8 sm:mt-20">
+              {[...Array(5)].map((_, i) => (
+                <React.Fragment key={i}>
+                  <div className="rounded-full w-3 h-3 bg-cyan-300" />
+                  {i < 4 && <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto" />}
+                </React.Fragment>
+              ))}
             </div>
 
-            <div className="">
-              <div className="mt-3 mb-10 ">
-                {/*outer-line*/}
-                <div className="rounded-xl w-70 sm:w-[25rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center sm:px-3">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <Podcast className="text-custom-cyan w-6 h-6" />
+            {/* steps content */}
+            <div>
+              {[
+                { icon: Podcast, title: "Apply with Your CV" },
+                { icon: ChartSpline, title: "Initial Screen" },
+                { icon: ChartArea, title: "Skills Assessment" },
+                { icon: Podcast, title: "Interview Process" },
+                { icon: BriefcaseBusiness, title: "Final Decision" },
+              ].map(({ icon: Icon, title }, i) => (
+                <div key={i} className="mb-10">
+                  <div className="rounded-xl w-70 sm:w-[25rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900">
+                    <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-gray-900 text-center sm:px-3 transition">
+                      <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
+                        <Icon className="text-custom-cyan w-6 h-6" />
+                      </div>
+                      <h1 className="text-xl my-3">{title}</h1>
+                      <p className="text-sm my-3 text-gray-600 dark:text-gray-300">
+                        We begin by understanding your business. Lorem ipsum dolor sit amet.
+                      </p>
                     </div>
-                    <h1 className="text-xl my-3">Apply with Your CV</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                   </div>
                 </div>
-              </div>
-              <div className="mb-10 ">
-                {/*outer-line*/}
-                <div className="rounded-xl w-70 sm:w-[25rem]  p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center sm:px-3">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <ChartSpline className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Initial Screen</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
-              </div>
-              <div className="mb-10 ">
-                {/*outer-line*/}
-                <div className="rounded-xl w-70 sm:w-[25rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center sm:px-3">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <ChartArea className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Skills Assessment</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
-              </div>
-              <div className=" mb-10">
-                {/*outer-line*/}
-                <div className="rounded-xl w-70 sm:w-[25rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center sm:px-3">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <Podcast className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Interview Process</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
-              </div>
-              <div className=" mb-10">
-                {/*outer-line*/}
-                <div className="rounded-xl w-70 sm:w-[25rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center sm:px-3">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <BriefcaseBusiness className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Final Decision</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* steps showcase  for desktop view */}
-          <div className="hidden md:flex md:mx-auto md:justify-center lg:gap-10 xl:gap-20 2xl:gap-32 ">
+          {/* hiring steps (desktop view) */}
+          <div className="hidden md:flex md:mx-auto md:justify-center lg:gap-10 xl:gap-20 2xl:gap-32">
             <div>
               <div className="mt-55 mr-7">
-                {/*outer-line*/}
-                <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center ">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <ChartSpline className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Initial Screen</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
+                <Step icon={ChartSpline} title="Initial Screen" />
               </div>
+              <div className="mt-66">
+                <Step icon={Podcast} title="Interview Process" />
+              </div>
+            </div>
 
-              <div className=" mt-66">
-                {/*outer-line*/}
-                <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center ">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <Podcast className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Interview Process</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
-              </div>
+            {/* connector line */}
+            <div className="flex flex-col justify-start mt-25 mr-4 gap-8 sm:mt-20">
+              {[...Array(5)].map((_, i) => (
+                <React.Fragment key={i}>
+                  <div className="rounded-full w-3 h-3 bg-cyan-300" />
+                  {i < 4 && <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto" />}
+                </React.Fragment>
+              ))}
             </div>
-            <div className="flex flex-col justify-start  mt-25  mr-4 gap-8 sm:mt-20">
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-              <div className="rounded-full w-1 h-40 bg-cyan-300 mx-auto"></div>
-              <div className="rounded-full w-3 h-3 bg-cyan-300 "></div>
-            </div>
+
             <div>
-              <div className="mt-3 mb-10 ">
-                {/*outer-line*/}
-                <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <Podcast className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Apply with Your CV</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
+              <div className="mt-3 mb-10">
+                <Step icon={Podcast} title="Apply with Your CV" />
               </div>
               <div className="mt-60">
-                {/*outer-line*/}
-                <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <ChartArea className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Skills Assessment</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
+                <Step icon={ChartArea} title="Skills Assessment" />
               </div>
-              <div className=" mt-66 mb-10">
-                {/*outer-line*/}
-                <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900  ">
-                  <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-center ">
-                    <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
-                      <BriefcaseBusiness className="text-custom-cyan w-6 h-6" />
-                    </div>
-                    <h1 className="text-xl my-3">Final Decision</h1>
-                    <p className="text-sm my-3">We begin by understanding your busineLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </div>
-                </div>
+              <div className="mt-66 mb-10">
+                <Step icon={BriefcaseBusiness} title="Final Decision" />
               </div>
             </div>
-
           </div>
 
-          {/* show case the role of position */}
-          <div className="text-center mt-8 mb-6  ">
+          {/* Job Role Cards */}
+          <div className="text-center mt-8 mb-6">
             <h1 className="text-3xl">
-              <span className="">
-                Find the
-                <span className="[font-family:var(--font-kaushan)] px-2">
-                  Best Role
-                </span>
-              </span>
-              <span className="">for you</span>
+              Find the <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Best Role</span> for you
             </h1>
           </div>
 
-
-        {/* vacancy job cards */}
-          <div className="lg:grid lg:grid-cols-2 max-w-[1440px] ">
-            <div className="mt-7">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem]  lg:w-[25rem] md:max-auto p-[1px] bg-gradient-to-t from-gray-600 to-gray-200  ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-7">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="mt-7">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="mt-7">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="mt-7 hidden lg:block">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-7 hidden lg:block">
-              {/*outer-line*/}
-              <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 ">
-                <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-black text-start px-5">
-                  <h1 className="text-xl my-3">Software Developer</h1>
-                  <p className="text-sm my-3 ">We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.</p>
-
-                  <div className="flex flex-row mb-3 justify-between">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex gap-1"><MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p></div>
-                      <div className="flex gap-1"><Clock12 className="text-custom-cyan w-5" /><p className="text-sm ">Full-Time</p></div>
-                    </div>
-                    <div>
-                      <button type="button" className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="text-center mt-4 md:hidden">
-              <button type="button" className="bg-custom-cyan px-4 py-2 rounded-lg mt-2 text-black font-semibold cursor-pointer">Explore More</button></div>
+          {/* Vacancy job cards */}
+          <div className="lg:grid lg:grid-cols-2 max-w-[1440px]">
+            {[...Array(6)].map((_, i) => (
+              <JobCard key={i} />
+            ))}
           </div>
 
-          <div className="bg-gradient-to-b from-gray-900 to-gray-950 py-4 px-2 mt-15 rounded-2xl md:w-[90%] md:mx-auto lg:w-[70%]">
-            <h1 className="text-center mx-5 text-2xl">
-              Take the
-              <span className="[font-family:var(--font-kaushan)] pl-2">
+          {/* CTA section */}
+          <div className="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-950 py-4 px-2 mt-15 rounded-2xl md:w-[90%] md:mx-auto lg:w-[70%] transition-colors duration-500">
+            <h1 className="text-center mx-5 text-2xl text-gray-900 dark:text-white">
+              Take the{" "}
+              <span className="[font-family:var(--font-kaushan)] text-custom-cyan">
                 Next Step
               </span>{" "}
               in Your Career
             </h1>
-            <p className="text-center mt-6 text-sm  mx-3 ">
-              Pushing the boundaries of what&apos;s possible in the digital real.
-              Join us this journey into the future of technology
+            <p className="text-center mt-6 text-sm text-gray-700 dark:text-gray-300 mx-3">
+              Pushing the boundaries of what&apos;s possible in the digital realm. Join us
+              on this journey into the future of technology.
             </p>
-            <div className="bg-custom-cyan w-35 sm:w-45 flex flex-row mx-auto py-2 rounded-xl text-black gap-2  justify-center mt-8 mb-10 text-lg">
-              {/* Visible only on mobile (<640px) */}
-              <button type="button" className="block ">
-                Book a call
-              </button>
-
-
+            <div className="bg-custom-cyan w-35 sm:w-45 flex flex-row mx-auto py-2 rounded-xl text-black gap-2 justify-center mt-8 mb-10 text-lg font-semibold cursor-pointer hover:bg-cyan-400 dark:hover:bg-cyan-300 transition">
+              <button type="button">Book a Call</button>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   );
 };
 
-export default page;
+// reusable components
+const Step = ({ icon: Icon, title }) => (
+  <div className="rounded-xl w-60 lg:w-[20rem] p-[1px] bg-gradient-to-t from-cyan-600 to-cyan-900">
+    <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-gray-900 text-center transition">
+      <div className="rounded-full w-10 h-10 bg-gray-800 flex items-center justify-center mx-auto my-5">
+        <Icon className="text-custom-cyan w-6 h-6" />
+      </div>
+      <h1 className="text-xl my-3">{title}</h1>
+      <p className="text-sm my-3 text-gray-600 dark:text-gray-300">
+        We begin by understanding your business. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+);
+
+const JobCard = () => (
+  <div className="mt-7 mx-auto">
+    <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 dark:from-gray-700 dark:to-gray-900 transition">
+      <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-gray-900 text-start px-5 transition">
+        <h1 className="text-xl my-3">Software Developer</h1>
+        <p className="text-sm my-3 text-gray-700 dark:text-gray-300">
+          We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications.
+        </p>
+        <div className="flex flex-row mb-3 justify-between">
+          <div className="flex flex-col gap-2">
+            <div className="flex gap-1">
+              <MapPin className="text-custom-cyan w-5" /> <p className="text-sm">Remote</p>
+            </div>
+            <div className="flex gap-1">
+              <Clock12 className="text-custom-cyan w-5" /> <p className="text-sm">Full-Time</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            className="bg-custom-cyan px-2 py-2 rounded-2xl mt-2 text-black font-semibold cursor-pointer hover:bg-cyan-400 transition"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+export default Page;

@@ -1,69 +1,141 @@
-import { Facebook, Instagram, Linkedin, Sun ,Phone, MapPin , SendHorizontal  } from "lucide-react"
-
 export default function Footer() {
   return (
-    <div>
+    <div className="transition-colors duration-300 bg-white text-black  dark:bg-black dark:text-white">
       {/* Mobile & Tablet Footer */}
-      <footer className="bg-black text-white lg:hidden">
+      <footer className="lg:hidden bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
         <div className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 gap-8 ">
+          <div className="grid grid-cols-1 gap-8">
             {/* Brand Section */}
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-center">Ceylon Developers</h2>
-              <p className="text-gray-400 text-sm leading-relaxed mx-auto max-w-md text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
+            <div className="space-y-4 text-center">
+              <h2 className="text-2xl font-semibold">Ceylon Developers</h2>
+
+              <p className="text-sm leading-relaxed mx-auto max-w-md text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet.
               </p>
-              <div className="flex gap-4 justify-center">
-                <Facebook className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-                <Instagram className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-                <div className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </div>
-                <Linkedin className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-              </div>
+
+              {/* (Social icons removed as you asked) */}
             </div>
 
             {/* Links Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
               {/* Quick Links */}
               <div>
                 <h3 className="text-lg font-semibold mb-4">Quick links</h3>
-                <ul className="space-y-3 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Service</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Projects</a></li>
-                  <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Client</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Service
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Projects
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Client
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Contact
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               {/* Important */}
               <div>
                 <h3 className="text-lg font-semibold mb-4">Important</h3>
-                <ul className="space-y-3 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors">Career</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Cookies Policy</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors">Social Work</a></li>
+                <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Career
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Terms &amp; Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Cookies Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-black dark:hover:text-white"
+                    >
+                      Social Work
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               {/* Contacts */}
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contacts</h3>
-                <div className="space-y-3 text-gray-400">
-                  <div className="flex  gap-2 ">
-                    <Phone className="text-gray-400"/> <span>+223 456 789</span>
+                <div className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                  <div className="flex justify-center sm:justify-start gap-2">
+                    <span className="font-medium">Tel:</span>
+                    <span>+223 456 789</span>
                   </div>
-                  <div className="flex  gap-2">
-                    <SendHorizontal className="text-gray-400"/> <span>example@gmail.com</span>
+                  <div className="flex justify-center sm:justify-start gap-2">
+                    <span className="font-medium">Email:</span>
+                    <span>example@gmail.com</span>
                   </div>
-                  <div className="flex  gap-2">
-                    <MapPin className="text-gray-400"/> <span>45d, example example</span>
+                  <div className="flex justify-center sm:justify-start gap-2">
+                    <span className="font-medium">Address:</span>
+                    <span>45d, example example</span>
                   </div>
                 </div>
               </div>
@@ -71,86 +143,163 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-gray-800 mt-8 pt-6 text-center">
-            <p className="text-gray-400 text-sm">Copyright 2025 | All Rights Reserved</p>
+          <div className="mt-8 pt-6 text-center border-t border-gray-300 dark:border-gray-800">
+            <p className="text-sm text-gray-600 dark:text-gray-500">
+              Copyright 2025 | All Rights Reserved
+            </p>
           </div>
         </div>
       </footer>
 
       {/* Desktop Footer */}
-      <footer className="bg-black text-white hidden lg:block">
+      <footer className="hidden  lg:block bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-4 gap-8">
             {/* Brand Section */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-baseline gap-2">
                 <h2 className="text-2xl font-bold">HEXZYON</h2>
-                <Sun className="w-6 h-6" />
+                {/* (Icon removed) */}
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
+
+              <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet.
               </p>
-              <div className="flex gap-4">
-                <Facebook className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-                <Instagram className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-                <div className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </div>
-                <Linkedin className="w-5 h-5 text-gray-400 hover:text-white transition-colors" />
-              </div>
+
+              {/* (Social icons removed) */}
             </div>
 
             {/* Quick Links */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick links</h3>
-              <ul className="space-y-3 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Projects</a></li>
-                <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Client</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Client
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
 
             {/* Important */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Important</h3>
-              <ul className="space-y-3 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Career</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cookies Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Social Work</a></li>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Career
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Terms &amp; Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Cookies Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-black dark:hover:text-white"
+                  >
+                    Social Work
+                  </a>
+                </li>
               </ul>
             </div>
 
             {/* Contacts */}
-           <div>
-  <h3 className="text-lg font-semibold mb-4">Contacts</h3>
-  <div className="space-y-3">
-    <div className="flex items-center gap-2 text-gray-400">
-      <span></span> <span>+223 456 789</span>
-    </div>
-    <div className="flex items-center gap-2 text-gray-400">
-      <span>✉️</span> <span>example@gmail.com</span>
-    </div>
-    <div className="flex items-center gap-2 text-gray-400">
-      <span>📍</span> <span>45d, example example</span>
-    </div>
-  </div>
-</div>
-
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contacts</h3>
+              <div className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <div className="flex gap-2">
+                  <span className="font-medium">Tel:</span>
+                  <span>+223 456 789</span>
+                </div>
+                <div className="flex gap-2">
+                  <span className="font-medium">Email:</span>
+                  <span>example@gmail.com</span>
+                </div>
+                <div className="flex gap-2">
+                  <span className="font-medium">Address:</span>
+                  <span>45d, example example</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-gray-800 mt-8 pt-6 text-center">
-            <p className="text-gray-400 text-sm">Copyright 2025 | All Rights Reserved</p>
+          <div className="mt-8 pt-6 text-center border-t border-gray-300 dark:border-gray-800">
+            <p className="text-sm text-gray-600 dark:text-gray-500">
+              Copyright 2025 | All Rights Reserved
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
