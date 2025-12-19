@@ -83,7 +83,7 @@ const page = () => {
 
         {/* Activities */}
 
-        <div className="mx-3 2xl:mx-30 max-w-[1440px] relative mt-10  2xl:ml-40">
+        <div className="relative mt-10 mx-auto max-w-[1536px] px-4 2xl:px-12">
           <Image
             src="/Images/Vector.png"
             alt="vector"
@@ -91,48 +91,60 @@ const page = () => {
             height={1000}
             className="absolute top-0 right-0 z-30 opacity-90 pointer-events-none hidden md:block"
           />
-          <div className="lg:flex lg:flex-row xl:ml-40 ">
-            <div className="lg:-ml-10 lg:w-110">
-              <div className="text-center lg:text-start text-3xl w-86 mx-2 xl:text-4xl lg:text-3xl sm:text-3xl lg:w-80 lg:ml-20  2xl:ml-1 sm:w-90 sm:mx-auto xl:w-70">
-                <h1 className="">
-                  To upscale your</h1>
-                 <span className="[font-family:var(--font-kaushan)] pr-3">business</span>  
-                  to the next level
+
+          <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30">
+            {/* left content */}
+            <div className="lg:w-1/2">
+              <div className="text-center lg:text-start text-3xl sm:text-3xl xl:text-4xl max-w-[290px] mx-auto lg:mx-0 ">
+                <h1>To upscale your</h1>
+                <span className="[font-family:var(--font-kaushan)] pr-3">business</span>
+                to the next level
               </div>
 
-              <div className=" sm:mx-20 max-w-[1440px] 2xl:mx-0 ">
-                <p className="text-center my-5 md:w-150 md:mx-auto lg:text-start lg:w-90 lg:ml-1 sm:text-start lg:text-md">
+              <div className="mt-5 max-w-[520px] mx-auto lg:mx-0">
+                <p className="text-center lg:text-start my-5">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua invidunt ut labore.
+                  aliquyam erat.
                 </p>
 
-                <p className="flex text-sm lg:text-md gap-3 py-1">
-                  <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5 dark:text-black" />
-                  Project template to kick-start a new project
-                </p>
-
-                <p className="flex text-sm gap-3 py-1 lg:text-md">
-                  <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5" />
-                  Clone task to speed your time to action
-                </p>
-
-                <p className="flex text-sm gap-3 py-1">
-                  <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5" />
-                  Communication and collaborate with your team and clients
-                </p>
-
-                <p className="flex text-sm gap-3 py-1">
-                  <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5" />
-                  Time tracking for the whole team
-                </p>
+                {[
+                  "Project template to kick-start a new project",
+                  "Clone task to speed your time to action",
+                  "Communication and collaborate with your team and clients",
+                  "Time tracking for the whole team",
+                ].map((text, i) => (
+                  <p key={i} className="flex text-sm lg:text-md gap-3 py-1">
+                    <Image
+                      src="/Images/TikButton.png"
+                      alt="Tick icon"
+                      width={20}
+                      height={20}
+                      className="w-5 h-5"
+                    />
+                    {text}
+                  </p>
+                ))}
               </div>
             </div>
 
-            <div className="lg:w-120 max-w-[1280px] ">
-              <div className="mt-5 w-100 h-100 sm:w-120 sm:mx-25 md:w-170 lg:w-150 md:mx-20  lg:mt-1 ">
-                <Image src="/Images/Activities.svg" alt="Activities" width={800} height={600} className="hidden dark:block " />
-                <Image src="/Images/DarkMode-action-section.png" alt="Activities" width={800} height={600} className="block dark:hidden" />
+            {/* right content */}
+            <div className="lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
+              <div className="max-w-[600px]">
+                <Image
+                  src="/Images/Activities.svg"
+                  alt="Activities"
+                  width={800}
+                  height={600}
+                  className="hidden dark:block"
+                />
+                <Image
+                  src="/Images/DarkMode-action-section.png"
+                  alt="Activities"
+                  width={800}
+                  height={600}
+                  className="block dark:hidden"
+                />
               </div>
             </div>
           </div>
