@@ -82,32 +82,37 @@ const page = () => {
         <ServicesSwiper />
 
         {/* Activities */}
-        <div className="mx-3 2xl:mx-30 max-w-[1440px] relative ">
-          <div className="lg:flex lg:flex-row xl:ml-50  ">
-            <div className="">
-              <div className="text-center mt-8 lg:text-start">
-                <h1 className="text-3xl sm:w-90 sm:mx-auto">
-                  <span className="">
-                    To upscale your
-                    <span className="[font-family:var(--font-kaushan)] px-2">business</span>
-                  </span>
-                  <span className="">to the next level</span>
-                </h1>
+
+        <div className="mx-3 2xl:mx-30 max-w-[1440px] relative mt-10  2xl:ml-40">
+          <Image
+            src="/Images/Vector.png"
+            alt="vector"
+            width={1000}
+            height={1000}
+            className="absolute top-0 right-0 z-30 opacity-90 pointer-events-none hidden md:block"
+          />
+          <div className="lg:flex lg:flex-row xl:ml-40 ">
+            <div className="lg:-ml-10 lg:w-110">
+              <div className="text-center lg:text-start text-3xl w-86 mx-2 xl:text-4xl lg:text-3xl sm:text-3xl lg:w-80 lg:ml-20  2xl:ml-1 sm:w-90 sm:mx-auto xl:w-70">
+                <h1 className="">
+                  To upscale your</h1>
+                 <span className="[font-family:var(--font-kaushan)] pr-3">business</span>  
+                  to the next level
               </div>
 
-              <div className="">
-                <p className="text-center my-5 md:w-150 md:mx-auto lg:text-start lg:w-90">
+              <div className=" sm:mx-20 max-w-[1440px] 2xl:mx-0 ">
+                <p className="text-center my-5 md:w-150 md:mx-auto lg:text-start lg:w-90 lg:ml-1 sm:text-start lg:text-md">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
                   aliquyam erat, sed diam voluptua invidunt ut labore.
                 </p>
 
-                <p className="flex text-sm gap-3 py-1">
+                <p className="flex text-sm lg:text-md gap-3 py-1">
                   <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5 dark:text-black" />
                   Project template to kick-start a new project
                 </p>
 
-                <p className="flex text-sm gap-3 py-1">
+                <p className="flex text-sm gap-3 py-1 lg:text-md">
                   <Image src="/Images/TikButton.png" alt="Tick icon" width={20} height={20} className="w-5 h-5" />
                   Clone task to speed your time to action
                 </p>
@@ -124,9 +129,9 @@ const page = () => {
               </div>
             </div>
 
-            <div className="lg:w-120">
-              <div className="mt-5 w-90 h-90 sm:w-120 sm:mx-25 md:w-140 lg:w-120 lg:mt-10">
-                <Image src="/Images/Activities.svg" alt="Activities" width={800} height={600} className="hidden dark:block" />
+            <div className="lg:w-120 max-w-[1280px] ">
+              <div className="mt-5 w-100 h-100 sm:w-120 sm:mx-25 md:w-170 lg:w-150 md:mx-20  lg:mt-1 ">
+                <Image src="/Images/Activities.svg" alt="Activities" width={800} height={600} className="hidden dark:block " />
                 <Image src="/Images/DarkMode-action-section.png" alt="Activities" width={800} height={600} className="block dark:hidden" />
               </div>
             </div>
@@ -134,13 +139,13 @@ const page = () => {
         </div>
 
         {/* Roadmap */}
-        <div className="-mt-10 lg:mt-10 md:mt-40 sm:mt-20">
+        <div className="-mt-10 lg:mt-10 md:mt-40 sm:mt-20 ">
           <h1 className="text-3xl text-center lg:text-4xl">
             Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
             <span className="[font-family:var(--font-kaushan)]">development</span> approach
           </h1>
 
-          <div className="mx-auto mt-6 md:mt-50 w-full max-w-[1000px]">
+          <div className="mx-auto mt-6 md:mt-50 w-full max-w-[1000px] 2xl:-mt-5">
             {/* Light mode (large screens only) */}
             <Image
               src="/Images/desktop-dark-roadmap.png"
@@ -236,37 +241,37 @@ const page = () => {
 
         <Technologies />
 
-        <div className="mt-10 md:mx-5 xl:mt-15 lg:mx-30">
-          <div className="flex flex-col lg:flex-row gap-10 w-full xl:gap-0">
+        <div className="mt-10 md:mx-5 xl:mt-15 lg:mx-35  ">
+          <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 xl:mx-10 ">
             {/* Left section */}
-            <div className="lg:w-[40%] xl:ml-10">
-              <h1 className="text-4xl text-center max-[371px]:mt-5 sm:text-3xl md:text-4xl 2xl:text-4xl xl:text-4xl">
+            <div className="lg:w-[40%]  xl:ml-10  xl:w-180 ">
+              <h1 className="text-4xl text-center max-[371px]:mt-5 sm:text-3xl md:text-4xl 2xl:text-4xl xl:text-4xl xl:text-start xl:ml-5">
                 Get <span className="[font-family:var(--font-kaushan)] pr-2">Touch</span>
               </h1>
               <p className="m-5 text-center xl:text-xl xl:text-start">
                 We&apos;re here to support you! Feel free to reach out for assistance, feedback, or any questions.
               </p>
-              <h1 className="ml-4 md:ml-10 sm:ml-10">Let&apos;s Talk About:</h1>
+              <h1 className="ml-4 md:ml-10 sm:ml-10 xl:text-2xl xl:ml-5">Let&apos;s Talk About:</h1>
 
               {/* tags: readable in light & dark */}
               <div className="space-y-5 mt-7 xl:ml-5 mx-10">
                 <div className="flex flex-row items-center bg-gray-200 dark:bg-gray-700 py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
-                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
-                    <ArrowRight />
+                  <div className="rounded-full p-1 lg:-ml-3 bg-custom-cyan flex items-center justify-center">
+                    <ArrowRight color="black" />
                   </div>
                   <p className="pl-3">Customer Experience</p>
                 </div>
 
                 <div className="flex flex-row items-center bg-gray-200 dark:bg-gray-700 py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
-                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
-                    <ArrowRight />
+                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center lg:-ml-3">
+                    <ArrowRight color="black" />
                   </div>
                   <p className="pl-3">Quality and Trust</p>
                 </div>
 
                 <div className="flex flex-row items-center bg-gray-200 dark:bg-gray-700 py-2 rounded-3xl w-full sm:w-max xl:w-max px-5">
-                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center">
-                    <ArrowRight />
+                  <div className="rounded-full p-1 bg-custom-cyan flex items-center justify-center lg:-ml-3">
+                    <ArrowRight color="black" />
                   </div>
                   <p className="pl-3">Dependable Service</p>
                 </div>

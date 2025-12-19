@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+Dockerfile
+dev.Dockerfile
+prod.Dockerfile
+compose.dev.yaml
+compose.prod.yaml
+npm-debug.log
+yarn-error.log
+*.swp

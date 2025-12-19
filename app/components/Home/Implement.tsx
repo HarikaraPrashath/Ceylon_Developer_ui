@@ -106,9 +106,9 @@ const Implement = () => {
               <button
                 type="button"
                 onClick={prevItem}
-                className="text-black "
+                className="text-sky-100"
               >
-                <ChevronLeft size={32} />
+                <ChevronLeft size={52} />
               </button>
 
               {/* Items */}
@@ -129,21 +129,21 @@ const Implement = () => {
               <button
                 type="button"
                 onClick={nextItem}
-                className="text-black"
+                className="text-sky-100"
               >
-                <ChevronRight size={32} />
+                <ChevronRight size={52} />
               </button>
             </div>
           </div>
 
-          <p className=" mt-8 text-center sm:w-100 mx-auto xl:ml-20 lg:w-90 ">
+          <p className="mt-8 text-center sm:w-100 mx-auto xl:ml-40 lg:w-90 lg:text-start ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
             sapiente, qui, porro molestiae soluta illum 
           </p>
         </div>
 
         {/* ≥1024px: 3 cards in a row */}
-        <div className="hidden lg:grid grid-cols-3  w-[60%] xl:mx-10 ">
+        <div className="hidden lg:grid grid-cols-3  w-[54%] xl:mx-10 ">
           {cards.map((c, i) => (
             <Card key={`lg-${i}`} {...c} />
           ))}

@@ -4,11 +4,11 @@ const Worlflow = () => {
   return (
     <div>
       {/* Desktop View */}
-      <div className="hidden lg:block max-w-[1440px] xl:ml-16 ">
-        <div className="flex flex-row-reverse justify-center mt-6">
+      <div className="hidden lg:block max-w-[1440px] xl:ml-30 2xl:ml-10">
+        <div className="flex flex-row-reverse justify-center mt-6 ">
           <div
             className="
-              relative border-gray-300 dark:border-gray-800 border-2 mx-5 rounded-3xl 
+              relative border-gray-300 dark:border-gray-800 border-2 mx-5 rounded-3xl
               flex flex-col justify-center items-start p-6 text-white
               bg-no-repeat bg-left
               bg-[linear-gradient(to_right,rgba(33,164,164,0.2),rgba(0,0,0,0.1)),url('/Images/Group%20669-light.png')]
@@ -17,7 +17,7 @@ const Worlflow = () => {
             style={{
               backgroundSize: "100%",
               height: "209px",
-              width: "550px",
+              width: "500px",
             }}
           >
             <div className="w-60 flex flex-col -mt-40 md:w-80 ml-45 lg:mt-1">
@@ -39,6 +39,7 @@ const Worlflow = () => {
             style={{
               backgroundSize: "70%,100%,100%",
               height: "209px",
+              width:"250px"
             }}
           >
             <div className="w-35 sm:w-60 p-3 flex flex-col">
@@ -51,7 +52,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse mt-6 gap-6 -lg:px-10">
+        <div className="flex flex-row-reverse mt-6 gap-6 -lg:px-10 xl:-mr-20 2xl:mr-15 ">
           <div
             className="
               relative  border-gray-300  dark:border-gray-800 border-2 w-80 rounded-3xl mr-70 text-white
@@ -62,10 +63,11 @@ const Worlflow = () => {
             style={{
               backgroundSize: "100%,100%",
               height: "209px",
+              width:"250px"
             }}
           >
             <div className="w-70 p-3 flex flex-col mt-32 lg:-mt-1">
-              <h1 className="font-bold text-2xl dark:text-gray-400 text-gray-700">Developer Mindset</h1>
+              <h1 className="font-bold text-2xl dark:text-gray-400 text-gray-700 px-2 xl:pt-25 xl:text-xl">Developer Mindset</h1>
               <p className="mt-2 max-w-md text-sm dark:text-gray-400 text-gray-700">
                 Stay curious embrace challenges, and keep learning to grow as a
                 developer
@@ -85,6 +87,7 @@ const Worlflow = () => {
               backgroundPosition: "bottom,right bottom",
               backgroundSize: "100%,70%",
               height: "209px",
+              width:"500px"
             }}
           >
             <div className="w-100 flex flex-col -mt-40 lg:pt-30">
