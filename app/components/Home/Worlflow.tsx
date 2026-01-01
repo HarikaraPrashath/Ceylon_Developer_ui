@@ -12,7 +12,8 @@ const Worlflow = () => {
             flex flex-col justify-center p-6
             bg-no-repeat bg-left
             bg-[linear-gradient(to_right,rgba(33,164,164,0.2),rgba(0,0,0,0.1)),url('/Images/Group%20669-light.png')]
-            dark:bg-[linear-gradient(to_right,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20669.png')]"
+            bg-[length:100%_100%,250px_200px]
+            dark:bg-[linear-gradient(to_right,rgba(30,160,164,0.20),rgba(0,0,0,0.1)),url('/Images/Group%20669.png')]"
             style={{ height: "209px", width: "500px" }}
           >
             <div className="max-w-[320px]">

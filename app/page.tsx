@@ -41,10 +41,9 @@ const page = () => {
             </p>
           </div>
 
-          <p className="mx-auto text-center mt-5 max-w-2xl text-sm px-4 sm:text-base sm:px-2 lg:text-lg max-[376px]:w-76 sm:w-90 lg:w-150">
-            Pushing the boundaries of what&apos;s possible in the digital us on
-            this journey into the future of technology
-          </p>
+          <h1 className="mx-auto text-center mt-5 max-w-2xl text-sm px-4 sm:text-base sm:px-2 lg:text-lg max-[376px]:w-76 sm:w-90 lg:w-150">
+            Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology.
+          </h1>
 
           {/* Buttons + Users */}
           <div className="flex flex-col-reverse items-center mt-10 space-y-3 sm:flex-row sm:space-y-0 mx-auto">
@@ -62,9 +61,8 @@ const page = () => {
                 height={90}
                 priority
               />
-              <p className="mt-0 ml-0 text-center text-sm sm:text-left sm:-mt-1.5 sm:-ml-3 sm:text-base min-[375px]:-mt-3">
-                Trusted by over +20K <br className="block sm:hidden" />
-                people in the world
+              <p className=" text-sm text-left sm:-mt-1.5 sm:-ml-3 sm:text-base min-[375px]:-mt-3 2xl:w-[170px] xl:w-[170px] lg:w-[170px] md:w-[170px] w-[170px]">
+                Trusted by over +20K people in the world
               </p>
             </div>
           </div>
@@ -249,7 +247,7 @@ const page = () => {
         <Worlflow />
 
         {/* line */}
-        <Image src="/Images/cureveLine.png" alt="cureveLine" width={1000} height={1000} className="w-[2000px] mx-auto mb-10" priority />
+        <Image src="/Images/cureveLine.png" alt="cureveLine" width={1000} height={1000} className="w-[2000px] mx-auto mb-10 xl:mt-5" priority />
 
         <Technologies />
 
