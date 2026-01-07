@@ -91,7 +91,7 @@ const Review = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl mb-4 text-balance">
+          <h2 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mb-4 text-balance">
             Why Customers{" "}
             <span className="[font-family:var(--font-kaushan)] pr-2">love</span>{" "}
             working with us

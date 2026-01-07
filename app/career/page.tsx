@@ -35,7 +35,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white">Case Studies</h1>
+          <h1 className="title text-white h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Career</h1>
         </div>
       ) : (
         <div
@@ -48,12 +48,12 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">Career</h1>
+          <h1 className="title text-black h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Career</h1>
         </div>
       )}
 
       <div className="sub-title-div">
-        <p className="paragraphy-push text-gray-700 dark:text-gray-300">
+        <p className=" text-center text-gray-700 dark:text-gray-300 body  sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl mx-2 mt-6 xl:w-[50%] xl:mx-auto xl:-mt-10">
           Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology.
         </p>
 
@@ -61,22 +61,22 @@ const Page = () => {
         <div className="mt-10 mx-4 sm:text-[1rem] md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] sm:mx-15 xl:mx-50 lg:mx-[0.1rem] ">
           <div className="lg:flex lg:flex-row">
             <div className="text-center mt-8 sm:text-start sm:w-[60%]">
-              <h1 className="text-2xl lg:text-[2.5rem]">
+              <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl xl:w-[110%]">
                 Discover Why{" "}
                 <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Ceylon Developers</span> is the Premier Destination for Advancing Your{" "}
                 <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Career</span>
               </h1>
             </div>
 
-            <div className="lg:w-200">
+            <div className="lg:w-200  xl:w-90 xl:ml-20">
               <ul className="mt-6">
-                <li className="my-2 text-lg lg:text-[1.2rem]">We are growing fast</li>
-                <li className="my-2 text-lg lg:text-[1.2rem]">Flexible hours</li>
-                <li className="my-2 text-lg lg:text-[1.2rem]">Work from anywhere</li>
-                <li className="my-2 text-lg lg:text-[1.2rem]">Paid vacations</li>
+                <li className="my-2 h4 sm:h4-sm md:h4-md lg:h4-lg xl:h4-xl 2xl:h4-2xl ">We are growing fast</li>
+                <li className="my-2 h4 sm:h4-sm md:h4-md lg:h4-lg xl:h4-xl 2xl:h4-2xl">Flexible hours</li>
+                <li className="my-2 h4 sm:h4-sm md:h4-md lg:h4-lg xl:h4-xl 2xl:h4-2xl">Work from anywhere</li>
+                <li className="my-2 h4 sm:h4-sm md:h4-md lg:h4-lg xl:h4-xl 2xl:h4-2xl">Paid vacations</li>
               </ul>
 
-              <p className="text-xs mt-3 lg:text-[1.3rem] sm:w-[70%] lg:w-[110%] text-gray-700 dark:text-gray-300">
+              <p className="body  sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl mb-7 mt-3 sm:w-[70%] lg:w-[110%] text-gray-700 dark:text-gray-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
@@ -93,7 +93,7 @@ const Page = () => {
 
           {/* Hiring Process Title */}
           <div className="text-center mt-8 mb-3 xl:mt-20">
-            <h1 className="text-3xl sm:text-[2rem] sm:w-[60%] mx-auto">
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl sm:w-[60%] mx-auto mb-6">
               Our <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Streamlined</span> Hiring Process
             </h1>
           </div>
@@ -171,21 +171,21 @@ const Page = () => {
 
           {/* Job Role Cards */}
           <div className="text-center mt-8 mb-6">
-            <h1 className="text-3xl">
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl">
               Find the <span className="[font-family:var(--font-kaushan)] text-custom-cyan">Best Role</span> for you
             </h1>
           </div>
 
           {/* Vacancy job cards */}
-          <div className="lg:grid lg:grid-cols-2 max-w-[1440px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24 max-w-[1440px] mx-auto">
             {[...Array(6)].map((_, i) => (
               <JobCard key={i} />
             ))}
           </div>
 
           {/* CTA section */}
-          <div className="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-950 py-4 px-2 mt-15 rounded-2xl md:w-[90%] md:mx-auto lg:w-[70%] transition-colors duration-500">
-            <h1 className="text-center mx-5 text-2xl text-gray-900 dark:text-white">
+          <div className="bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-950 py-4 px-2 mt-15 rounded-2xl md:w-[90%] md:mx-auto lg:w-[80%] w-[110%] transition-colors duration-500">
+            <h1 className="text-center mx-5 h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-gray-900 dark:text-white">
               Take the{" "}
               <span className="[font-family:var(--font-kaushan)] text-custom-cyan">
                 Next Step
@@ -223,12 +223,12 @@ const Step = ({ icon: Icon, title }) => (
 );
 
 const JobCard = () => (
-  <div className="mt-7 mx-auto">
-    <div className="rounded-xl w-80 sm:w-[30rem] md:w-[37rem] lg:w-[25rem] p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 dark:from-gray-700 dark:to-gray-900 transition">
-      <div className="rounded-[calc(1rem-5px)] p-1 bg-white dark:bg-gray-900 text-start px-5 transition">
-        <h1 className="text-xl my-3">Software Developer</h1>
-        <p className="text-sm my-3 text-gray-700 dark:text-gray-300">
-          We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications.
+  <div className=" mx-auto ">
+    <div className="rounded-xl sm:w-[27rem] md:w-[30rem] lg:w-[23rem]  p-[1px] bg-gradient-to-t from-gray-600 to-gray-200 dark:from-gray-700 dark:to-gray-900 transition">
+      <div className="rounded-[calc(1rem-5px)]  p-1 bg-white dark:bg-gray-900 text-start px-5 transition">
+        <h1 className="h4 sm:h4-sm md:h4-md lg:h4-lg xl:h4-xl 2xl:h4-2xl my-3">Software Developer</h1>
+        <p className="body  sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl my-3 text-gray-700 dark:text-gray-300">
+          We seek a skilled Software Developer to join our tech team. You will be responsible for developing and maintaining software applications. Strong programming skills and experience with various coding languages are required.
         </p>
         <div className="flex flex-row mb-3 justify-between">
           <div className="flex flex-col gap-2">

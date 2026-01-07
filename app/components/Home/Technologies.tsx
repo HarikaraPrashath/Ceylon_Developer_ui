@@ -6,7 +6,7 @@ const Technologies = () => {
   return (
     <div className="max-w-[1440px]">
       {/* Heading */}
-      <h1 className="mx-auto text-center text-3xl sm:w-90 xl:ml-130 max-w-[1440px]">
+      <h1 className="mx-auto h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center sm:w-90 xl:ml-130 xl:w-120 max-w-[1440px]">
         <span className="[font-family:var(--font-kaushan)] pr-2">
           Technologies
         </span>{" "}

@@ -40,7 +40,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white">Project Details</h1>
+          <h1 className="title text-white h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Project Details</h1>
         </div>
       ) : (
         <div
@@ -54,15 +54,14 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">Project Details</h1>
+          <h1 className="title text-black text-[40px] h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Project Details</h1>
         </div>
       )}
 
       {/* BODY CONTENT */}
-      <div className="px-5 mt-30 xl:mt-30">
-        <p className="text-sm text-center w-70 mx-auto sm:pt-10 md:pt-20 md:w-80 lg:w-120 lg:text-lg text-gray-700 dark:text-gray-300">
-          Pushing the boundaries of what&apos;s possible in the digital
-          realm. Join us on this journey into the future of technology.
+      <div className="px-3 mt-20 xl:mt-20">
+        <p className="text-center body  xl:w-120 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl mx-auto sm:pt-6 md:pt-20 md:w-83 lg:w-130 lg:text-lg text-gray-700 dark:text-gray-300 sm:w-100">
+          Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology.
         </p>
 
         {/* Main content */}
@@ -91,9 +90,9 @@ const Page = () => {
 
           {/* Description */}
           <div className="mx-2 mt-10 sm:mx-10 lg:mx-30 xl:mx-60">
-            <h1 className="text-3xl">SaaS Website</h1>
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl">SaaS Website</h1>
 
-            <p className="text-xs mt-3 lg:text-sm">
+            <p className="body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-2xl mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis ad est dolorum mollitia fuga magni accusamus sequi nisi minima delectus illo optio enim alias aperiam, totam minus amet eos omnis quas eveniet culpa facilis? Dolore architecto labore ex! Animi.
             </p>
 
@@ -107,7 +106,7 @@ const Page = () => {
                 className="w-[350px] mx-auto mb-10 sm:my-7 sm:flex sm:flex-col sm:mr-40 md:ml-1"
                 priority
               />
-              <p className="text-xs mt-3 lg:text-sm">
+              <p className="body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis ad est dolorum mollitia fuga magni accusamus sequi nisi minima delectus illo optio enim alias aperiam.
               </p>
             </div>
@@ -123,8 +122,8 @@ const Page = () => {
             </div>
 
             {/* Technologies Used */}
-            <h1 className="text-3xl text-center mt-5">Technologies Used</h1>
-            <p className="text-xs mt-5 lg:text-sm">
+            <h1 className="text-center mt-9 h2 sm:h2-sm md:h2-md xl:h2-xl 2xl:h2-2xl">Technologies Used</h1>
+            <p className="body sm:body-sm md:body-md lg:body-lg-lg xl:body-lg-xl 2xl:body-lg-2xl mt-5 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellendus magni eius vel consequuntur consequatur explicabo sunt! Natus, cum, dicta aut numquam illo dolor libero rerum error, quam consectetur alias.
             </p>
 
@@ -145,7 +144,7 @@ const Page = () => {
             </div>
 
             {/* Team Section */}
-            <h1 className="text-3xl mx-1 mt-5">Team Members Involved</h1>
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mx-1 mt-7 ">Team Members Involved</h1>
             <div className="md:flex md:flex-row md:gap-10">
               {[1, 2].map((n) => (
                 <div key={n} className="md:block sm:hidden px-3 py-2 border border-gray-600 rounded-xl mt-10">
@@ -158,22 +157,22 @@ const Page = () => {
                     priority
                   />
                   <div className="text-center pt-4">
-                    <h1 className="text-lg font-semibold">Michael R</h1>
-                    <p className="text-sm font-light pt-1">Software Engineer</p>
+                    <h1 className="body-lg sm:body-lg-sm md:body-lg-md  lg:body-lg-lg xl:body-lg-xl 2xl:body-lg-2xl font-semibold">Michael R</h1>
+                    <p className="body sm:body-sm md:body-md  lg:body-lg xl:body-xl 2xl:body-2xl font-light pt-1">Software Engineer</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Related Works */}
-            <h1 className="text-3xl mx-1 mt-7 mb-5">Related Works</h1>
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mx-1 mt-14 mb-5">Related Works</h1>
             <div className="md:flex md:flex-row md:gap-20 lg:justify-around xl:justify-start xl:gap-10">
               <Image
                 src="/Images/works.png"
                 alt="Work 1"
                 width={1000}
                 height={1000}
-                className="rounded-sm sm:w-80"
+                className="rounded-sm sm:w-80 mb-5"
                 priority
               />
               <Image
@@ -187,14 +186,24 @@ const Page = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-4 px-2 mt-15 rounded-2xl text-center sm:w-110 sm:mx-auto md:w-139 lg:w-150 transition-colors duration-300">
-              <h1 className="text-3xl w-72 sm:mx-auto sm:text-2xl">
-                Let&apos;s Turn Your
-                <span className="[font-family:var(--font-kaushan)] pl-2 text-custom-cyan">Dream</span>{" "}
-                into
-                <span className="[font-family:var(--font-kaushan)] pl-2 text-custom-cyan">Reality</span>
+            <div className="bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-4 px-2 mt-15 rounded-2xl text-center transition-colors duration-300">
+              <h1 className="h2 sm:h2-sm md:h2-md  lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center">
+                <span className="block">
+                  Let&apos;s Turn Your
+                </span>
+
+                <span className="block">
+                  <span className="[font-family:var(--font-kaushan)] px-2">
+                    Dream
+                  </span>
+                  into
+                  <span className="[font-family:var(--font-kaushan)] px-2">
+                    Reality
+                  </span>
+                </span>
               </h1>
-              <p className="text-center mt-6 text-sm mx-5 sm:text-sm text-gray-700 dark:text-gray-300">
+
+              <p className="text-center body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-xl mt-6 lg:w-130 mx-5 sm:w-80 sm:mx-auto text-gray-700 dark:text-gray-300">
                 Pushing the boundaries of what&apos;s possible in the digital realm.
                 Join us on this journey into the future of technology.
               </p>

@@ -41,7 +41,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white dark:text-gray-100">Contact Us</h1>
+          <h1 className="title text-white dark:text-gray-100 h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Contact Us</h1>
         </div>
       ) : (
         <div
@@ -54,24 +54,24 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">Contact Us</h1>
+          <h1 className="title text-black h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Contact Us</h1>
         </div>
       )}
 
       {/* BODY */}
       <div className="sub-title-div">
-        <p className="paragraphy-push text-gray-700 dark:text-gray-300">
+        <p className="mx-auto text-center lg:-mt-10 w-90 text-gray-700 dark:text-gray-300 body  xl:w-120 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
           Pushing the boundaries of what&apos;s possible in the digital realm.
           Join us on this journey into the future of technology
         </p>
 
         {/* main content */}
         <div className="mt-10 mx-1 sm:mx-[1rem] md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px]">
-          <h1 className="text-center text-2xl sm:text-[1.8rem]">
+          <h1 className="text-center h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl">
             We&apos;re Here to
             <span className="[font-family:var(--font-kaushan)] pr-2">Help</span>
           </h1>
-          <p className="mt-5 text-center text-gray-700 dark:text-gray-300">
+          <p className="mt-5 text-center mx-auto lg:w-10 text-gray-700 dark:text-gray-300 body  xl:w-120 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
             Our team is ready to support you with expert advice & solutions.
           </p>
 

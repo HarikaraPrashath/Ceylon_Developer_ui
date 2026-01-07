@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className="max-w-[1440px] mx-auto px-4 bg-white text-black dark:bg-black dark:text-white">
       <div className="xl:hidden ">
-        <h1 className="text-4xl mt-10 sm:text-5xl">
+        <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-10 mx-auto">
           Discover our{" "}
           <span className="[font-family:var(--font-kaushan)] pr-2">talented{" "}</span>
           and{" "}
@@ -136,12 +136,13 @@ const Card = () => {
         </div>
       </div>
       <div className="hidden xl:block">
-        <h1 className="text-5xl xl:w-150  ml-60 xl:ml-80 text-center  mt-10 xl:text-4xl 2xl:ml-70">
+        <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl
+               xl:w-130 mx-auto text-center mt-10 xl:mt-20">
           Discover our{" "}
-          <span className="[font-family:var(--font-kaushan)] pr-2 ">talented{" "}</span>
+          <span className="[font-family:var(--font-kaushan)] pr-2">talented</span>
           and{" "}
-          <span className="[font-family:var(--font-kaushan)] pr-2">Dedicated{" "}</span>{" "}
-          team{" "}
+          <span className="[font-family:var(--font-kaushan)] pr-2">Dedicated</span>
+          team
         </h1>
 
         <div className="">

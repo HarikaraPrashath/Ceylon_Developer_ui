@@ -190,13 +190,13 @@ export default function ServicesSwiper() {
       <div className="mx-auto relative w-full max-w-[1440px] lg:mt-110 xl:-mt-5">
         <div className="text-center">
           {" "}
-          <h1 className="text-center lg:-mt-100 2xl:text-[72px] xl:text-[64px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-3xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-8">
+          <h1 className="text-center lg:-mt-100 h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl max-[640px]:flex max-[640px]:flex-col xl:mt-10 2xl:-mt-8">
             <span className="[font-family:var(--font-kaushan)] px-4 text-gray-900 dark:text-gray-100">
               Services
             </span>
             <span className="text-gray-900 dark:text-gray-100">We offer</span>
           </h1>
-          <p className="mt-6 xl:w-155 text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[16px] sm:text-[15px]">
+          <p className="mt-6 xl:w-119 text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
             Pushing the boundaries of what&apos;s possible in the digital realm{" "}
             Join us on this journey into the future of technology
           </p>

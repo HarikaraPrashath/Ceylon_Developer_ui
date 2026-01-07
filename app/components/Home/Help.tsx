@@ -44,7 +44,7 @@ const Help = () => {
         backgroundColor: "", // light mode background
       }}
     >
-      <h1 className="max-[376px]:text-4xl text-center max-[376px]:mt-5 sm:text-3xl 2xl:text-4xl md:text-3xl 2xl:mt-20 mx-5 lg:text-3xl">
+      <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center max-[376px]:mt-5 2xl:mt-20 mx-2 ">
         How
         <span className="[font-family:var(--font-kaushan)] pr-2">
           Ceylon Developers

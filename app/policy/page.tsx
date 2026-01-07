@@ -42,7 +42,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white">Privacy Policy</h1>
+          <h1 className="title text-white h2 sm:h1-sm md:h1-md lg:h1-xl xl:h1-xl 2xl:h1-2xl">Privacy Policy</h1>
         </div>
       ) : (
         <div
@@ -55,31 +55,30 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">Privacy Policy</h1>
+          <h1 className="title text-black text-[40px] sm:text-[40px] h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Privacy Policy</h1>
         </div>
       )}
 
       {/* BODY CONTENT */}
       <div className="sub-title-div">
-        <p className="paragraphy-push text-gray-700 dark:text-gray-300 text-center max-w-[800px] mx-auto">
-          Pushing the boundaries of what&apos;s possible in the digital realm.
-          Join us on this journey into the future of technology.
+        <p className="body sm:body-sm md:body-md lg:mx-80 lg:body-lg xl:body-xl 2xl:body-2xl md:mx-44 md:-mt-10 text-gray-700 dark:text-gray-300 text-center mx-4 mt-10">
+          Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology.
         </p>
 
-        <div className="mt-10 mx-4 md:text-[1.1rem] md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] text-gray-800 dark:text-gray-200">
-          <p>
+        <div className="mt-10 mx-4 body md:mx-[4rem] 2xl:mx-[6rem] max-w-[1440px] text-gray-800 dark:text-gray-200 ">
+          <p className="body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-2xl ">
             Ceylon Developer is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our services, website, and other digital platforms.
           </p>
 
           {/* Phase -1 */}
-          <Section title="1. Information We Collect">
-            <p>
+          <Section title="1. Information We Collect" >
+            <p >
               We collect different types of information to provide and improve
               our services:
             </p>
 
             <Bullet>
-              <b>Personal Information:</b> When you sign up or interact with
+              <b >Personal Information:</b> When you sign up or interact with
               Ceylon Developer, we may collect details like your name, email,
               and other contact information.
             </Bullet>
@@ -197,16 +196,20 @@ const Section = ({
   bottom?: boolean;
 }) => (
   <div className={`mt-10 ${bottom ? "mb-20" : ""}`}>
-    <h2 className="mb-4 text-xl text-custom-cyan dark:text-custom-cyan">
-      {title}
-    </h2>
+  <h2 className="mb-4 body-lg sm:body-lg-sm md:body-lg-md lg:body-lg-lg xl:body-xl 2xl:body-2xl font-semibold text-custom-cyan dark:text-custom-cyan">
+    {title}
+  </h2>
+
+  <div className="space-y-3  body sm:body-sm md:body-md lg:body-lg-lg xl:body-xl 2xl:body-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
     {children}
   </div>
+</div>
+
 );
 
 /* Bullet component */
 const Bullet = ({ children }: { children: React.ReactNode }) => (
-  <div className="flex items-start mt-5 ml-2 text-gray-800 dark:text-gray-200">
+  <div className="flex items-start mt-5 ml-2 text-gray-800 dark:text-gray-200 body sm:body-sm md:body-md lg:body-lg-lg xl:body-xl 2xl:body-2xl">
     <div className="mt-[2px]">
       <CircleSmall
         fill="currentColor"

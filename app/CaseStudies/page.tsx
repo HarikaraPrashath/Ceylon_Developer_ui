@@ -39,7 +39,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white">Case Studies</h1>
+          <h1 className="title text-white h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Case Studies</h1>
         </div>
       ) : (
         <div
@@ -52,13 +52,13 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">Case Studies</h1>
+          <h1 className="title text-black h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">Case Studies</h1>
         </div>
       )}
 
       {/* BODY CONTENT */}
       <div className="sub-title-div">
-        <p className="paragraphy-push text-gray-700 dark:text-gray-300">
+        <p className="text-center mx-auto text-gray-700 dark:text-gray-300 body w-75 mt-7 body sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl xl:w-130 xl:-mt-10">
           Pushing the boundaries of hat&apos;s possible in the digital realm.
           Join us on this journey into the future of technology
         </p>
@@ -83,7 +83,7 @@ const Page = () => {
               </span>{" "}
             </h1>
 
-            <p className="text-center mt-6 w-59 text-xs">
+            <p className="text-center mt-6 w-59 body sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
               Pushing the boundaries of what&apos;s possible in the digital
               real. Join us this journey into the future of technology
             </p>
@@ -96,7 +96,7 @@ const Page = () => {
       </div>
 
       {/* DESKTOP VERSION */}
-      <div className="mx-3 md:mx-10 lg:mx-10 xl:mx-40 hidden sm:block">
+      <div className="mx-3 md:mx-10 lg:mx-10 xl:mx-50 hidden sm:block ">
         <CaseCardDesktop />
         <CaseCardDesktop />
         <CaseCardDesktop />
@@ -104,7 +104,7 @@ const Page = () => {
 
       {/* final section */}
       <div className="bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-6 px-4 mx-3 mt-10 rounded-2xl sm:w-[520px] sm:mx-auto lg:w-[640px] xl:w-[760px] transition-colors duration-300">
-        <h1 className="text-center text-2xl lg:text-3xl text-gray-800 dark:text-white">
+        <h1 className="text-center  lg:text-3xl text-gray-800 dark:text-white">
           We&apos;re eager to{" "}
           <span className="[font-family:var(--font-kaushan)] pr-2">Discuss</span>{" "}
           how we can elevate{" "}
@@ -113,7 +113,7 @@ const Page = () => {
           </span>
         </h1>
 
-        <p className="text-center mt-6 text-gray-700 dark:text-gray-300 w-[240px] sm:w-[360px] mx-auto text-sm">
+        <p className="text-center mt-6 text-gray-700 dark:text-gray-300 w-[240px] sm:w-[360px] mx-auto body sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
           Pushing the boundaries of what&apos;s possible in the digital realm.
           Join us on this journey into the future of technology.
         </p>
@@ -145,8 +145,8 @@ const CaseCard = () => (
       <Tag>Framer Development</Tag>
     </div>
     <div>
-      <h1 className="text-2xl pt-1 pb-1 font-semibold ml-1">SaaS Website</h1>
-      <p className="ml-1 text-sm">
+      <h1 className="text-2xl pt-1 pb-1 font-semibold ml-1 h2 mt-6">SaaS Website</h1>
+      <p className="ml-1 body sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         possimus temporibus sapiente non, numquam modi aut quo consectetur saepe
         qui voluptatem reprehenderit sed, obcaecati blanditiis, pariatur eveniet
@@ -177,7 +177,7 @@ const CaseCardDesktop = () => (
         <h1 className="text-2xl pt-1 pb-1 font-semibold ml-1 sm:text-3xl sm:my-3 xl:text-4xl xl:mb-6 xl:mt-7">
           SaaS Website
         </h1>
-        <p className="ml-1 text-sm">
+        <p className="ml-1 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           possimus temporibus sapiente non, numquam modi aut quo consectetur
           saepe qui voluptatem reprehenderit sed, obcaecati blanditiis,

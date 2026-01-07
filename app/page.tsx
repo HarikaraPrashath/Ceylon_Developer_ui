@@ -93,7 +93,7 @@ const page = () => {
           <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30">
             {/* left content */}
             <div className="lg:w-1/2">
-              <div className="text-center lg:text-start text-3xl sm:text-3xl xl:text-4xl max-w-[290px] mx-auto lg:mx-0 ">
+              <div className="text-center lg:text-start h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl max-w-[290px] mx-auto lg:mx-0 ">
                 <h1>To upscale your</h1>
                 <span className="[font-family:var(--font-kaushan)] pr-3">business</span>
                 to the next level
@@ -149,13 +149,13 @@ const page = () => {
         </div>
 
         {/* Roadmap */}
-        <div className="-mt-10 lg:mt-10 md:mt-40 sm:mt-20 ">
-          <h1 className="text-3xl text-center lg:text-4xl">
+        <div className="-mt-10 lg:mt-10 md:mt-40 sm:mt-20  ">
+          <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center ">
             Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
             <span className="[font-family:var(--font-kaushan)]">development</span> approach
           </h1>
 
-          <div className="mx-auto mt-6 md:mt-50 w-full max-w-[1000px] 2xl:-mt-5">
+          <div className="mx-auto mt-6 md:mt-50 w-full max-w-[1000px] 2xl:-mt-5 lg:-mt-10">
             {/* Light mode (large screens only) */}
             <Image
               src="/Images/desktop-dark-roadmap.png"

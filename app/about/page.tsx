@@ -59,7 +59,7 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-white">About</h1>
+          <h1 className="title text-white h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">About</h1>
         </div>
       ) : (
         <div
@@ -72,12 +72,12 @@ const Page = () => {
           }}
         >
           <Navbar />
-          <h1 className="title text-black">About</h1>
+          <h1 className="title text-black h1 sm:h1-sm md:h1-md lg:h1-lg xl:h1-xl 2xl:h1-2xl">About</h1>
         </div>
       )}
 
       <div className="sub-title-div">
-        <p className="paragraphy-push">
+        <p className=" body text-center w-80 lg:w-90mx-auto mx-auto lg:-mt-10 lg:w-120 mt-8 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
           Pushing the boundaries of hat&apos;s possible in the digital
           realm.Join us on this journey into the future of technology
         </p>
@@ -86,22 +86,22 @@ const Page = () => {
           <div className="mt-7 flex flex-col lg:flex-row-reverse lg:justify-center md:gap-5">
             {/* flex content place */}
             <div className="lg:w-90">
-              <h1 className="text-4xl text-center mt-10">
+              <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center mt-10">
                 Our{" "}
                 <span className="[font-family:var(--font-kaushan)] pr-2">
                   Story
                 </span>{" "}
               </h1>
 
-              <p className="mt-4 lg:mt-9">
+              <p className="mt-4 lg:mt-9  body  xl:w-120 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
                 corrupti unde excepturi cumque ipsam sapiente accusamus officia
                 quae, necessitatibus fugiat ut eaque deserunt labore illum maxime
                 nesciunt commodi consequuntur molestias!
               </p>
 
-              <div>
-                <div className="flex gap-4 mt-4">
+              <div className=" body  xl:w-120 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl">
+                <div className="flex gap-4 mt-4 ">
                   <div className="text-black rounded-full bg-custom-cyan w-6 h-6 ">
                     <Check className="p-1" />
                   </div>{" "}
@@ -140,13 +140,13 @@ const Page = () => {
                 width={800}
                 height={800}
                 priority
-                className="hidden dark:block border w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px]"
+                className="hidden dark:block border w-[350px] h-[252px] sm:w-[500px] sm:h-[400px] md:w-[550px] md:h-[370px] xl:w-[900px] xl:h-[300px]"
               />
             </div>
 
           </div>
 
-          <h1 className="text-4xl text-center mt-10 sm:text-5xl md:text-4xl lg:text-5xl xl:text-4xl">
+          <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center mt-10 ">
             Why Choose{" "}
             <span className="[font-family:var(--font-kaushan)] pr-2">
               Ceylon Developers?
@@ -297,10 +297,10 @@ const Page = () => {
           </div>
 
           {/* Mission , Goal , Vision represent */}
-          <div className="lg:flex lg:flex-row lg:justify-center lg:mt-10">
-            <div>
+          <div className="lg:flex lg:flex-row lg:justify-center lg:mt-10  xl:w-200   ">
+            <div className="">
               {/* Tabs */}
-              <div className="mt-10 sm:gap-8 flex flex-row gap-4">
+              <div className="mt-10 sm:gap-8 flex flex-row gap-4 ">
                 <button
                   type="button"
                   onClick={() => setActiveTab("mission")}
@@ -334,10 +334,10 @@ const Page = () => {
               </div>
 
               {/* Dynamic Content */}
-              <h1 className="text-xl w-60 mt-5 sm:w-90 lg:w-80 ">
+              <h1 className="body-lg sm:body-lg-sm  md:body-lg-md lg:body-lg-lg xl:body-lg-xl 2xl:body-lg-2xl w-60 mt-5 sm:w-90 lg:w-80 ">
                 {content[activeTab].title}
               </h1>
-              <p className="w-90 text-base mt-5 sm:w-140 lg:w-120">
+              <p className="w-90 body xl:w-90 sm:body-sm  md:body-md lg:body-lg xl:body-xl 2xl:body-2xl mt-5 sm:w-140 lg:w-120">
                 {content[activeTab].text}
               </p>
             </div>
@@ -349,7 +349,7 @@ const Page = () => {
                 width={200}
                 height={200}
                 priority
-                className="mx-auto mt-5 w-80 sm:mt-8 sm:w-110"
+                className="mx-auto mt-5 w-80 sm:mt-8 sm:w-110 xl:w-140"
               />
             </div>
           </div>
@@ -359,7 +359,7 @@ const Page = () => {
 
           <Card />
           <div className="bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-6 px-4 mx-3 mt-10 rounded-2xl sm:w-[520px] sm:mx-auto lg:w-[640px] xl:w-[760px] transition-colors duration-300">
-            <h1 className="text-center text-2xl lg:text-3xl text-gray-800 dark:text-white">
+            <h1 className="text-center h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-gray-800 dark:text-white">
               Ready to
               <span className="[font-family:var(--font-kaushan)] pl-2">
                 Manage
