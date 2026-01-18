@@ -35,7 +35,7 @@ const Help = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat text-black dark:text-white"
+      className="relative bg-cover bg-center bg-no-repeat text-black dark:text-white "
       style={{
         backgroundImage: "url('/Images/fAqBg.png')",
         backgroundPosition: "right center",
@@ -44,33 +44,52 @@ const Help = () => {
         backgroundColor: "", // light mode background
       }}
     >
-      <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center max-[376px]:mt-5 2xl:mt-20 mx-2 ">
-        How
+      <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center 
+      lg:w-[698px] lg:h-[55px] lg:font-[500] lg:text-[48px] lg:leading-[55px] lg:mx-auto
+      xl:w-[1222px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:font-[500]
+      ">
+        How{}
         <span className="[font-family:var(--font-kaushan)] pr-2">
-          Ceylon Developers
+           Ceylon Developers
         </span>{" "}
         help you?
       </h1>
 
-      <div className="space-y-4 mt-10">
+      <div className="w-[354px]  h-[530px] sm:w-[576px] sm:h-[554px] md:w-[643px] md:h-[652px] md:gap-[28px] mx-auto mt-10  
+      ">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="mx-5 sm:mx-10 md:mx-15 lg:mx-48 rounded-xl p-3 border-2 text-sm sm:text-lg 
+            className=" mt-5 font-[400] text-[20px] leading-[25px] border-[1px] py-[20px] px-[30px] w-[354px] h-[80px] rounded-[30px]
+                        sm:w-[576px] sm:h-[78px] sm:rounded-[30px] sm:border-[1px]  sm:py-[25px] sm:px-[35px] sm:gap-[10px]
+                        md:w-[643px] md:h-[90px] md:rounded-[30px] md:border-[1px] md:px-[35px] md:py-[30px]
+                        lg:w-[898px] lg:h-[92px] lg:rounded-[30px] lg:border-[1px] lg:py-[30px] lg:px-[35px] lg:-ml-30
+                        xl:w-[1208px] xl:h-[102px] xl:rounded-[30px] xl:border-[1px] xl:py-[30px] xl:px-[35px] xl:gap-[10px] xl:-ml-60
                        bg-gray-100 dark:bg-transparent 
                        border-gray-300  dark:border-green-950 
                        transition-colors duration-300"
           >
             {/* Question */}
             <div
-              className="flex justify-between items-center cursor-pointer"
+              className="flex justify-between items-center cursor-pointer w-[294px]   -mt-2 
+              sm:w-[506px] sm:h-[28px] sm:gap-[148px] 
+              lg:w-[828px] lg:h-[32px] lg:gap-[148px] 
+              xl:w-[1138px] xl:h-[42px] xl:gap-[148px]
+              "
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <h1 className="font-medium text-gray-900 dark:text-white max-[376px]:w-60">
+              <h1 className="font-[400] text-[20px] leading-[25px]  text-gray-900 dark:text-white w-[230px] h-[50px]
+              sm:w-[338px] sm:h-[56px] sm:font-[400] sm:text-[22px] sm:leading-[28px]  sm:mt-2 
+              md:w-[576px] md:h-[30px] md:font-[400] md:text-[24px] md:leading-[30px]
+              lg:w-[650px] lg:h[32px] lg:text-[26px] lg:leading-[32px] 
+              xl:w-[948px] xl:h-[36px] xl:text-[30px] xl:leading-[36px]
+              ">
                 {faq.question}
               </h1>
               {openIndex === index ? (
-                <Minus className="text-gray-900 dark:text-white" />
+                <Minus className="text-gray-900 dark:text-white w-[25px] h-[25px] sm:w-[20px] sm:h-[20px] lg:w-[30px] lg:h-[30px]
+                xl:w-[42px] xl:h-[42px]
+                " />
               ) : (
                 <Plus className="text-gray-900 dark:text-white" />
               )}
