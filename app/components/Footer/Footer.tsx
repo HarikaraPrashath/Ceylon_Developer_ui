@@ -24,42 +24,54 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Quick links</h3>
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
-                  <Link
+                  <li>
+                    <Link
                       href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Home
-                  </Link>
-                  <Link
-                      href="#"
+                      </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Service
-                  </Link>
-                  <Link
-                      href="#"
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Projects
                   </Link>
+                  </li>
+                  <li>
                   <Link
                       href="/about"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       About
                   </Link>
+                  </li>
+                  <li>
                   <Link
-                      href="#"
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Client
                   </Link>
+                  </li>
+                  <li>
                   <Link
-                      href="contact"
+                      href="/contact"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Contact
                   </Link>
+                  </li>
                 </ul>
               </div>
 
@@ -67,37 +79,46 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Important</h3>
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                  <li>
                   <Link
                       href="/career"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Career
                   </Link>
+                    </li>
+                  <li>
                   <Link
-                      href="#"
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Terms &amp; Conditions
                   </Link>
+                    </li>
+                  <li>
                   <Link
                       href="/policy"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Privacy Policy
                     </Link>
-                  </Link>
+                   </li>
+                  <li>
                   <Link
-                      href="#"
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Cookies Policy
                   </Link>
+                  </li>
+                  <li>
                   <Link
-                      href="#"
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Social Work
                   </Link>
+                    </li>
                 </ul>
               </div>
 
@@ -154,42 +175,54 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick links</h3>
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <li>
                 <Link
                     href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Home
                 </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Service
                   </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Projects
                 </Link>
+                  </li>
+                <li>
                 <Link
                     href="/about"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     About
                 </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Client
                 </Link>
+                  </li>
+                <li>
                 <Link
                     href="/contact"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Contact
                 </Link>
+                  </li>
               </ul>
             </div>
 
@@ -197,36 +230,46 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important</h3>
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <li>
                 <Link
                     href="/career"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Career
                 </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Terms &amp; Conditions
                   </Link>
+                  </li>
+                <li>
                 <Link
                     href="/policy"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Privacy Policy
                 </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Cookies Policy
                 </Link>
+                  </li>
+                <li>
                 <Link
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Social Work
                 </Link>
+                  </li>
               </ul>
             </div>
 
