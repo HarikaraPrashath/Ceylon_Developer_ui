@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <div className="transition-colors duration-300 bg-white text-black  dark:bg-black dark:text-white">
@@ -23,54 +24,42 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Quick links</h3>
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
-                  <li>
-                    <a
+                  <Link
                       href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Home
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Service
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="/about"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       About
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Client
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="contact"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Contact
-                    </a>
-                  </li>
+                  </Link>
                 </ul>
               </div>
 
@@ -78,46 +67,37 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Important</h3>
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
-                  <li>
-                    <a
+                  <Link
                       href="/career"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Career
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Terms &amp; Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="/policy"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                    </Link>
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Cookies Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
+                  </Link>
+                  <Link
                       href="#"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Social Work
-                    </a>
-                  </li>
+                  </Link>
                 </ul>
               </div>
 
@@ -174,54 +154,42 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick links</h3>
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
-                <li>
-                  <a
+                <Link
                     href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Home
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Service
-                  </a>
-                </li>
-                <li>
-                  <a
+                  </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Projects
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="/about"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     About
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Client
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="/contact"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Contact
-                  </a>
-                </li>
+                </Link>
               </ul>
             </div>
 
@@ -229,46 +197,36 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Important</h3>
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
-                <li>
-                  <a
+                <Link
                     href="/career"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Career
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Terms &amp; Conditions
-                  </a>
-                </li>
-                <li>
-                  <a
+                  </Link>
+                <Link
                     href="/policy"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Cookies Policy
-                  </a>
-                </li>
-                <li>
-                  <a
+                </Link>
+                <Link
                     href="#"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Social Work
-                  </a>
-                </li>
+                </Link>
               </ul>
             </div>
 
