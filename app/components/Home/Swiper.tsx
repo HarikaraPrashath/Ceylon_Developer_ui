@@ -180,7 +180,7 @@ export default function ServicesSwiper() {
   };
 
   return (
-    <section className="-pt0 px-2 sm:px-2 bg-white dark:bg-black min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="px-2 sm:px-2 bg-white dark:bg-black 2xl:h-[773px] xl:h-[690px] lg:h-[582px] lg:w-[982px] xl:w-[1280px] 2xl:w-[1440px] flex items-center justify-center relative overflow-hidden mx-auto ">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-40 h-40 border border-custom-cyan rounded-lg rotate-12"></div>
         <div className="absolute top-32 right-20 w-32 h-32 border border-custom-cyan rounded-lg -rotate-12"></div>
@@ -189,12 +189,12 @@ export default function ServicesSwiper() {
         <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-custom-cyan rounded-lg rotate-[30deg]"></div>
       </div>
 
-      <div className="mx-auto relative w-full max-w-[1440px] -mt-10 lg:mt-80 2xl:-mt-60">
+      <div className="mx-auto relative w-full max-w-[1440px]  ">
         <div className="text-center">
           {" "}
           <h1 className=" h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
-          text-center lg:-mt-100  max-[640px]:flex max-[640px]:flex-col 
-           
+          text-center   max-[640px]:flex max-[640px]:flex-col 
+          
           ">
             <span className="[font-family:var(--font-kaushan)] px-4 text-gray-900 dark:text-gray-100">
               Services

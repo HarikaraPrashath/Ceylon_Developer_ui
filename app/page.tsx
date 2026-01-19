@@ -142,11 +142,18 @@
             />
           </div>
 
+        {/* Starting body section  */}
+
+        <div className="min-h-screen bg-white dark:bg-black flex justify-center">
+         <div  className="w-full max-w-[1440px] px-4">
+    
           <ServicesSwiper />
 
           {/* Activities */}
 
-          <div className="relative mt-10 mx-auto max-w-[1536px] px-4 2xl:px-12 2xl:-mt-140">
+          <div className="relative mx-auto px-4 2xl:mt-10 2xl:px-10  2xl:h-[583px]
+           
+          ">
             <Image
               src="/Images/Vector.png"
               alt="vector"
@@ -155,7 +162,7 @@
               className="absolute top-0 right-0 z-30 opacity-90 pointer-events-none hidden md:block"
             />
 
-            <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30 -mt-20 lg:mx-15 xl:ml-40">
+            <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30 -mt-20 lg:mx-15   2xl:w-[1150px]">
               {/* left content */}
               <div className="lg:w-[425px] lg:h-[468px] mx-auto ">
                 <div className="text-center  ">
@@ -177,6 +184,7 @@
                   lg:w-[425px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px] 
                   xl:w-[535px] xl:h-[112px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
                   2xl:w-[576px] 2xl:h-[120px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px] 
+                
                   ">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.
                   </p>
@@ -280,8 +288,8 @@
           </div>
 
           {/* Roadmap */}
-          <div className="-mt-10 lg:mt-10 md:-mt-15 sm:mt-20 2xl:mt-60 ">
-            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center 
+          <div className="  ">
+            <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center
             ">
               Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
               <span className="[font-family:var(--font-kaushan)]">development</span> approach
@@ -383,10 +391,10 @@
 
           <Technologies />
 
-          <div className="mt-10 md:mx-5 xl:mt-15 lg:block w-[345px] h-[815px]  mx-auto sm:hidden lg:flex xl:ml-30">
-            <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 xl:mx-10  lg:ml-6  ">
+          <div className="mt-10 md:mx-5 xl:mt-15 lg:block w-[345px] h-[815px]  mx-auto sm:hidden lg:flex">
+            <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 xl:mx-10 2xl:h-[700px] ">
               {/* Left section */}
-              <div className="lg:w-[40%]  xl:ml-10  xl:w-[562px] xl:h-[455px] ">
+              <div className="lg:w-[40%]  xl:w-[562px] xl:h-[455px] ">
                 <h1 className="text-center w-[286px] h-[35px] font-medium text-[36px] leading-[35px] mx-auto
                 lg:w-[375px] lg:h-[55px] lg:font-[500] lg:text-[48px] lg:leading-[55px]
                 xl:w-[562px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:text-start
@@ -566,6 +574,8 @@
               ">Get Started</button>
             </div>
           </div>
+  </div>
+</div>
         </div>
       </div>
     );

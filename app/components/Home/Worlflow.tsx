@@ -68,29 +68,31 @@ const Worlflow = () => {
         </div>
 
         {/* ROW 2 */}
-        <div className="flex flex-row-reverse justify-center mt-6 max-w-[1440px] mx-auto gap-6 2xl:w-[1190px] 2xl:h-[375px] ">
+        <div className="flex flex-row-reverse justify-center mt-6 max-w-[1440px] mx-auto gap-6 2xl:w-[1190px] 2xl:h-[375px]">
           <div
             className="border border-gray-300 dark:border-gray-800 rounded-3xl
-            bg-no-repeat bg-top
-            xl:w-[345.25px] xl:h-[350px.61px] xl:rounded-[23.38px] xl:border-[4.68px]
-            2xl:w-[345.25px] 2xl:h-[350px.61px] 2xl:rounded-[23.38px] 2xl:border-[4.68px]
+            bg-no-repeat bg-top 
+            xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[4.68px]
+            2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[5px]
             lg:w-[270px] lg:h-[329px] lg:rounded-[25px] lg:border-[2px]
+            xl:flex xl:flex-col xl:justify-end
+
             bg-[linear-gradient(to_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
             dark:bg-[linear-gradient(to_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]"
             
           >
-            <div className="p-4 mt-24">
+            <div className="p-4 pt-2">
               <h1 className="font-bold text-xl text-gray-700 dark:text-gray-400
               lg:w-[191px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px]
                xl:w-[298.32px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
-               2xl:w-[319.06px] 2xl:h-[10px] 2xl:text-[30px] 2xl:leading-[100%] xl:mt-15
+               2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%]
               ">
                 Developer Mindset
               </h1>
-              <p className="lg:mt-10 text-sm text-gray-700 dark:text-gray-400
+              <p className="  text-gray-700 dark:text-gray-400
               lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
               xl:w-[298.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
-              2xl:w-[319.90px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] xl:-mt-0 xl:mt-4
+              2xl:w-[319.90px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
                 Stay curious, embrace challenges, and keep learning to grow as a developer.
               </p>
@@ -112,14 +114,14 @@ const Worlflow = () => {
               <h1 className="font-bold text-2xl text-gray-700 dark:text-gray-400
               lg:w-[309px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px]
               xl:w-[481.52px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
-              2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 2xl:ml-60 2xl:-mt-30
+              2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 
 
               ">
                 Your Workflow
               </h1>
               <p className="mt-2 lg:w-[443.57px] lg:h-[75px] lg:text-[18px] lg:leading-[25px] lg:font-[400] text-gray-700 dark:text-gray-400
               xl:w-[565.93px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
-              2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:-mt-10
+              2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
                 Automate repetitive tasks and streamline yur workflows with our powerful automation features. Reduce manual effort, eliminate errors.
               </p>

@@ -35,7 +35,7 @@ const Help = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat text-black dark:text-white "
+      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-40 2xl:pt-60"
       style={{
         backgroundImage: "url('/Images/fAqBg.png')",
         backgroundPosition: "right center",
@@ -46,7 +46,7 @@ const Help = () => {
     >
       <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center 
       lg:w-[698px] lg:h-[55px] lg:font-[500] lg:text-[48px] lg:leading-[55px] lg:mx-auto
-      xl:w-[1222px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:font-[500]
+      xl:w-[1222px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:font-[500] 
       ">
         How{}
         <span className="[font-family:var(--font-kaushan)] pr-2">
@@ -63,7 +63,7 @@ const Help = () => {
             className=" mt-5 font-[400] text-[20px] leading-[25px] border-[1px] py-[20px] px-[30px] w-[354px] h-[80px] rounded-[30px]
                         sm:w-[576px] sm:h-[78px] sm:rounded-[30px] sm:border-[1px]  sm:py-[25px] sm:px-[35px] sm:gap-[10px]
                         md:w-[643px] md:h-[90px] md:rounded-[30px] md:border-[1px] md:px-[35px] md:py-[30px]
-                        lg:w-[898px] lg:h-[92px] lg:rounded-[30px] lg:border-[1px] lg:py-[30px] lg:px-[35px] lg:-ml-30
+                        lg:w-[898px] lg:h-[92px] lg:rounded-[30px] lg:border-[1px] lg:py-[30px] lg:px-[35px] 
                         xl:w-[1208px] xl:h-[102px] xl:rounded-[30px] xl:border-[1px] xl:py-[30px] xl:px-[35px] xl:gap-[10px] xl:-ml-60
                        bg-gray-100 dark:bg-transparent 
                        border-gray-300  dark:border-green-950 

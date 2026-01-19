@@ -85,8 +85,8 @@
     );
 
     return (
-      <div className="flex flex-col gap-10 mt-20 mb-20 xl:mx-10">
-        <div className="flex items-center justify-between gap-6 px-6 xl:mx-10">
+      <div className="flex flex-col gap-10   ">
+        <div className="flex items-center justify-between gap-6 px-6 ">
           <div className="flex flex-col justify-between w-full lg:w-[35%]">
             {/* Small We (mobile only) */}
             <div className="block sm:hidden text-center ">
@@ -101,7 +101,7 @@
                 <h1 className="[font-family:var(--font-kaushan)] 
                 sm:w-[48px] sm:h-[48px] sm:text-[36px] sm:ml-20 sm:-mt-3
                 md:w-[53px] md:h-[50px] md:text-[40px] md:leading-[50px] md:ml-35 md:-mt-1 text-center mt-12 
-                lg:w-[63px] lg:h-[55px] lg:text-[48px] lg:leading-[55px] lg:ml-170
+                lg:w-[63px] lg:h-[55px] lg:text-[48px] lg:leading-[55px] 
                 xl:w-[66px] xl:h-[70px] xl:font-[400] xl:text-[50px] xl:leading-[70px] xl:ml-55 xl:-mt-20 
                 ">
                   
@@ -153,8 +153,8 @@
             <p className="mt-8 w-[298px] h-[60px] text-center text-[14px] leading-[20px] font-[400] mx-auto 
             md:w-[619px] md:h-[44px]
             lg:font-[400] lg:text-[18px] lg:leading-[25px]  lg:ml-40
-            xl:w-[399px] xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start xl:ml-40
-            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-start 2xl:ml-40 
+            xl:w-[399px] xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start 
+            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-start
             ">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore          </p>
           </div>

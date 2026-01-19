@@ -87,16 +87,16 @@ const testimonials = [
 
 const Review = () => {
   return (
-    <section className="bg-white dark:bg-black text-black dark:text-white py-16 px-6 sm:mx-5 lg:-mt-40">
-      <div className=" mx-auto xl:ml-30  ">
+    <section className="bg-white dark:bg-black text-black dark:text-white px-6 sm:mx-5  ">
+      <div className=" mx-auto 2xl:h-[1178px] ">
         {/* Header */}
-        <div className="text-center mb-12 md:w-[703px] md:h-[169px] md:gap-[25px] lg:w-[50px]  lg:h-[185px]
-        xl:w-[703px] xl:h-[235px] xl:gap-[35px]
+        <div className="text-center mb-12 mx-auto md:w-[703px] md:h-[169px] md:gap-[25px] lg:w-[50px]  lg:h-[185px]
+        xl:w-[703px] xl:h-[200px] xl:gap-[35px] 
         ">
           <h2 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
           md:w-[403px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px] md:mx-auto 
-          lg:w-[503px] lg:h-[110px] lg:text-[48px] lg:leading-[55px] lg:ml-50 
-          xl:w-[403px] xl:h-[90px] xl:font-[500]  xl:text-[72px] xl:leading-[70px]  xl:ml-100
+          lg:w-[503px] lg:h-[110px] lg:text-[48px] lg:leading-[55px] 
+          xl:w-[403px] xl:h-[90px] xl:font-[500]  xl:text-[72px] xl:leading-[70px] 
           
           ">
             Why Customers{" "}
@@ -106,8 +106,8 @@ const Review = () => {
           <p className="text-[14px] leading-[20px] font-[400] text-gray-700 dark:text-gray-400
           sm:w-[439px] sm:h-[40px] sm:text-[15px] sm:font-[400] sm:leading-[20px]
           md:w-[617px] md:h-[44px] md:font-[400] md:text-[16px] md:leading-[22px]
-          lg:w-[617px] lg:h-[50px] lg:text-[18px] lg:leading-[25px]  lg:ml-35
-          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[600px] xl:ml-70
+          lg:w-[617px] lg:h-[50px] lg:text-[18px] lg:leading-[25px]  
+          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[600px]  mx-auto
           ">
             Hear directly from customers about their experiences and how web
             done has made a difference.
@@ -115,8 +115,7 @@ const Review = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  lg:w-[910px]  lg:gap-[35px] xl:gap-[30px] 
-        xl:w-[1191px]">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 ">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
