@@ -25,7 +25,7 @@ export default function Footer() {
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Home
@@ -65,7 +65,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="contact"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Contact
@@ -80,7 +80,7 @@ export default function Footer() {
                 <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="/career"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Career
@@ -96,7 +96,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/policy"
                       className="transition-colors hover:text-black dark:hover:text-white"
                     >
                       Privacy Policy
@@ -176,7 +176,7 @@ export default function Footer() {
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Home
@@ -216,7 +216,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/contact"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Contact
@@ -231,7 +231,7 @@ export default function Footer() {
               <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/career"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Career
@@ -247,7 +247,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/policy"
                     className="transition-colors hover:text-black dark:hover:text-white"
                   >
                     Privacy Policy
