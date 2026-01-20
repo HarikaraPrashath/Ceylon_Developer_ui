@@ -35,7 +35,9 @@ const Help = () => {
 
   return (
     <div
-      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-40 2xl:pt-60"
+      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-60 2xl:pt-60
+      
+      "
       style={{
         backgroundImage: "url('/Images/fAqBg.png')",
         backgroundPosition: "right center",
@@ -55,16 +57,18 @@ const Help = () => {
         help you?
       </h1>
 
-      <div className="w-[354px]  h-[530px] sm:w-[576px] sm:h-[554px] md:w-[643px] md:h-[652px] md:gap-[28px] mx-auto mt-10  
+      <div className="w-[354px]  h-[530px] sm:w-[576px] sm:h-[554px] md:w-[643px] md:h-[652px] md:gap-[28px] mx-auto mt-10 
+      lg:w-[906px] 2xl:w-[1280px] 2xl:h-[622px]  xl:w-[1170px] 
+
       ">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className=" mt-5 font-[400] text-[20px] leading-[25px] border-[1px] py-[20px] px-[30px] w-[354px] h-[80px] rounded-[30px]
+            className=" mt-5 font-[400] text-[20px] leading-[25px]  py-[20px] px-[30px] w-[354px] h-[80px] rounded-[30px]
                         sm:w-[576px] sm:h-[78px] sm:rounded-[30px] sm:border-[1px]  sm:py-[25px] sm:px-[35px] sm:gap-[10px]
                         md:w-[643px] md:h-[90px] md:rounded-[30px] md:border-[1px] md:px-[35px] md:py-[30px]
                         lg:w-[898px] lg:h-[92px] lg:rounded-[30px] lg:border-[1px] lg:py-[30px] lg:px-[35px] 
-                        xl:w-[1208px] xl:h-[102px] xl:rounded-[30px] xl:border-[1px] xl:py-[30px] xl:px-[35px] xl:gap-[10px] xl:-ml-60
+                        xl:w-[1208px] xl:h-[102px] xl:rounded-[30px] xl:border-[1px] xl:py-[30px] xl:px-[35px] xl:gap-[10px] 
                        bg-gray-100 dark:bg-transparent 
                        border-gray-300  dark:border-green-950 
                        transition-colors duration-300"
@@ -73,8 +77,8 @@ const Help = () => {
             <div
               className="flex justify-between items-center cursor-pointer w-[294px]   -mt-2 
               sm:w-[506px] sm:h-[28px] sm:gap-[148px] 
-              lg:w-[828px] lg:h-[32px] lg:gap-[148px] 
-              xl:w-[1138px] xl:h-[42px] xl:gap-[148px]
+              lg:w-[828px] lg:h-[32px] lg:gap-[148px]
+              xl:w-[1138px] xl:h-[42px] xl:gap-[148px] 
               "
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >

@@ -4,10 +4,10 @@ import Marquee from "react-fast-marquee";
 
 const Technologies = () => {
   return (
-    <div className="max-w-[1440px] 2xl:mt-40 ">
+    <div className="max-w-[1440px] 2xl:mt-40 sm:h-[325px] ">
       {/* Heading */}
-      <h1 className="mx-auto h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center  max-w-[1440px]
-      sm:w-[638px] sm:h-[40px] sm:leading-[40px] sm:font-[400]
+      <h1 className="mx-auto h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center h-[100px] max-w-[1440px]
+      sm:w-[638px] sm:h-[40px] sm:leading-[40px] sm:font-[400] mb-5
       lg:w-[1024px] lg:h-[48px] lg:leading-[55px]
       xl:w-[1300px] xl:h-[70px] xl:font-[400] xl:text-[64px] xl:leading-[60px]
       2xl:w-[1300px] 2xl:h-[70px] 2xl:font-[400] 2xl:text-[72px] 2xl:leading-[70px]
@@ -18,10 +18,10 @@ const Technologies = () => {
         we work with
       </h1>
 
-      <div className=" max-w-[1440px] sm:mt-5 ">
-        {/* ✅ Row 1 - Left to Right */}
+      <div className=" max-w-[1440px]  xl:flex xl:flex-col ">
+        {/* Row 1 - Left to Right */}
         <Marquee speed={40} pauseOnHover gradient={false}>
-          <div className="flex gap-4 ml-4 sm:ml-14  mt-5">
+          <div className="flex gap-4  ">
             {["Image.png", "Image (1).png", "Image (2).png", "Image (3).png", "Image (4).png"].map(
               (img, index) => (
                 <div
@@ -50,9 +50,9 @@ const Technologies = () => {
           </div>
         </Marquee>
 
-        {/* ✅ Row 2 - Right to Left */}
+        {/* Row 2 - Right to Left */}
         <Marquee speed={50} pauseOnHover direction="right" gradient={false}>
-          <div className="flex gap-4 ml-4 sm:ml-14  mt-5">
+          <div className="flex gap-4  sm:mt-4 mt-2  ">
             {["Image (8).png", "Image (7).png", "Image (6).png", "Image (5).png", "Image.png"].map(
               (img, index) => (
                 <div
@@ -70,7 +70,8 @@ const Technologies = () => {
                     alt="curveLine"
                     width={900}
                     height={900}
-                    className="w-24  px-2 py-1 sm:w-[110px] sm:h-[40px] md:w-[125px] md:h-[44px] lg:w-[140px] lg:h-[49px] 2xl:w-[175px] 2xl:-[60px]"
+                    className="w-24  px-2 py-1 sm:w-[110px] sm:h-[40px] md:w-[125px] md:h-[44px] lg:w-[140px] lg:h-[49px]
+                    xl:w-[175px] xl:h-[60px]  2xl:w-[175px] 2xl:-[60px]"
                     priority
                   />
                 </div>
@@ -79,9 +80,9 @@ const Technologies = () => {
           </div>
         </Marquee>
 
-        {/* ✅ Row 3 - Left to Right again */}
+        {/* Row 3 - Left to Right again */}
         <Marquee speed={35} pauseOnHover gradient={false}>
-          <div className="flex gap-4 ml-4 sm:ml-14 md:hidden mt-5">
+          <div className="flex gap-4 sm:ml-14 md:hidden mt-2">
             {["Image (3).png", "Image (4).png", "Image (1).png", "Image (7).png", "Image.png"].map(
               (img, index) => (
                 <div

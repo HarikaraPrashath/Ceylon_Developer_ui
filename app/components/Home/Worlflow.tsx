@@ -15,25 +15,24 @@ const Worlflow = () => {
             2xl:w-[786.04px] 2xl:h-[374px] 2xl:left-[-0px] 2xl:rounded-[25px] 2xl:border-[5px]
             bg-no-repeat bg-left
             bg-[linear-gradient(to_right,rgba(33,164,164,0.2),rgba(0,0,0,0.1)),url('/Images/Group%20669-light.png')]
-            bg-[length:100%_100%,250px_200px]
+            bg-[length:100%_100%,360px_300px]
             dark:bg-[linear-gradient(to_right,rgba(30,160,164,0.20),rgba(0,0,0,0.1)),url('/Images/Group%20669.png')]"
             
           >
             <div className="max-w-[320px]">
               <h1 className=" text-gray-800 dark:text-gray-400
-              lg:w-[309px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px] lg:ml-30 lg:-mt-10
+              lg:w-[309px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px] lg:ml-30 lg:-mt-30
               xl:w-[481.54px] xl:h-[34px] xl:text-[28px] xl:leading-[34px] xl:ml-60 xl:-mt-30
               2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 2xl:ml-60 2xl:-mt-30
               ">
                 Analytics & Reporting
               </h1>
               <p className="mt-2  text-gray-800 dark:text-gray-400 lg:ml-30
-              lg:w-[352px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
+              lg:w-[372px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
               xl:w-[461.54px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] xl:ml-60
               2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:ml-60
               ">
-                Generate real-time reports, identify key performance indicators,
-                and make data-driven decisions.
+                Generate real-time reports, identify key performance indicators, and make data-driven decisions for continuous improvement.
               </p>
             </div>
           </div>
@@ -75,10 +74,11 @@ const Worlflow = () => {
             xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[4.68px]
             2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[5px]
             lg:w-[270px] lg:h-[329px] lg:rounded-[25px] lg:border-[2px]
-            xl:flex xl:flex-col xl:justify-end
-
+            xl:flex xl:flex-col xl:justify-end 
             bg-[linear-gradient(to_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
-            dark:bg-[linear-gradient(to_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]"
+            dark:bg-[linear-gradient(to_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
+            bg-[length:100%_70%,300px_170px]
+            "
             
           >
             <div className="p-4 pt-2">
@@ -91,8 +91,8 @@ const Worlflow = () => {
               </h1>
               <p className="  text-gray-700 dark:text-gray-400
               lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
-              xl:w-[298.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
-              2xl:w-[319.90px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
+              xl:w-[288.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
+              2xl:w-[319.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
                 Stay curious, embrace challenges, and keep learning to grow as a developer.
               </p>
@@ -147,7 +147,7 @@ const Worlflow = () => {
             backgroundSize: "100%",
           }}
         >
-          <div className="w-60 flex flex-col ml-20 -mt-20 md:w-80 md:ml-70 ">
+          <div className="w-60 flex flex-col ml-20 -mt-30 md:w-[427px]">
             <h1 className="w-[195px] h-[25px] text-[20px] leading-[25px] font-[400] dark:text-gray-400 text-gray-700
             sm:w-[265.23px] sm:h-[28px] sm:font-[400] sm:text-[22px] sm:leading-[28px]
             md:w-[309px] md:h-[30px] md:[400] md:text-[24px] md:leading-[30px]
@@ -164,7 +164,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex mt-6 mx-2 justify-between">
+        <div className="flex justify-between w-[350px] h-[290px] pt-3  mx-auto sm:gap-[28px] sm:justify-center sm:w-[558px] md:w-[651px]">
           <div
             className="
               border-gray-300 dark:border-gray-800 border-2  text-white

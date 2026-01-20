@@ -74,7 +74,7 @@ const Page = () => {
 
       {/* BODY */}
       <div className="flex justify-center">
-        <div className="w-full max-w-[1440px] 2xl:max-w-[1440px] px-4">
+        <div className="w-full max-w-[1440px] 2xl:max-w-[1440px] px-4 ">
           <p className=" text-gray-700 dark:text-gray-300 mt-[25px]
         w-[307px] h-[60px] font-[400] text-[14px] leading-[20px] text-center mx-auto
         sm:w-[435px] sm:h-[40px] sm:text-[15px] sm:leading-[20px]
@@ -330,7 +330,7 @@ const Page = () => {
               2xl:w-[821px] 2xl:h-[56px] 2xl:gap-[225px]
               ">
                   <div className="bg-custom-cyan text-black font-semibold mx-auto
-                w-[114px] h-[38px] rounded-[4.79px] py-9px px-[18px]
+                w-[114px] h-[28px] rounded-[4.79px] py-9px px-[18px]
                 sm:w-[100px] sm:h-[46px] sm:rounded-[10px] sm:py-[13px] sm:px-[25px]
                 md:w-[103px] md:h-[48px] md:rounded-[10px] md:py-[13px] md:px-[25px]
                 lg:w-[110px] lg:h-[51px] lg:rounded-[10px] lg:py-[13px] lg:px-[25px]
@@ -338,7 +338,7 @@ const Page = () => {
                 2xl:w-[123px] 2xl:h-[56px] 2xl:rounded-[10px] 2xl:py-[13px] 2xl:px-[25px]
                 ">
                     <button type="button" className="-mt-5
-                  w-[78px] h-[20px] font-[400] text-[14px] leading-[20px]
+                  w-[78px] h-[20px] font-[400] text-[15px] leading-[20px]
                   sm:w-[80px] sm:h-[20px] sm:text-[15px] sm:leading-[20px] sm:-ml-4 
                   md:w-[83px] md:h-[22px] md:text-[16px] md:leading-[22px] md:-ml-4 
                   lg:w-[60px] lg:h-[25px] lg:text-[18px] lg:leading-[25px] lg:ml-0.5
@@ -386,7 +386,7 @@ const Page = () => {
                   lines: ["5899 Alexys Highway Suite", "678, NR, Nevada, USA"],
                 },
               ].map((item, idx) => (
-                <div key={idx} className="text-center mt-10  2xl:w-[1080px]  px-5 ">
+                <div key={idx} className="text-center mt-10  2xl:w-[1080px]  px-5 s">
                   <div className="h-[63px] w-[63px] top-[1px] left-[1px] rounded-[40px] border border-gray-300 dark:border-gray-700 bg-gradient-to-br from-gray-100 to-gray-50 dark:from-gray-800 dark:to-gray-950 mx-auto  flex items-center justify-center text-gray-700 dark:text-gray-300
                 sm:w-[45px] sm:h-[45px] sm:rounded-[32px]
                 md:w-[52px] md:h-[52px] md:rounded-[32px]

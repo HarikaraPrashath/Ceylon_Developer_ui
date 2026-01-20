@@ -87,12 +87,14 @@ const testimonials = [
 
 const Review = () => {
   return (
-    <section className="bg-white dark:bg-black text-black dark:text-white px-6 sm:mx-5  ">
+    <section className="bg-white dark:bg-black text-black dark:text-white px-6 
+    xl:w-[1171px] xl:gap-[75px] xl:mx-auto 
+    sm:w-[507px] sm:mx-auto sm:h-[1958px] md:w-[703px] md:mx-auto  md:h-[1418px] lg:w-[703px] lg:h-[1169px] 
+    ">
       <div className=" mx-auto 2xl:h-[1178px] ">
         {/* Header */}
-        <div className="text-center mb-12 mx-auto md:w-[703px] md:h-[169px] md:gap-[25px] lg:w-[50px]  lg:h-[185px]
-        xl:w-[703px] xl:h-[200px] xl:gap-[35px] 
-        ">
+        <div className="text-center mb-12 mx-auto md:w-[700px] md:h-[169px] md:gap-[25px]  
+        xl:w-[703px] xl:h-[200px] xl:gap-[35px]  lg:w-[703px] lg:h-[185px] xl:-mt-20  ">
           <h2 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
           md:w-[403px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px] md:mx-auto 
           lg:w-[503px] lg:h-[110px] lg:text-[48px] lg:leading-[55px] 
@@ -107,7 +109,7 @@ const Review = () => {
           sm:w-[439px] sm:h-[40px] sm:text-[15px] sm:font-[400] sm:leading-[20px]
           md:w-[617px] md:h-[44px] md:font-[400] md:text-[16px] md:leading-[22px]
           lg:w-[617px] lg:h-[50px] lg:text-[18px] lg:leading-[25px]  
-          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[600px]  mx-auto
+          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[600px]  mx-auto 
           ">
             Hear directly from customers about their experiences and how web
             done has made a difference.
@@ -115,7 +117,7 @@ const Review = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 ">
+        <div className="flex flex-wrap justify-center lg:h-[697px] xl:w-[1171px] xl:mx-auto   gap-6 lg:-ml-30  md:w-[705px] md:grid md:grid-cols-2 lg:grid-cols-3  lg:gap-[35px] md:mx-auto lg:w-[910px] lg:mx-auto xl:gap-12 md:-ml-4 ">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}

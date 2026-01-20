@@ -43,7 +43,7 @@
           ml-7
           relative rounded-[4px] ${borderClass}
           dark:bg-gradient-to-b from-gray-700 to-black/80 b w-[311px] h-[235px] py-[25px] px-[45px] mb-20
-          sm:w-[473px] sm:h-[241px] sm:rounded-[4px] sm:border-[1px] sm:px-[70px] sm:py-[40px]
+          sm:w-[473px] sm:h-[241px] sm:rounded-[4px] sm:border-[1px] sm:px-[70px] sm:py-[40px] sm:mx-auto
           md:w-[199px] md:h-[305px] md:rounded-[4px] md:border-[1px] md:py-[35px] md:px-[22px]
         `}
       >
@@ -85,9 +85,9 @@
     );
 
     return (
-      <div className="flex flex-col gap-10   ">
-        <div className="flex items-center justify-between gap-6 px-6 ">
-          <div className="flex flex-col justify-between w-full lg:w-[35%]">
+      <div className="flex flex-col gap-10  ">
+        <div className="flex items-center justify-between gap-6 px-6  ">
+          <div className="flex flex-col justify-between w-full lg:w-[35%] ">
             {/* Small We (mobile only) */}
             <div className="block sm:hidden text-center ">
               <h1 className="[font-family:var(--font-kaushan)] text-[36px] font-[400]  leading-[35px] mb-2 ">
@@ -95,16 +95,15 @@
               </h1>
             </div>
 
-            <div className="flex items-center justify-center ">
+            <div className="flex items-center justify-center">
               {/* Big We (tablet & desktop only) */}
-              <div className="hidden sm:block  w-20">
+              <div className="hidden sm:block w-10">
                 <h1 className="[font-family:var(--font-kaushan)] 
                 sm:w-[48px] sm:h-[48px] sm:text-[36px] sm:ml-20 sm:-mt-3
                 md:w-[53px] md:h-[50px] md:text-[40px] md:leading-[50px] md:ml-35 md:-mt-1 text-center mt-12 
                 lg:w-[63px] lg:h-[55px] lg:text-[48px] lg:leading-[55px] 
                 xl:w-[66px] xl:h-[70px] xl:font-[400] xl:text-[50px] xl:leading-[70px] xl:ml-55 xl:-mt-20 
                 ">
-                  
                   We
                 </h1>
               </div>
@@ -160,7 +159,7 @@
           </div>
 
           {/* ≥1024px: 3 cards in a row */}
-          <div className="xl:block hidden xl:mx-10 xl:grid xl:grid-cols-3  ">
+          <div className="xl:block hidden xl:mx-10 xl:grid xl:grid-cols-3 xl:gap-10 ">
             {cards.map((c, i) => (
               <Card key={`lg-${i}`} {...c} />
             ))}
@@ -181,7 +180,7 @@
           onNext={nextItem}
         />
         {/* ≤376px: show all 3 stacked vertically */}
-        <div className=" sm:hidden">
+        <div className=" max-[376px]:block hidden">
           {cards.map((c, i) => (
             <div key={`xs-${i}`} className="w-[89%]">
               <Card {...c} />
@@ -206,7 +205,7 @@
   }) {
     if (!visible) return null;
     return (
-      <div className="block md:hidden md:h-[100px] max-[376px]:hidden px-6 ">
+      <div className="hidden sm:block md:hidden hidden px-6">
         <div className="w-full">
           <div className="">
             <div className="">
@@ -226,7 +225,7 @@
                     `}
                   >
                     <div className="h-full w-full rounded-sm ">
-                      <h1 className="text-center font-medium mt-4 dark:text-white text-black
+                      <h1 className="text-center font-medium mt-4 dark:text-white text-black 
                       sm:font-[700] sm:text-[20px] sm:leading-[24px] sm:w-[155px] sm:h-[24px] sm:mx-auto
                       md:font-[700] md:text-[20px] md:leading-[24px] 
                       lg:font-[700] lg:text-[22px] lg:leading-[26px] 

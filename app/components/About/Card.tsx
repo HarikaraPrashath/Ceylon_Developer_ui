@@ -5,10 +5,10 @@ import { ArrowUpRight } from "lucide-react";
 const Card = () => {
   return (
     <div className="max-w-[1440px] mx-auto  bg-white text-black dark:bg-black dark:text-white">
-      <div className="xl:hidden ">
+      <div className="xl:hidden h-[1830px]  sm:h-[1498px] md:h-[1000px] lg:h-[1100px]">
         <h1 className="mt-10 mx-auto
         w-[302px] h-[106px] font-[500] text-[36px] leading-[35px]  text-center
-        sm:w-[430px] sm:h-[80px] sm:font-[500] sm:text-[36px] sm:leading-[40px]
+        sm:w-[430px] sm:h-[100px] sm:font-[500] sm:text-[36px] sm:leading-[40px]
         md:w-[477px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px]
         ">
           Discover our{" "}
@@ -18,7 +18,7 @@ const Card = () => {
           team{" "}
         </h1>
 
-        <div className="">
+        <div className=" ">
           <div className=" md:flex md:flex-row md:justify-center md:gap-2 ">
             {/* show for mobile screen  */}
             {/* md screen  */}
@@ -138,7 +138,7 @@ const Card = () => {
             {/* md screen show 2nd div  */}
             <div>
 
-              <div className="bg-gray-100 dark:bg-gray-900 mt-10
+              <div className="bg-gray-100 dark:bg-gray-900 mt-10 hidden md:block
             w-[333px] h-[361px] rounded-[20px] p-[14px] gap-[15px]
             sm:w-[531px] sm:h-[606px] sm:rounded-[25px] sm:p-[25px] sm:gap-[25px]
             md:w-[332px] md:h-[377px] md:rounded-[15px] md:p-[15px] md:gap-[15px]
@@ -193,7 +193,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="bg-gray-100 dark:bg-gray-900 mt-10
+              <div className="bg-gray-100 dark:bg-gray-900 mt-10 hidden md:block
             w-[333px] h-[361px] rounded-[20px] p-[14px] gap-[15px]
             sm:w-[531px] sm:h-[606px] sm:rounded-[25px] sm:p-[25px] sm:gap-[25px]
             md:w-[332px] md:h-[377px] md:rounded-[15px] md:p-[15px] md:gap-[15px]

@@ -125,7 +125,7 @@ const Page = () => {
 
               <p className="mt-4
               w-[322px] h-[180px] font-[400] text-[14px] leading-[20px]
-              sm:w-[564px] sm:h-[80px] sm:font-[400] sm:text-[15px] sm:leading-[20px]
+              sm:w-[564px] sm:h-[100px] sm:font-[400] sm:text-[15px] sm:leading-[20px]
               md:w-[621px] md:h-[88px] md:font-[400] md:text-[16px] md:leading-[22px]
               lg:w-[396px] lg:h-[175px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
               xl:w-[503px] xl:h-[168px] xl:font-[400] xl:text-[20px] xl:leading-[28px]
@@ -463,7 +463,7 @@ const Page = () => {
           </div>
 
           {/* Mission , Goal , Vision represent */}
-          <div className="lg:flex lg:flex-row lg:justify-center lg:mt-10  x ">
+          <div className="lg:flex lg:flex-row lg:justify-center lg:mt-10  ">
             <div className="">
               {/* Tabs */}
               <div className="mt-10 flex flex-row
@@ -472,12 +472,12 @@ const Page = () => {
               md:w-[417px] md:h-[42px] md:gap-[28px]
               lg:w-[446px] lg:h-[45px] lg:gap-[28px]
               xl:w-[475px] xl:h-[48px] xl:gap-[28px]
-              2xl:w-[504px] 2xl:h-[50px] 2xl:gap-[28px]
+              2xl:w-[520px] 2xl:h-[50px] 2xl:gap-[28px]   
               ">
                 <button
                   type="button"
                   onClick={() => setActiveTab("mission")}
-                  className={`w-35 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] ${activeTab === "mission"
+                  className={`w-35 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px]   ${activeTab === "mission"
                     ? "bg-custom-cyan text-black "
                     : "bg-gray-600 text-white"
                     }`}
@@ -487,7 +487,7 @@ const Page = () => {
                 <button
                   type="button"
                   onClick={() => setActiveTab("vision")}
-                  className={`w-25 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] ${activeTab === "vision"
+                  className={`w-25 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] xl:w-[149px] ${activeTab === "vision"
                     ? "bg-custom-cyan text-black"
                     : "bg-gray-600 text-white"
                     }`}
@@ -497,7 +497,7 @@ const Page = () => {
                 <button
                   type="button"
                   onClick={() => setActiveTab("goal")}
-                  className={`w-25 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] ${activeTab === "goal"
+                  className={`w-25 rounded-md py-1 px-1 text-center sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] xl:w-[134px] ${activeTab === "goal"
                     ? "bg-custom-cyan text-black"
                     : "bg-gray-600 text-white"
                     }`}

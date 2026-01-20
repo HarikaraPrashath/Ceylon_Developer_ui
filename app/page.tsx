@@ -162,7 +162,7 @@
               className="absolute top-0 right-0 z-30 opacity-90 pointer-events-none hidden md:block"
             />
 
-            <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30 -mt-20 lg:mx-15   2xl:w-[1150px]">
+            <div className="lg:flex lg:flex-row max-w-[1280px] mx-auto 2xl:mx-30 lg:mx-15   2xl:w-[1150px] h-[600px] sm:h-[700px] lg:h-[400px]">
               {/* left content */}
               <div className="lg:w-[425px] lg:h-[468px] mx-auto ">
                 <div className="text-center  ">
@@ -180,7 +180,7 @@
                 <div className="mt-5  w-[335px]  md:w-[673px] md:h-[44px]   mx-auto sm:w-[513px] sm:h-[60px]">
                   <p className="text-center font-[400] text-[14px] lg:text-start my-5
                   sm:font-[400] sm:text-[15px] sm:text-start sm:pr-10
-                  md:pr-0 md:text-[16px] md:leading-[22px] md:-mt-1
+                  md:pr-0 md:text-[16px] md:leading-[22px] 
                   lg:w-[425px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px] 
                   xl:w-[535px] xl:h-[112px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
                   2xl:w-[576px] 2xl:h-[120px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px] 
@@ -189,7 +189,7 @@
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.
                   </p>
 
-                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start
+                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
                       lg:w-[423px]
                       xl:text-[20px] xl:leading-[28px]
@@ -205,7 +205,7 @@
                     Project template to kick-start a new project
                   </p>
 
-                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start
+                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
                     md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
                     lg:w-[423px]
                     xl:text-[20px] xl:leading-[28px]
@@ -216,12 +216,12 @@
                       alt="Tick icon"
                       width={20}
                       height={20}
-                      className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
+                      className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-3"
                     />
                     Clone task to speed your time to action
                   </p>
 
-                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px]  item-start
+                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px]  item-start gap-[5px]
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px] 
                       lg:w-[423px]
                       xl:text-[20px] xl:leading-[28px] md:mb-7
@@ -232,12 +232,12 @@
                       alt="Tick icon"
                       width={20}
                       height={20}
-                      className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
+                      className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2 mt-1"
                     />
                     Communication and collaborate with your team and clients
                   </p>
 
-                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start
+                  <p className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px] 
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
                       lg:w-[423px]
                       xl:text-[20px] xl:leading-[28px]
@@ -248,7 +248,7 @@
                       alt="Tick icon"
                       width={20}
                       height={20}
-                      className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] xl:mt-1 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
+                      className="w-5 h-5 sm:w-[20px] mt-1 sm:h-[20px] md:w-[20px] md:h-[20px] xl:mt-1 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
                     />
                     Time tracking for the whole team
                   </p>
@@ -288,7 +288,7 @@
           </div>
 
           {/* Roadmap */}
-          <div className="  ">
+          <div className="h-[1500px] sm:h-[1570px] lg:h-[800px]">
             <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center
             ">
               Our <span className="[font-family:var(--font-kaushan)]">design</span> and <br />
@@ -391,8 +391,8 @@
 
           <Technologies />
 
-          <div className="mt-10 md:mx-5 xl:mt-15 lg:block w-[345px] h-[815px]  mx-auto sm:hidden lg:flex">
-            <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 xl:mx-10 2xl:h-[700px] ">
+          <div className="mt-10 md:mx-5 xl:mt-15 lg:block w-[345px] h-[825px]  mx-auto sm:hidden lg:flex">
+            <div className="flex flex-col lg:flex-row gap-10 xl:gap-0 xl:mx-30 2xl:mx-auto  2xl:h-[700px] xl:h-[700px]  2xl:left-[121px] 2xl:top-[5747px] 2xl:ml-20">
               {/* Left section */}
               <div className="lg:w-[40%]  xl:w-[562px] xl:h-[455px] ">
                 <h1 className="text-center w-[286px] h-[35px] font-medium text-[36px] leading-[35px] mx-auto
@@ -476,7 +476,7 @@
               </div>
 
               {/* Right section (form) */}
-              <div className="border-[1px] border-custom-cyan/60 w-[345px] h-[473px] rounded-[25px] py-[20px] px-[15px]
+              <div className="border-[1px] border-custom-cyan/60 w-[345px] h-[423px] rounded-[25px] py-[20px] px-[15px]
               lg:w-[515px] lg:h-[575px] lg:rounded-[25px] lg:border-[1px] lg:p-[25px]
               xl:w-[635px] xl:h-[605px] xl:rounded-[65px] xl:border-[1px] xl:p-[25px] xl:gap-[10px]
               ">
@@ -519,7 +519,7 @@
                     xl:w-[584px] xl:h-[56px] xl:py-[13px] xl:px-[229px] 
                     "
                   >
-                    <p className="text-[22px] xl:leading-[30px] xl:w-[154px]">
+                    <p className="xl-text-[22px] xl:leading-[30px] xl:w-[154px] w-[98px] h-[20px] leading-[20px]">
                       Send Message
                     </p>
                   </button>
@@ -532,7 +532,8 @@
           <Help />
 
           {/* footer block: gradient adapts */}
-          <div className="bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-6 px-4 mx-3 mt-10 rounded-2xl sm:w-[520px] sm:mx-auto
+          <div className="bg-gradient-to-b from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-950 py-6 px-4 mx-3 mt-10  sm:w-[520px] sm:mx-auto
+          w-[345px] h-[333px] rounded-[20px] mx-auto
           md:w-[573px] md:h-[353px]
           lg:w-[716px] lg:h-[355px] lg:top-[7781px] lg:left-[123px] lg:rounded-[20px] lg:py-[42px] lg:px-[70px]
           xl:w-[913px] xl:h-[384px] xl:top-[8140px] xl:left-[184px] xl:rounded-[20px] xl:py-[42px] xl:px-[70px] 
