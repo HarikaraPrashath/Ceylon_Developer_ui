@@ -23,7 +23,7 @@ const Worlflow = () => {
               <h1 className=" text-gray-800 dark:text-gray-400
               lg:w-[309px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px] lg:ml-30 lg:-mt-30
               xl:w-[481.54px] xl:h-[34px] xl:text-[28px] xl:leading-[34px] xl:ml-60 xl:-mt-30
-              2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 2xl:ml-60 2xl:-mt-30
+              2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 2xl:ml-60 2xl:-mt-40 
               ">
                 Analytics & Reporting
               </h1>
