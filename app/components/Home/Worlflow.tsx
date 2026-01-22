@@ -85,7 +85,7 @@ const Worlflow = () => {
               <h1 className="font-bold text-xl text-gray-700 dark:text-gray-400
               lg:w-[191px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px]
                xl:w-[298.32px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
-               2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%]
+               2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%] 
               ">
                 Developer Mindset
               </h1>
