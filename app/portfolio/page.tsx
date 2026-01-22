@@ -10,7 +10,7 @@ const app = () => {
     <div>
       <PNavbar />
       {/* main content         */}
-      <div className="mt-15 sm:mx-[3rem] xl:mx-[11rem] 2xl:mx-[6rem] max-w-[1440px]">
+      <div className="mt-15  mx-auto sm:mx-[3rem] xl:mx-[11rem] 2xl:mx-[6rem] ">
         <h1 className="pl-8 text-lg">👋 Hello I am </h1>
         <div className="mx-5">
           <h1 className=" text-4xl text-start">UI/UX designer</h1>
