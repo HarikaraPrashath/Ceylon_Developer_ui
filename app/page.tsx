@@ -8,7 +8,7 @@ import Review from "./components/Home/Review";
 import Help from "./components/Home/Help";
 import Technologies from "./components/Home/Technologies";
 import { ArrowRight } from "lucide-react";
-import { HERO_TEXTS } from "../constants/heroSection.constants.ts";
+import { HERO_TEXTS } from "../constants/home.constants.ts";
 
 const page = () => {
   return (
