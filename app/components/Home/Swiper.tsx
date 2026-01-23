@@ -201,10 +201,13 @@ export default function ServicesSwiper() {
             </span>
             <span className="text-gray-900 dark:text-gray-100">We offer</span>
           </h1>
-          <p className="mt-6 xl:w-119 text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 body sm:body-sm md:body-md lg:body-lg xl:body-xl 2xl:body-2xl
-         
+          <p className="mt-6  text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 body 
+          sm:body-sm md:body-md 
+          lg:body-lg xl:body-xl 
+          xl:w-[480px]
+          2xl:w-[430px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px]
           ">
-            Pushing the boundaries of what&apos;s possible in the digital realm{" "}
+            Pushing the boundaries of what&apos;s possible in the digital realm.{" "}
             Join us on this journey into the future of technology
           </p>
         </div>

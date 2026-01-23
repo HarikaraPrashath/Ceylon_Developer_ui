@@ -8,11 +8,11 @@ const Worlflow = () => {
         {/* ROW 1 */}
         <div className="flex flex-row-reverse justify-center mt-6 max-w-[1280px] mx-auto gap-6 2xl:w-[1190px] 2xl:h-[375px]">
           <div
-            className="relative border border-gray-300 dark:border-gray-800 rounded-3xl
+            className="relative border border-gray-300 dark:border-gray-900 rounded-3xl
             flex flex-col justify-center p-6
             lg:w-[577px] lg:h-[329px] lg:top-[-0.03] lg:left-[-0.22px] lg:rounded-[18.33px] lg:border-[3.67px]
-            xl:w-[735.29px] xl:h-[350px] xl:left-[-0px] xl:rounded-[23.39px] xl:border-[4.68px]
-            2xl:w-[786.04px] 2xl:h-[374px] 2xl:left-[-0px] 2xl:rounded-[25px] 2xl:border-[5px]
+            xl:w-[735.29px] xl:h-[350px] xl:left-[-0px] xl:rounded-[23.39px] xl:border-[2px]
+            2xl:w-[786.04px] 2xl:h-[374px] 2xl:left-[-0px] 2xl:rounded-[25px] 2xl:border-[3px]
             bg-no-repeat bg-left
             bg-[linear-gradient(to_right,rgba(33,164,164,0.2),rgba(0,0,0,0.1)),url('/Images/Group%20669-light.png')]
             bg-[length:100%_100%,360px_300px]
@@ -38,11 +38,11 @@ const Worlflow = () => {
           </div>
 
           <div
-            className="border border-gray-300 dark:border-gray-800 rounded-3xl
+            className="border border-gray-300 dark:border-gray-900 rounded-3xl
             bg-no-repeat bg-bottom
             lg:w-[270px] lg:h-[329px] lg:rounded-[18px] lg:border-[2.2px]
-            xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[4.68px]
-            2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[5px]
+            xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[2px]
+            2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[3px]
             bg-[url('/Images/Group%20681.png'),url('/Images/Mask%20group.png'),linear-gradient(to_right,rgba(33,164,164,0.2),rgba(0,0,0,0.1))]
             dark:bg-[url('/Images/Group%20681.png'),url('/Images/Mask%20group.png')]"
             style={{  backgroundSize: "70%,100%,100%" }}
@@ -69,10 +69,10 @@ const Worlflow = () => {
         {/* ROW 2 */}
         <div className="flex flex-row-reverse justify-center mt-6 max-w-[1440px] mx-auto gap-6 2xl:w-[1190px] 2xl:h-[375px]">
           <div
-            className="border border-gray-300 dark:border-gray-800 rounded-3xl
+            className="border border-gray-300 dark:border-gray-900 rounded-3xl
             bg-no-repeat bg-top 
-            xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[4.68px]
-            2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[5px]
+            xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[2px]
+            2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[3px]
             lg:w-[270px] lg:h-[329px] lg:rounded-[25px] lg:border-[2px]
             xl:flex xl:flex-col xl:justify-end 
             bg-[linear-gradient(to_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
@@ -100,11 +100,11 @@ const Worlflow = () => {
           </div>
 
           <div
-            className="border border-gray-300 dark:border-gray-800 rounded-3xl
+            className="border border-gray-300 dark:border-gray-900 rounded-3xl
             bg-no-repeat
             lg:w-[577px] lg:h-[329px] lg:top-[-0.03] lg:left-[-0.22px] lg:rounded-[18.33px] lg:border-[3.67px] 
-            xl:w-[735.29px] xl:h-[350px] xl:left-[-0px] xl:rounded-[23.39px] xl:border-[4.68px]
-            2xl:w-[786.04px] 2xl:h-[374px] 2xl:left-[-0px] 2xl:rounded-[25px] 2xl:border-[5px]
+            xl:w-[735.29px] xl:h-[350px] xl:left-[-0px] xl:rounded-[23.39px] xl:border-[2px]
+            2xl:w-[786.04px] 2xl:h-[374px] 2xl:left-[-0px] 2xl:rounded-[25px] 2xl:border-[3px]
             bg-[radial-gradient(circle_at_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20212.png')]
             dark:bg-[radial-gradient(circle_at_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20212.png')]"
             style={{ backgroundSize: "200%,60%",backgroundPosition: "bottom ",
