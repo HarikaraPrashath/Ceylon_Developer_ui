@@ -13,6 +13,15 @@ import { HERO_TEXTS } from "../constants/home.constants.ts";
 const page = () => {
   return (
     <div className="bg-white text-black dark:bg-black  dark:text-white min-h-screen border-4 border-white dark:border-hidden ">
+      {/* Debug Indicator - Remove after fixing */}
+      <div className="fixed top-0 right-0 z-50 bg-red-500 text-white p-2 font-bold opacity-75">
+        <span className="block sm:hidden">DEFAULT (&lt;640px)</span>
+        <span className="hidden sm:block md:hidden">SM (640px+)</span>
+        <span className="hidden md:block lg:hidden">MD (768px+)</span>
+        <span className="hidden lg:block xl:hidden">LG (1024px+)</span>
+        <span className="hidden xl:block 2xl:hidden">XL (1280px+)</span>
+        <span className="hidden 2xl:block">2XL (1440px+)</span>
+      </div>
       {/* was bg-black; now adapts */}
       <div className="bg-white dark:bg-black items-center ">
         {/* Container with multiple backgrounds */}
@@ -45,8 +54,8 @@ const page = () => {
                 2xl:w-[385px] 2xl:h-[30px] 2xl:text-[23px] 2xl:leading-[30px] 
               ">{HERO_TEXTS.bubble}
             </p>
-          </div> 
-          
+          </div>
+
           <div
             className="text-center mt-6 w-[297px] h-[90px] mx-auto 
             sm:w-[500px] sm:h-[165px]
