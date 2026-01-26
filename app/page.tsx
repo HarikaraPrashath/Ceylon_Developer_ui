@@ -116,7 +116,7 @@ const page = () => {
                   md:text-[16px] md:font-[400] md:leading-[22px] md:w-[86px] md:h-[22px] md:-ml-8
                   lg:text-[18px] lg:font-[400] lg:leading-[25px]
                   xl:text-[20px] xl:font-[400] xl:leading-[28px] xl:-ml-12
-                  2xl:w-[119px] 2xl:h-[30px] 2xl:text-[22px] 2xl:font-[400] 2xl:leading-[30px] 2xl:-ml-12
+                  2xl:w-[119px] 2xl:h-[30px] 2xl:text-[22px] 2xl:font-[400] 2xl:leading-[30px] 2xl:-ml-6
                 "
               >
                 Learn More
