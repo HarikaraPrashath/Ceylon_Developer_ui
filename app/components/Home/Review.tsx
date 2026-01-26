@@ -41,9 +41,9 @@ const Review = () => {
           <Image
             src="/Images/review.png"
             alt="Review"
-            width={1500}       // intrinsic width
+            width={500}       // intrinsic width
             height={1000}       // intrinsic height
-            className="mx-auto lg:w-[2000px] lg:h-[400px] -mt-8 absolute object-cover lg:-ml-20"
+            className="mx-auto lg:w-[700px] lg:h-[400px] -mt-8   absolute sm:border  lg:-ml-20"
           />
 
         </div>
