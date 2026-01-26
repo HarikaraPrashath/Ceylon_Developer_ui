@@ -26,7 +26,7 @@
       // mobile view
       <div
         className={`
-          ml-7
+          ml-7 
           relative rounded-[4px] ${borderClass}
           dark:bg-gradient-to-b from-gray-700 to-black/80 b w-[311px] h-[235px] py-[25px] px-[45px] mb-20
           sm:w-[473px] sm:h-[241px] sm:rounded-[4px] sm:border-[1px] sm:px-[70px] sm:py-[40px] sm:mx-auto
@@ -71,7 +71,7 @@
     );
 
     return (
-      <div className="flex flex-col gap-10  ">
+      <div className="flex flex-col gap-10 ">
         <div className="flex items-center justify-between gap-6 px-6  ">
           <div className="flex flex-col justify-between w-full lg:w-[35%] md:mx-auto">
             {/* Small We (mobile only) */}
@@ -95,7 +95,7 @@
               </div>
 
               {/* Flex row with arrows + items */}
-              <div className="flex items-center justify-center space-x-6 text-5xl font-bold w-90% sm:flex sm:gap-4 sm:w-full   lg:ml-170 
+              <div className="flex items-center justify-center space-x-6 text-5xl font-bold w-90% sm:flex sm:gap-4 sm:w-full   lg:ml-50 
               xl:w-[250px] xl:h-[140px] xl:ml-70   xl:-mt-20   
               ">
                 {/* Left Arrow */}
@@ -137,7 +137,7 @@
 
             <p className="mt-8 w-[298px] h-[60px] text-center text-[14px] leading-[20px] font-[400] mx-auto 
             md:w-[550px] md:h-[44px]
-            lg:font-[400] lg:text-[18px] lg:leading-[25px]  lg:ml-40
+            lg:font-[400] lg:text-[18px] lg:leading-[25px] 
             xl:w-[300px] xl:ml-50 xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start 
             2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-star 
             ">

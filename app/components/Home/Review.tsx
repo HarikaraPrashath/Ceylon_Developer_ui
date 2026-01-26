@@ -13,14 +13,14 @@ const Review = () => {
       <div className=" mx-auto 2xl:h-[1178px] ">
 
         {/* Header */}
-        <div className="text-center  mx-auto md:w-[700px]  md:gap-[25px]  
+        <div className="text-center  mx-auto md:w-[700px]  md:gap-[25px] mt-10 
         xl:w-[703px] xl:h-[200px] xl:gap-[35px]  lg:w-[703px] lg:h-[185px] xl:-mt-20">
           
           <h2 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
           md:w-[403px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px] md:mx-auto 
           lg:w-[503px] lg:h-[110px] lg:text-[48px] lg:leading-[55px] 
           xl:w-[403px] xl:h-[90px] xl:font-[500]  xl:text-[72px] xl:leading-[70px] 
-            bg-[url('/Images/review.png')] bg-no-repeat bg-top bg-cover 
+            bg-[url('/Images/review.png')] bg-no-repeat bg-top bg-cover mb-2
           ">
             Why Customers{" "}
             <span className="[font-family:var(--font-kaushan)] pr-4">love</span> {" "}
@@ -43,7 +43,7 @@ const Review = () => {
             alt="Review"
             width={500}       // intrinsic width
             height={1000}       // intrinsic height
-            className="mx-auto lg:w-[700px] lg:h-[400px] -mt-8   absolute sm:border  lg:-ml-20"
+            className="mx-auto lg:w-[700px] lg:h-[400px] -mt-8  hidden sm:block absolute sm:border  lg:-ml-20"
           />
 
         </div>
