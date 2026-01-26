@@ -73,7 +73,7 @@
     return (
       <div className="flex flex-col gap-10  ">
         <div className="flex items-center justify-between gap-6 px-6  ">
-          <div className="flex flex-col justify-between w-full lg:w-[35%] ">
+          <div className="flex flex-col justify-between w-full lg:w-[35%] md:mx-auto">
             {/* Small We (mobile only) */}
             <div className="block sm:hidden text-center ">
               <h1 className="[font-family:var(--font-kaushan)] text-[36px] font-[400]  leading-[35px] mb-2 ">
@@ -136,10 +136,10 @@
             </div>
 
             <p className="mt-8 w-[298px] h-[60px] text-center text-[14px] leading-[20px] font-[400] mx-auto 
-            md:w-[619px] md:h-[44px]
+            md:w-[550px] md:h-[44px]
             lg:font-[400] lg:text-[18px] lg:leading-[25px]  lg:ml-40
             xl:w-[300px] xl:ml-50 xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start 
-            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-star
+            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-star 
             ">
             {HERO_TEXTS.implmentSubText}
             </p>
@@ -153,7 +153,7 @@
           </div>
         </div>
         {/* ≥768 and <1024: 3 cards in one horizontal row (as requested) */}
-        <div className="xl:hidden md:grid grid-cols-3 lg:mx-20 ">
+        <div className="xl:hidden md:grid grid-cols-3 lg:mx-20 mx-auto hidden md:gap-[25px] md:mx-auto">
           {cards.map((c, i) => (
             <Card key={`md-${i}`} {...c} />
           ))}
@@ -167,13 +167,13 @@
           onNext={nextItem}
         />
         {/* ≤376px: show all 3 stacked vertically */}
-        <div className=" max-[376px]:block hidden">
+        {/* <div className=" max-[376px]:block hidden">
           {cards.map((c, i) => (
             <div key={`xs-${i}`} className="w-[89%]">
               <Card {...c} />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     );
   };
@@ -192,7 +192,7 @@
   }) {
     if (!visible) return null;
     return (
-      <div className="hidden sm:block md:hidden hidden px-6">
+      <div className="hidden sm:block md:hidden  px-6 sm:mb-10">
         <div className="w-full">
           <div className="">
             <div className="">

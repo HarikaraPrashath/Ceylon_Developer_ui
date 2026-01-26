@@ -10,7 +10,7 @@ const Help = () => {
 
   return (
     <div
-      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-60 2xl:pt-60
+      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-60 2xl:pt-60 pt-10
       
       "
       style={{

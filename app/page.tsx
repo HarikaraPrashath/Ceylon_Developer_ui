@@ -205,7 +205,7 @@ const page = () => {
                   md:w-[590px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px]
                   lg:w-[496px] lg:h-[165px] lg:font-[500] lg:text-[48px] lg:leading-[55px] lg:text-start
                   xl:w-[535px] xl:h-[180px] xl:font-[500] xl:text-[64px] xl:leading-[60px]
-                  2xl:w-[576px] 2xl:h-[210px] 2xl:font-[500] 2xl:text-[72px] 2xl:leading-[70px]
+                  2xl:w-[576px] 2xl:h-[210px] 2xl:font-[500] 2xl:text-[72px] 2xl:leading-[70px] mx-auto
                   "
                     >
                       To upscale your
@@ -336,7 +336,7 @@ const page = () => {
             </div>
 
             {/* Roadmap */}
-            <div className="h-[1500px] sm:h-[1570px] lg:h-[800px]">
+            <div className=" sm:mb-10">
               <h1
                 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center
             "

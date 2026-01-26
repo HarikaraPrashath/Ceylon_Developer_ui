@@ -133,7 +133,7 @@ const Worlflow = () => {
       </div>
 
       {/* Mobile and Tab view */}
-      <div className="block lg:hidden md:mx-10 sm:mx-10">
+      <div className="block lg:hidden  md:mx-auto sm:mx-10 ">
         <div
           className="
             relative border-gray-300 dark:border-gray-800  mx-auto
@@ -165,7 +165,7 @@ const Worlflow = () => {
           </div>
         </div>
 
-        <div className="flex justify-between w-[350px] h-[290px] pt-3  mx-auto sm:gap-[28px] sm:justify-center sm:w-[558px] md:w-[651px]">
+        <div className="flex  md:mb-12 justify-between w-[350px] h-[290px] pt-3  mx-auto sm:gap-[28px] sm:justify-center sm:w-[558px] md:w-[651px]">
           <div
             className="
               border-gray-300 dark:border-gray-800 border-2  text-white

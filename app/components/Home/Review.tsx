@@ -8,14 +8,14 @@ const Review = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white px-6 
     xl:w-[1171px] xl:gap-[75px] xl:mx-auto 
-    
     sm:w-[507px] sm:mx-auto sm:h-[1958px] md:w-[703px] md:mx-auto  md:h-[1418px] lg:w-[703px] lg:h-[1169px] 
     ">
       <div className=" mx-auto 2xl:h-[1178px] ">
 
         {/* Header */}
-        <div className="text-center mb-12 mx-auto md:w-[700px] md:h-[169px] md:gap-[25px]  
-        xl:w-[703px] xl:h-[200px] xl:gap-[35px]  lg:w-[703px] lg:h-[185px] xl:-mt-20  ">
+        <div className="text-center  mx-auto md:w-[700px]  md:gap-[25px]  
+        xl:w-[703px] xl:h-[200px] xl:gap-[35px]  lg:w-[703px] lg:h-[185px] xl:-mt-20">
+          
           <h2 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
           md:w-[403px] md:h-[100px] md:font-[500] md:text-[40px] md:leading-[50px] md:mx-auto 
           lg:w-[503px] lg:h-[110px] lg:text-[48px] lg:leading-[55px] 
@@ -31,26 +31,25 @@ const Review = () => {
           md:w-[617px] md:h-[44px] md:font-[400] md:text-[16px] md:leading-[22px]
           lg:w-[617px] lg:h-[50px] lg:text-[18px] lg:leading-[25px]  
           xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[610px]   mx-auto 
-          bg-[url('/Images/review.png')] bg-no-repeat bg-top bg-cover
+          bg-[url('/Images/review.png')] bg-no-repeat bg-top bg-cover 
           bg-opacity-50
           "
           >
-          {HERO_TEXTS.reviewPageSubText}
-           
+            {HERO_TEXTS.reviewPageSubText}
+
           </p>
           <Image
             src="/Images/review.png"
             alt="Review"
             width={1500}       // intrinsic width
             height={1000}       // intrinsic height
-            className="mx-auto lg:w-[2000px] lg:h-[400px] -mt-8 object-cover lg:-ml-20"
+            className="mx-auto lg:w-[2000px] lg:h-[400px] -mt-8 absolute object-cover lg:-ml-20"
           />
 
         </div>
 
         {/* Testimonials Grid */}
         <div className="flex flex-wrap justify-center 
-        
         lg:h-[697px] xl:w-[1171px] xl:mx-auto   gap-6 lg:-ml-30  md:w-[705px] md:grid md:grid-cols-2 lg:grid-cols-3  lg:gap-[35px] md:mx-auto lg:w-[910px] lg:mx-auto xl:gap-12 md:-ml-4 "
 
         >

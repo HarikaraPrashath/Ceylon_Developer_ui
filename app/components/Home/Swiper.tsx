@@ -190,7 +190,7 @@ export default function ServicesSwiper() {
         <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-custom-cyan rounded-lg rotate-[30deg]"></div>
       </div>
 
-      <div className="mx-auto relative w-full max-w-[1440px] mx-auto ">
+      <div className="mx-auto relative w-full max-w-[1440px]">
         <div className="text-center mx-auto">
           {" "}
           <h1 className=" h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
@@ -261,9 +261,10 @@ export default function ServicesSwiper() {
                   >
                     <div
                       className="
+                      mx-auto
                         w-[333px] h-[223px] p-6
                         sm:w-[523px] sm:h-[208px] sm:px-[20px] sm:py-[25px] sm:mx-auto sm:-mt-25
-                        md:w-[307px] md:h-[260px]
+                        md:w-[307px] md:h-[260px] 
                         lg:w-[307px] lg:h-[306px]
                         xl:w-[331] xl:h-[333px]
                         2xl:w-[333] 2xl:h-[379px]
@@ -308,7 +309,7 @@ export default function ServicesSwiper() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-[3.61px] mx-auto sm:w-[64px] sm:h-[11.19px] sm:-mt-25 lg:mt-[1px] 2xl:mt-10">
+        <div className="flex items-center justify-center gap-[3.61px] mx-auto sm:w-[64px] sm:h-[11.19px] sm:-mt-25 lg:mt-[1px] 2xl:mt-10 md:mb-10">
           {services.map((_, index) => (
             <button
               type="button"
