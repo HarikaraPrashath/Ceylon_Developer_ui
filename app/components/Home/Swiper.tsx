@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
 const services = [
   {
@@ -189,8 +190,8 @@ export default function ServicesSwiper() {
         <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-custom-cyan rounded-lg rotate-[30deg]"></div>
       </div>
 
-      <div className="mx-auto relative w-full max-w-[1440px]  ">
-        <div className="text-center">
+      <div className="mx-auto relative w-full max-w-[1440px] mx-auto ">
+        <div className="text-center mx-auto">
           {" "}
           <h1 className=" h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
           text-center   max-[640px]:flex max-[640px]:flex-col 
@@ -204,11 +205,10 @@ export default function ServicesSwiper() {
           <p className="mt-6  text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 body 
           sm:body-sm md:body-md 
           lg:body-lg xl:body-xl 
-          xl:w-[480px]
-          2xl:w-[430px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px]
+          xl:w-[520px] xl:h-[56px] xl:text-[20px] xl:leading-[28px]
+          2xl:w-[480px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px]
           ">
-            Pushing the boundaries of what&apos;s possible in the digital realm.{" "}
-            Join us on this journey into the future of technology
+           {HERO_TEXTS.serviceSubText}
           </p>
         </div>
 

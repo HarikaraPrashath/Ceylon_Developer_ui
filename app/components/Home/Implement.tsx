@@ -1,8 +1,10 @@
   "use client";
   import React, { useState } from "react";
   import { ChevronLeft, ChevronRight } from "lucide-react";
+  import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
   const Implement = () => {
+     const { cards } = HERO_TEXTS;
     const items = ["Design", "Develop", "Delivery"];
     const [index, setIndex] = useState(0);
 
@@ -10,23 +12,7 @@
     const prevItem = () =>
       setIndex((prev) => (prev - 1 + items.length) % items.length);
 
-    const cards = [
-      {
-        title: "Consulting",
-        borderClass: "border-gradient-bottom",
-        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
-      },
-      {
-        title: "Implementation",
-        borderClass: "border-gradient-top",
-        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
-      },
-      {
-        title: "Distribution",
-        borderClass: "border-gradient-bottom",
-        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
-      },
-    ];
+  
 
     const Card = ({
       title,
@@ -44,7 +30,7 @@
           relative rounded-[4px] ${borderClass}
           dark:bg-gradient-to-b from-gray-700 to-black/80 b w-[311px] h-[235px] py-[25px] px-[45px] mb-20
           sm:w-[473px] sm:h-[241px] sm:rounded-[4px] sm:border-[1px] sm:px-[70px] sm:py-[40px] sm:mx-auto
-          md:w-[199px] md:h-[305px] md:rounded-[4px] md:border-[1px] md:py-[35px] md:px-[22px]
+          md:w-[199px] md:h-[305px] md:rounded-[4px] md:border-[1px] md:py-[35px] md:px-[22px] 
         `}
       >
         <div className="">
@@ -95,7 +81,7 @@
               </h1>
             </div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center ">
               {/* Big We (tablet & desktop only) */}
               <div className="hidden sm:block w-10">
                 <h1 className="[font-family:var(--font-kaushan)] 
@@ -152,10 +138,11 @@
             <p className="mt-8 w-[298px] h-[60px] text-center text-[14px] leading-[20px] font-[400] mx-auto 
             md:w-[619px] md:h-[44px]
             lg:font-[400] lg:text-[18px] lg:leading-[25px]  lg:ml-40
-            xl:w-[399px] xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start 
-            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-start
+            xl:w-[300px] xl:ml-50 xl:h-[120px] xl:text-[22px] xl:leading-[30px] xl:text-start 
+            2xl:w-[392px] 2xl:h-[120px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:text-star
             ">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore          </p>
+            {HERO_TEXTS.implmentSubText}
+            </p>
           </div>
 
           {/* ≥1024px: 3 cards in a row */}

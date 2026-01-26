@@ -85,11 +85,10 @@ const page = () => {
             md:w-[402px] md:h-[66px] md:font-[400] md:leading-[22px]  md:mt-10 md:text-[16px]
             lg:w-[670px] lg:h-[50px] lg:font-[400] lg:text-[18px] lg:leading-[25px] lg:mt-15
             xl:w-[670px] xl:h-[56px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
-            2xl:w-[670px] 2xl:h-[60px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px]  
+            2xl:w-[650px]  2xl:h-[60px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px]  
             "
           >
-            Pushing the boundaries of what&apos;s possible in the digital realm.
-            Join us on this journey into the future of technology.
+            {HERO_TEXTS.subText}
           </h1>
 
           {/* Buttons + Users */}
@@ -156,7 +155,7 @@ const page = () => {
 
                 "
               >
-                Trusted by over +20K people in the World
+                {HERO_TEXTS.imageText}
               </p>
             </div>
           </div>
@@ -224,19 +223,16 @@ const page = () => {
                   sm:font-[400] sm:text-[15px] sm:text-start sm:pr-10
                   md:pr-0 md:text-[16px] md:leading-[22px] 
                   lg:w-[425px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px] 
-                  xl:w-[535px] xl:h-[112px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
-                  2xl:w-[576px] 2xl:h-[120px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px] 
-                
+                  xl:w-[517px] xl:h-[112px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
+                  2xl:w-[550px] 2xl:h-[120px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px] 
                   "
                     >
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua invidunt ut labore.
+                        {HERO_TEXTS.upScaleText}
                     </p>
 
                     <p
                       className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
-                      md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
+                      md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px] 
                       lg:w-[423px]
                       xl:text-[20px] xl:leading-[28px]
                       2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10
@@ -247,9 +243,9 @@ const page = () => {
                         alt="Tick icon"
                         width={20}
                         height={20}
-                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
+                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] xl:mt-1 2xl:h-[16px] 2xl:mt-2"
                       />
-                      Project template to kick-start a new project
+                      {HERO_TEXTS.upsacle.project}
                     </p>
 
                     <p
@@ -265,17 +261,17 @@ const page = () => {
                         alt="Tick icon"
                         width={20}
                         height={20}
-                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-3"
+                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px]  xl:mt-1 md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-3"
                       />
-                      Clone task to speed your time to action
+                       {HERO_TEXTS.upsacle.task}
                     </p>
 
                     <p
                       className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px]  item-start gap-[5px]
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px] 
                       lg:w-[423px]
-                      xl:text-[20px] xl:leading-[28px] md:mb-7
-                      2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10
+                      xl:text-[20px] xl:leading-[28px] md:mb-7 xl:w-[505px]
+                      2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10 2xl:w-[543px] 
                       "
                     >
                       <Image
@@ -283,9 +279,9 @@ const page = () => {
                         alt="Tick icon"
                         width={20}
                         height={20}
-                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2 mt-1"
+                        className="w-5 h-5 sm:w-[20px]  sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2 mt-1"
                       />
-                      Communication and collaborate with your team and clients
+                       {HERO_TEXTS.upsacle.communication}
                     </p>
 
                     <p
@@ -303,7 +299,7 @@ const page = () => {
                         height={20}
                         className="w-5 h-5 sm:w-[20px] mt-1 sm:h-[20px] md:w-[20px] md:h-[20px] xl:mt-1 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
                       />
-                      Time tracking for the whole team
+                       {HERO_TEXTS.upsacle.time}
                     </p>
                   </div>
                 </div>
@@ -486,8 +482,7 @@ const page = () => {
                 xl:w-[562px] xl:[60px] xl:font-[400] xl:text-[22px] xl:leading-[30px]
                 "
                   >
-                    We&apos;re here to support you! Feel free to reach out for
-                    assistance, feedback, or any questions.
+                     {HERO_TEXTS.GetinTouch.subText}
                   </p>
                   <h1
                     className="mt-7 text-[20px] w-[156px] h-[25px] leading-[25px] font-[400]
@@ -495,7 +490,7 @@ const page = () => {
                 xl:w-[289.37px] xl:h-[45px] xl:top-[-0.21px] xl:font-[400] xl:text-[30px] xl:leading-[36px]
                 "
                   >
-                    Let&apos;s Talk About:
+                    {HERO_TEXTS.GetinTouch.about}
                   </h1>
 
                   {/* tags: readable in light & dark */}
@@ -525,7 +520,7 @@ const page = () => {
                     xl:w-[223px] xl:h-[30px] xl:text-[22px] xl:leading-[30px]
                     "
                       >
-                        Customer Experience
+                        {HERO_TEXTS.GetinTouch.key_1}
                       </p>
                     </div>
 
@@ -557,7 +552,7 @@ const page = () => {
                     xl:w-[223px] xl:h-[30px] xl:text-[22px] xl:leading-[30px]
                     "
                       >
-                        Quality and Trust
+                        {HERO_TEXTS.GetinTouch.key_2}
                       </p>
                     </div>
 
@@ -587,7 +582,7 @@ const page = () => {
                       xl:w-[223px] xl:h-[30px] xl:text-[22px] xl:leading-[30px]
                     "
                       >
-                        Dependable Service
+                        {HERO_TEXTS.GetinTouch.key_3}
                       </p>
                     </div>
                   </div>
@@ -606,7 +601,7 @@ const page = () => {
                 xl:w-[585px] xl:h-[45px] xl:font-[400] xl:text-[30px] xl:leading-[36px]
                 "
                   >
-                    Get a quote
+                   {HERO_TEXTS.GetinTouch.Get_quote}
                   </h1>
 
                   {/* helper text contrast */}
@@ -616,8 +611,7 @@ const page = () => {
                 xl:w-[585px] xl:h-[60px] xl:text-[22px] xl:leading-[30px]
                 "
                   >
-                    Fill up the form and our Team will get back to you within 24
-                    hours.
+                   {HERO_TEXTS.GetinTouch.fillUp}
                   </p>
 
                   <form className="mt-5 space-y-5">
@@ -688,7 +682,7 @@ const page = () => {
           md:w-[573px] md:h-[353px]
           lg:w-[716px] lg:h-[355px] lg:top-[7781px] lg:left-[123px] lg:rounded-[20px] lg:py-[42px] lg:px-[70px]
           xl:w-[913px] xl:h-[384px] xl:top-[8140px] xl:left-[184px] xl:rounded-[20px] xl:py-[42px] xl:px-[70px] 
-          2xl:w-[984px] 2xl:h-[410px] 
+          2xl:w-[984px] 2xl:h-[410px]  xl:mb-10
           lg transition-colors duration-300"
             >
               <h1
@@ -716,8 +710,7 @@ const page = () => {
             2xl:w-[844px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px] 
             "
               >
-                Pushing the boundaries of what&apos;s possible in the digital
-                real. Join us this journey into the future of technology
+                {HERO_TEXTS.footerBoxSection.subText}
               </p>
 
               <div

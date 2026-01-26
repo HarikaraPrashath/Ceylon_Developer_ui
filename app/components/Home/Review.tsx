@@ -1,91 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-1.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-2.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 3,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-3.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 4,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-4.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 5,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-5.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 6,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-6.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 7,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-4.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 8,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-2.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 9,
-    name: "Mike Johnson",
-    handle: "@mike_tech",
-    maker: "Saas-maker",
-    avatar: "/Images/pic-1.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];
 
 const Review = () => {
+  const { testimonials } = HERO_TEXTS;
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white px-6 
     xl:w-[1171px] xl:gap-[75px] xl:mx-auto 
@@ -111,13 +30,13 @@ const Review = () => {
           sm:w-[439px] sm:h-[40px] sm:text-[15px] sm:font-[400] sm:leading-[20px]
           md:w-[617px] md:h-[44px] md:font-[400] md:text-[16px] md:leading-[22px]
           lg:w-[617px] lg:h-[50px] lg:text-[18px] lg:leading-[25px]  
-          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[600px]  mx-auto 
+          xl:font-[400] xl:text-[22px] xl:leading-[30px] xl:w-[610px]   mx-auto 
           bg-[url('/Images/review.png')] bg-no-repeat bg-top bg-cover
           bg-opacity-50
           "
           >
-            Hear directly from customers about their experiences and how web
-            done has made a difference.
+          {HERO_TEXTS.reviewPageSubText}
+           
           </p>
           <Image
             src="/Images/review.png"

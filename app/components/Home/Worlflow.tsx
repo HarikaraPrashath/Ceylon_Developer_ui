@@ -1,6 +1,8 @@
 import React from "react";
+import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
 const Worlflow = () => {
+  
   return (
     <div>
       {/* Desktop View */}
@@ -25,14 +27,14 @@ const Worlflow = () => {
               xl:w-[481.54px] xl:h-[34px] xl:text-[28px] xl:leading-[34px] xl:ml-60 xl:-mt-30
               2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 2xl:ml-60 2xl:-mt-40 
               ">
-                Analytics & Reporting
+                {HERO_TEXTS.workflowComponent.analyticsReporting}
               </h1>
               <p className="mt-2  text-gray-800 dark:text-gray-400 lg:ml-30
               lg:w-[372px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
               xl:w-[461.54px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] xl:ml-60
               2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:ml-60
               ">
-                Generate real-time reports, identify key performance indicators, and make data-driven decisions for continuous improvement.
+                 {HERO_TEXTS.workflowComponent.generateRealTime}
               </p>
             </div>
           </div>
@@ -53,14 +55,14 @@ const Worlflow = () => {
                 xl:w-[298.32px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
                 2xl:w-[319.06px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%]
               ">
-                Project
+                {HERO_TEXTS.workflowComponent.project}
               </h1>
               <p className="mt-2 text-gray-700 dark:text-gray-400
               lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
               xl:w-[298.32px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
               2xl:w-[319.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px]
               ">
-                Easily organize tasks, set deadlines, and track progress in real-time with Ease.
+                 {HERO_TEXTS.workflowComponent.organize}
               </p>
             </div>
           </div>
@@ -87,14 +89,14 @@ const Worlflow = () => {
                xl:w-[298.32px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
                2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%] 
               ">
-                Developer Mindset
+                {HERO_TEXTS.workflowComponent.developer}
               </h1>
               <p className="  text-gray-700 dark:text-gray-400
               lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
               xl:w-[288.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
               2xl:w-[319.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
-                Stay curious, embrace challenges, and keep learning to grow as a developer.
+                {HERO_TEXTS.workflowComponent.curious}
               </p>
             </div>
           </div>
@@ -117,13 +119,13 @@ const Worlflow = () => {
               2xl:w-[514.78px] 2xl:h-[36px] 2xl:text-[30px] 2xl:leading-[100%] 
 
               ">
-                Your Workflow
+                 {HERO_TEXTS.workflowComponent.yourWorkflow}
               </h1>
               <p className="mt-2 lg:w-[443.57px] lg:h-[75px] lg:text-[18px] lg:leading-[25px] lg:font-[400] text-gray-700 dark:text-gray-400
               xl:w-[565.93px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
               2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
-                Automate repetitive tasks and streamline yur workflows with our powerful automation features. Reduce manual effort, eliminate errors.
+                 {HERO_TEXTS.workflowComponent.automate}
               </p>
             </div>
           </div>
@@ -152,14 +154,13 @@ const Worlflow = () => {
             sm:w-[265.23px] sm:h-[28px] sm:font-[400] sm:text-[22px] sm:leading-[28px]
             md:w-[309px] md:h-[30px] md:[400] md:text-[24px] md:leading-[30px]
             ">
-              Analytics & Reporting
+              {HERO_TEXTS.workflowComponent.analyticsReporting}
             </h1>
             <p className="w-[235px] h-[60px] font-[400] text-[12px] leading-[15px] mt-2 dark:text-gray-400 text-gray-700
             sm:w-[366.51px] sm:h-[60px] sm:text-[15px] sm:leading-[20px]
             md:w-[427px] md:h-[66px] md:font-[400] md:text-[16px] md:leading-[22px]
             ">
-              Generate real-time reports, identify key performance indicators,
-              and make data-driven decisions for continuous improvement.
+              {HERO_TEXTS.workflowComponent.generateRealTime}
             </p>
           </div>
         </div>
@@ -183,13 +184,14 @@ const Worlflow = () => {
               <h1 className="w-[75px] h-[25px] font-[400] text-[20px] leading-[25px] dark:text-gray-400 text-gray-700
               sm:w-[163.94px] sm:h-[28px] sm:text-[22px] sm:leading-[28px]
               md:w-[191px] md:h-[30px] md:font-[400] md:text-[24px] md:leading-[30px]
-              ">Project</h1>
+              ">
+                {HERO_TEXTS.workflowComponent.project}
+              </h1>
               <p className="mt-2 w-[147px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
              sm:w-[200px] sm:h-[80px] sm:text-[15px] sm:leading-[20px]
               md:w-[233.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
               ">
-                Easily organize tasks, set deadlines, and track progress in
-                real-time with Ease.
+                {HERO_TEXTS.workflowComponent.organize}
               </p>
             </div>
           </div>
@@ -213,14 +215,13 @@ const Worlflow = () => {
               sm:w-[163.94px] sm:h-[28px] sm:text-[22px] sm:leading-[28px]
               md:w-[191px] md:h-[30px] md:font-[400] md:text-[24px] md:leading-[30px]
               ">
-                Developer Mindset
+                {HERO_TEXTS.workflowComponent.developer}
               </h1>
               <p className="mt-2 w-[140px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
               sm:w-[200px] sm:h-[80px] sm:text-[15px] sm:leading-[20px] sm:mt-10
               md:w-[233.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
               ">
-                Stay curious embrace challenges, and keep learning to grow as a
-                developer
+                {HERO_TEXTS.workflowComponent.curious}
               </p>
             </div>
           </div>
@@ -247,14 +248,14 @@ const Worlflow = () => {
             w-[137px] h-[25px] font-[400] text-[20px] leading-[25px]
             sm:w-[265.23px] sm:h-[28px] sm:font-[400] sm:text-[22px] sm:leading-[28px]
             md:w-[309px] md:h-[30px] md:[400] md:text-[24px] md:leading-[30px]
-            ">Your Workflow</h1>
+            ">
+              {HERO_TEXTS.workflowComponent.yourWorkflow}
+            </h1>
             <p className="mt-2 w-[235px] h-[60px] font-[400] text-[12px] leading-[15px] dark:text-gray-400 text-gray-700
              sm:w-[366.51px] sm:h-[60px] sm:text-[15px] sm:leading-[20px]
               md:w-[427px] md:h-[66px] md:font-[400] md:text-[16px] md:leading-[22px]
             ">
-              Automate repetitive tasks and streamline your workflow with our
-              powerful automation features. Reduce manual effort, eliminate
-              error
+              {HERO_TEXTS.workflowComponent.automate}
             </p>
           </div>
         </div>

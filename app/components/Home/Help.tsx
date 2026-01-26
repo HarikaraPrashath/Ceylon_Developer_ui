@@ -1,37 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
 const Help = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: "What Service do you offer?",
-      answer:
-        "We offer web design, development, mobile apps, and SEO optimization.",
-    },
-    {
-      question: "Do you offer website redesign service?",
-      answer:
-        "Yes, we specialize in modern redesigns to improve user experience and SEO.",
-    },
-    {
-      question: "What technologies do you use?",
-      answer:
-        "We use React, Node.js, MongoDB, Tailwind CSS, Next.js, and more.",
-    },
-    {
-      question: "Can you build a custom web application?",
-      answer:
-        "Absolutely! We develop scalable custom apps tailored to your needs.",
-    },
-    {
-      question: "Do you offer maintenance and support?",
-      answer:
-        "Yes, we provide ongoing support, updates, and performance monitoring.",
-    },
-  ];
+  const {faqs} = HERO_TEXTS;
 
   return (
     <div
