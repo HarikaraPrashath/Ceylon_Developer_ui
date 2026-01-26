@@ -167,13 +167,13 @@
           onNext={nextItem}
         />
         {/* ≤376px: show all 3 stacked vertically */}
-        {/* <div className=" max-[376px]:block hidden">
+        <div className=" sm:hidden  ">
           {cards.map((c, i) => (
-            <div key={`xs-${i}`} className="w-[89%]">
+            <div key={`xs-${i}`} className="">
               <Card {...c} />
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     );
   };
