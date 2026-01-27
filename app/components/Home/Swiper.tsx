@@ -194,7 +194,7 @@ export default function ServicesSwiper() {
         <div className="text-center mx-auto">
           {" "}
           <h1 className=" h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl 
-          text-center   max-[640px]:flex max-[640px]:flex-col 
+          text-center   max-[640px]:flex max-[640px]:flex-col  mt-5
           
           ">
             <span className="[font-family:var(--font-kaushan)] px-4 text-gray-900 dark:text-gray-100">
@@ -202,18 +202,22 @@ export default function ServicesSwiper() {
             </span>
             <span className="text-gray-900 dark:text-gray-100">We offer</span>
           </h1>
-          <p className="mt-6  text-[14px] mx-auto lg:w-150 md:w-127 sm:w-115 max-[640px]:w-70 text-gray-700 dark:text-gray-300 body 
+          <p className="mt-6  text-[14px] mx-auto    text-gray-700 dark:text-gray-300  
+          w-[281px]
+          sm:w-[524px]
+          md:w-[470px]
           sm:body-sm md:body-md 
           lg:body-lg xl:body-xl 
+          lg:w-[500px]
           xl:w-[520px] xl:h-[56px] xl:text-[20px] xl:leading-[28px]
-          2xl:w-[480px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px]
+          2xl:w-[640px] 2xl:h-[60px] 2xl:text-[22px] 2xl:leading-[30px]
           ">
            {HERO_TEXTS.serviceSubText}
           </p>
         </div>
 
         <div
-          className="relative h-96 flex items-center justify-center -mt-20 sm:mt-5"
+          className="relative h-96 flex items-center justify-center -mt-20 sm:mt-5 "
           style={{ perspective: "1000px" }}
         >
           <div className="relative w-full h-full flex items-center justify-center ">
@@ -251,7 +255,7 @@ export default function ServicesSwiper() {
                     className="
                       absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                       h-80 transition-all duration-500 ease-out
-                      w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)] 
+                      w-[calc(100%-1rem)] sm:w-[calc(100%-1rem)]
                     "
                     style={{
                       transform: `translateX(${translateX}px) translateY(${offsetY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
@@ -262,7 +266,7 @@ export default function ServicesSwiper() {
                     <div
                       className="
                       mx-auto
-                        w-[333px] h-[223px] p-6
+                        w-[320px] h-[223px] p-6
                         sm:w-[523px] sm:h-[208px] sm:px-[20px] sm:py-[25px] sm:mx-auto sm:-mt-25
                         md:w-[307px] md:h-[260px] 
                         lg:w-[307px] lg:h-[306px]

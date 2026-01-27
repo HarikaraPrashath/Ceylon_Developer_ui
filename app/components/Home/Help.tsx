@@ -5,85 +5,77 @@ import { HERO_TEXTS } from "../../../constants/home.constants.ts";
 
 const Help = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const {faqs} = HERO_TEXTS;
+  const { faqs } = HERO_TEXTS;
 
   return (
-    <div
-      className=" bg-cover bg-center bg-no-repeat text-black dark:text-white md:pt-32 lg:pt-36 xl:pt-60 2xl:pt-60 pt-10
-      
-      "
+    <section
+      className="pt-10 md:pt-32 lg:pt-36 xl:pt-60 text-black dark:text-white bg-no-repeat bg-right"
       style={{
         backgroundImage: "url('/Images/fAqBg.png')",
-        backgroundPosition: "right center",
         backgroundSize: "25%",
-        backgroundBlendMode: "overlay",
-        backgroundColor: "", // light mode background
       }}
     >
-      <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl text-center 
-      lg:w-[698px] lg:h-[55px] lg:font-[500] lg:text-[48px] lg:leading-[55px] lg:mx-auto
-      xl:w-[1222px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:font-[500] 
-      ">
-        How{}
-        <span className="[font-family:var(--font-kaushan)] pr-2">
-           Ceylon Developers
+      {/* Title */}
+      <h1 className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl w-[350px] text-center lg:w-[698px] lg:h-[55px] 
+      sm:w-[533px] mx-auto  lg:font-[500] lg:text-[48px] lg:leading-[55px] lg:mx-auto xl:w-[1222px] xl:h-[70px] xl:text-[72px] xl:leading-[70px] xl:font-[500] ">
+        How{" "}
+        <span className="[font-family:var(--font-kaushan)]">
+          Ceylon Developers
         </span>{" "}
         help you?
       </h1>
 
-      <div className="w-[354px]  h-[530px] sm:w-[576px] sm:h-[554px] md:w-[643px] md:h-[652px] md:gap-[28px] mx-auto mt-10 
-      lg:w-[906px] 2xl:w-[1280px] 2xl:h-[622px]  xl:w-[1170px] 
+      {/* FAQ Wrapper */}
+      <div className="mt-14 flex flex-col items-center space-y-5 ">
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
 
-      ">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className=" mt-5 font-[400] text-[20px] leading-[25px]  py-[20px] px-[30px] w-[354px] h-[80px] rounded-[30px]
-                        sm:w-[576px] sm:h-[78px] sm:rounded-[30px] sm:border-[1px]  sm:py-[25px] sm:px-[35px] sm:gap-[10px]
-                        md:w-[643px] md:h-[90px] md:rounded-[30px] md:border-[1px] md:px-[35px] md:py-[30px]
-                        lg:w-[898px] lg:h-[92px] lg:rounded-[30px] lg:border-[1px] lg:py-[30px] lg:px-[35px] 
-                        xl:w-[1208px] xl:h-[102px] xl:rounded-[30px] xl:border-[1px] xl:py-[30px] xl:px-[35px] xl:gap-[10px] 
-                       bg-gray-100 dark:bg-transparent 
-                       border-gray-300  dark:border-green-950 
-                       transition-colors duration-300"
-          >
-            {/* Question */}
+          return (
             <div
-              className="flex justify-between items-center cursor-pointer w-[294px]   -mt-2 
-              sm:w-[506px] sm:h-[28px] sm:gap-[148px] 
-              lg:w-[828px] lg:h-[32px] lg:gap-[148px]
-              xl:w-[1138px] xl:h-[42px] xl:gap-[148px] 
-              "
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+              key={index}
+              className={`rounded-4xl md:rounded-3xl border-2  transition-all duration-300 sm:w-[620px] mx-auto lg:w-[898px] xl:w-[1170px] 2xl:w-[1108px]
+                ${
+                  isOpen
+                    ? "bg-gray-50 dark:bg-neutral-900 border-gray-400 dark:border-green-900 "
+                    : "bg-gray-100 dark:bg-transparent border-gray-300 dark:border-green-950"
+                }
+              `}
             >
-              <h1 className="font-[400] text-[20px] leading-[25px]  text-gray-900 dark:text-white w-[230px] h-[50px]
-              sm:w-[338px] sm:h-[56px] sm:font-[400] sm:text-[22px] sm:leading-[28px]  sm:mt-2 
-              md:w-[576px] md:h-[30px] md:font-[400] md:text-[24px] md:leading-[30px]
-              lg:w-[650px] lg:h[32px] lg:text-[26px] lg:leading-[32px] 
-              xl:w-[948px] xl:h-[36px] xl:text-[30px] xl:leading-[36px]
-              ">
-                {faq.question}
-              </h1>
-              {openIndex === index ? (
-                <Minus className="text-gray-900 dark:text-white w-[25px] h-[25px] sm:w-[20px] sm:h-[20px] lg:w-[30px] lg:h-[30px]
-                xl:w-[42px] xl:h-[42px]
-                " />
-              ) : (
-                <Plus className="text-gray-900 dark:text-white" />
-              )}
-            </div>
+              {/* Question */}
+              <button type="button"
+                onClick={() =>
+                  setOpenIndex(isOpen ? null : index)
+                }
+                className="w-full flex items-center justify-between px-6 sm:px-8 py-5 text-left "
+              >
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-normal leading-snug  sm:w-[300px] lg:w-[650px]  xl:w-[900px] 2xl:w-[800px] ">
+                  {faq.question}
+                </h3>
 
-            {/* Answer */}
-            {openIndex === index && (
-              <p className="text-gray-700 dark:text-gray-400 mt-2 transition-colors duration-300">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
+                <span className="ml-4 flex-shrink-0 transition-transform duration-300">
+                  {isOpen ? (
+                    <Minus className="w-6 h-6 lg:w-7 lg:h-7" />
+                  ) : (
+                    <Plus className="w-6 h-6 lg:w-7 lg:h-7" />
+                  )}
+                </span>
+              </button>
+
+              {/* Answer */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <p className="px-6 sm:px-8 pb-6 text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

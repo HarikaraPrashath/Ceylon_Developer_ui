@@ -80,8 +80,8 @@ const page = () => {
           </div>
 
           <h1
-            className="mt-10 text-[14px] font-[400] leading-[20px] mx-auto text-center w-[297px] h-[90px]
-            sm:font-[400] sm:text-[15px] sm:leading-[25px] sm:text-center sm:-mt-10
+            className="mt-10 text-[14px] font-[400] leading-[20px] mx-auto text-center w-[290px] h-[90px]
+            sm:font-[400] sm:text-[15px] sm:leading-[25px] sm:text-center sm:-mt-10 sm:w-[330px]
             md:w-[402px] md:h-[66px] md:font-[400] md:leading-[22px]  md:mt-10 md:text-[16px]
             lg:w-[670px] lg:h-[50px] lg:font-[400] lg:text-[18px] lg:leading-[25px] lg:mt-15
             xl:w-[670px] xl:h-[56px] xl:font-[400] xl:text-[20px] xl:leading-[28px] 
@@ -179,7 +179,7 @@ const page = () => {
             {/* Activities */}
 
             <div
-              className="relative mx-auto px-4 2xl:mt-10 2xl:px-10  2xl:h-[583px]
+              className="relative mx-auto px-4 2xl:mt-10 2xl:px-10  2xl:h-[583px] 
            
           "
             >
@@ -197,8 +197,8 @@ const page = () => {
             "
               >
                 {/* left content */}
-                <div className="lg:w-[425px] lg:h-[468px] mx-auto ">
-                  <div className="text-center  ">
+                <div className="lg:w-[425px] lg:h-[468px] mx-auto mt-2">
+                  <div className="text-center mx-auto  ">
                     <h1
                       className="leading-[35px] text-[36px] font-medium  w-[335px] h-[105px] 
                   sm:w-[427px] sm:h-[80px] sm:text-[36px] sm:font-[500] sm:leading-[40px]  sm:mx-auto 
@@ -227,80 +227,83 @@ const page = () => {
                   2xl:w-[550px] 2xl:h-[120px] 2xl:font-[400] 2xl:text-[22px] 2xl:leading-[30px] 
                   "
                     >
-                        {HERO_TEXTS.upScaleText}
+                      {HERO_TEXTS.upScaleText}
                     </p>
+                    <div className="">
 
-                    <p
-                      className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
+                      <p
+                        className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px] 
                       lg:w-[423px]
                       xl:text-[20px] xl:leading-[28px]
-                      2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10
+                      2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10 
                       "
-                    >
-                      <Image
-                        src="/Images/TikButton.png"
-                        alt="Tick icon"
-                        width={20}
-                        height={20}
-                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] xl:mt-1 2xl:h-[16px] 2xl:mt-2"
-                      />
-                      {HERO_TEXTS.upsacle.project}
-                    </p>
+                      >
+                        <Image
+                          src="/Images/TikButton.png"
+                          alt="Tick icon"
+                          width={20}
+                          height={20}
+                          className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] xl:mt-1 2xl:h-[16px] 2xl:mt-2 md:mt-2 "
+                        />
+                        {HERO_TEXTS.upsacle.project}
+                      </p>
 
-                    <p
-                      className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
+                      <p
+                        className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px]
                     md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
                     lg:w-[423px]
                     xl:text-[20px] xl:leading-[28px]
                     2xl:text-[22px] 2xl:leading-[30px] 
                     "
-                    >
-                      <Image
-                        src="/Images/TikButton.png"
-                        alt="Tick icon"
-                        width={20}
-                        height={20}
-                        className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px]  xl:mt-1 md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-3"
-                      />
-                       {HERO_TEXTS.upsacle.task}
-                    </p>
+                      >
+                        <Image
+                          src="/Images/TikButton.png"
+                          alt="Tick icon"
+                          width={20}
+                          height={20}
+                          className="w-5 h-5 sm:w-[20px] sm:h-[20px] md:w-[20px]  xl:mt-1 md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-3"
+                        />
+                        {HERO_TEXTS.upsacle.task}
+                      </p>
 
-                    <p
-                      className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px]  item-start gap-[5px]
+                      <p
+                        className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px]  item-start gap-[5px]
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px] 
                       lg:w-[423px]
-                      xl:text-[20px] xl:leading-[28px] md:mb-7 xl:w-[505px]
+                      xl:text-[20px] xl:leading-[28px] md:mb-7 xl:w-[505px] 
                       2xl:text-[22px] 2xl:leading-[30px]  2xl:mb-10 2xl:w-[543px] 
                       "
-                    >
-                      <Image
-                        src="/Images/TikButton.png"
-                        alt="Tick icon"
-                        width={20}
-                        height={20}
-                        className="w-5 h-5 sm:w-[20px]  sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2 mt-1"
-                      />
-                       {HERO_TEXTS.upsacle.communication}
-                    </p>
+                      >
+                        <Image
+                          src="/Images/TikButton.png"
+                          alt="Tick icon"
+                          width={20}
+                          height={20}
+                          className="w-5 h-5 sm:w-[20px]  sm:h-[20px] md:w-[20px] md:h-[20px] 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2 mt-1"
+                        />
+                        {HERO_TEXTS.upsacle.communication}
+                      </p>
 
-                    <p
-                      className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px] 
+                      <p
+                        className="flex sm:w-[513px] sm:gap-[16px] sm:text-[15px] mb-3 item-start gap-[5px] 
+                        sm:mt-3 md:-mt-3
                       md:w-[527px] md:h-[30px] md:text-[16px] md:gap-[16px]
-                      lg:w-[423px]
+                      lg:w-[423px] 
                       xl:text-[20px] xl:leading-[28px]
                       2xl:text-[22px] 2xl:leading-[30px] 
                       "
-                    >
-                      <Image
-                        src="/Images/TikButton.png"
-                        alt="Tick icon"
-                        width={20}
-                        height={20}
-                        className="w-5 h-5 sm:w-[20px] mt-1 sm:h-[20px] md:w-[20px] md:h-[20px] xl:mt-1 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
-                      />
-                       {HERO_TEXTS.upsacle.time}
-                    </p>
+                      >
+                        <Image
+                          src="/Images/TikButton.png"
+                          alt="Tick icon"
+                          width={20}
+                          height={20}
+                          className="w-5 h-5 sm:w-[20px] mt-1 sm:h-[20px] md:w-[20px] md:h-[20px] xl:mt-1 2xl:w-[16px] 2xl:h-[16px] 2xl:mt-2"
+                        />
+                        {HERO_TEXTS.upsacle.time}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -314,8 +317,8 @@ const page = () => {
                       height={600}
                       className="hidden dark:block w-[335.47px] h-[237.88px]  sm:w-[587px] sm:h-[424px]  sm:ml-10 lg:w-[600px] xl:w-[663px] xl:h-[500px]
                     xl:top-[50px] xl:left-[570px]
-                    md:w-[673px] md:h-[424px] 
-                    2xl:w-[643.37px] 2xl:h-[487px] 2xl:left-[596px] 2xl:top-[48px] 2xl:ml-50
+                    md:w-[673px] md:h-[424px] m
+                    2xl:w-[643.37px] 2xl:h-[487px] 2xl:left-[596px] 2xl:top-[48px] 2xl:ml-50 md:mt-10
                     "
                     />
                     <Image
@@ -326,7 +329,7 @@ const page = () => {
                       className="block dark:hidden  w-[335.47px] h-[237.88px] sm:w-[587px] sm:h-[424px] sm:ml-10 lg:w-[455.66px] 
                     xl:w-[563px] xl:h-[500px]
                     xl:top-[50px] xl:left-[570px]
-                    md:w-[673px] md:h-[424px]
+                    md:w-[673px] md:h-[424px] 
                     2xl:w-[643.37px] 2xl:h-[487px] 2xl:left-[596px] 2xl:top-[48px]
                     "
                     />
@@ -336,9 +339,9 @@ const page = () => {
             </div>
 
             {/* Roadmap */}
-            <div className=" sm:mb-10">
+            <div className=" sm:mb-10  lg:mt-10  ">
               <h1
-                className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20 text-center
+                className="h2 sm:h2-sm md:h2-md lg:h2-lg xl:h2-xl 2xl:h2-2xl mt-20  text-center
             "
               >
                 Our{" "}
@@ -482,7 +485,7 @@ const page = () => {
                 xl:w-[562px] xl:[60px] xl:font-[400] xl:text-[22px] xl:leading-[30px]
                 "
                   >
-                     {HERO_TEXTS.GetinTouch.subText}
+                    {HERO_TEXTS.GetinTouch.subText}
                   </p>
                   <h1
                     className="mt-7 text-[20px] w-[156px] h-[25px] leading-[25px] font-[400]
@@ -601,7 +604,7 @@ const page = () => {
                 xl:w-[585px] xl:h-[45px] xl:font-[400] xl:text-[30px] xl:leading-[36px]
                 "
                   >
-                   {HERO_TEXTS.GetinTouch.Get_quote}
+                    {HERO_TEXTS.GetinTouch.Get_quote}
                   </h1>
 
                   {/* helper text contrast */}
@@ -611,7 +614,7 @@ const page = () => {
                 xl:w-[585px] xl:h-[60px] xl:text-[22px] xl:leading-[30px]
                 "
                   >
-                   {HERO_TEXTS.GetinTouch.fillUp}
+                    {HERO_TEXTS.GetinTouch.fillUp}
                   </p>
 
                   <form className="mt-5 space-y-5">
@@ -676,14 +679,14 @@ const page = () => {
             <div
               className="bg-gradient-to-b from-gray-100 to-gray-300   dark:from-[rgba(24,24,24,0.35)]
           dark:via-[rgba(255,255,255,0.2)]
-          dark:to-[rgba(24,24,24,0.35)]
-          py-6 px-4  mt-10  sm:w-[520px] sm:mx-auto
+          dark:to-[rgba(24,24,24,0.35)] 
+          py-6 px-4  mt-15  sm:w-[520px] sm:mx-auto
           w-[345px] h-[333px] rounded-[20px] mx-auto
           md:w-[573px] md:h-[353px]
           lg:w-[716px] lg:h-[355px] lg:top-[7781px] lg:left-[123px] lg:rounded-[20px] lg:py-[42px] lg:px-[70px]
           xl:w-[913px] xl:h-[384px] xl:top-[8140px] xl:left-[184px] xl:rounded-[20px] xl:py-[42px] xl:px-[70px] 
           2xl:w-[984px] 2xl:h-[410px]  xl:mb-10
-          lg transition-colors duration-300"
+          lg transition-colors duration-300 sm:mb-10"
             >
               <h1
                 className="text-center text-[36px] leading-[35px] font-[500] text-gray-800 dark:text-white

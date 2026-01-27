@@ -1,6 +1,6 @@
 export const HERO_TEXTS = {
   bubble: 'Bring your business to the best scale',
-  subText: "Pushing the boundaries of what's possible in the digital realm.Join us on this journey into the future of technology.",
+  subText: "Pushing the boundaries of what's possible in the digital realm .Join us on this journey into the future of technology.",
 
   imageText: "Trusted by over +20K people in the World",
 
@@ -154,11 +154,11 @@ export const HERO_TEXTS = {
     developer: " Developer Mindset",
     curious: "Stay curious, embrace challenges, and keep learning to grow as a developer.",
     yourWorkflow: "Your Workflow",
-    automate: " Automate repetitive tasks and streamline yur workflows with our powerful automation features. Reduce manual effort, eliminate errors."
+    automate: "Automate repetitive tasks and streamline your workflows with our powerful automation features. Reduce manual effort, eliminate errors."
   },
 
   //Service component text 
-  serviceSubText:" Pushing the boundaries of what&apos;s possible in the digital realm. Join us on this journey into the future of technology",
+  serviceSubText:" Pushing the boundaries of what's possible in the digital realm. Join us on this journey into the future of technology",
 
   //implement component text 
   implmentSubText:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",

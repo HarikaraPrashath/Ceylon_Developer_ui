@@ -30,7 +30,7 @@ const Worlflow = () => {
                 {HERO_TEXTS.workflowComponent.analyticsReporting}
               </h1>
               <p className="mt-2  text-gray-800 dark:text-gray-400 lg:ml-30
-              lg:w-[372px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
+              lg:w-[352px] lg:h-[100px] lg:font-[400] lg:text-[18px] lg:leading-[25px]
               xl:w-[461.54px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] xl:ml-60
               2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 2xl:ml-60
               ">
@@ -58,8 +58,8 @@ const Worlflow = () => {
                 {HERO_TEXTS.workflowComponent.project}
               </h1>
               <p className="mt-2 text-gray-700 dark:text-gray-400
-              lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
-              xl:w-[298.32px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
+              lg:w-[190.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
+              xl:w-[270.32px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
               2xl:w-[319.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px]
               ">
                  {HERO_TEXTS.workflowComponent.organize}
@@ -75,7 +75,7 @@ const Worlflow = () => {
             bg-no-repeat bg-top 
             xl:w-[345.25px] xl:h-[350.61px] xl:rounded-[23.38px] xl:border-[2px]
             2xl:w-[369.25px] 2xl:h-[374.61px] 2xl:rounded-[25px] 2xl:border-[3px]
-            lg:w-[270px] lg:h-[329px] lg:rounded-[25px] lg:border-[2px]
+            lg:w-[270px] lg:h-[329px] lg:rounded-[25px] lg:border-[2px] 
             xl:flex xl:flex-col xl:justify-end 
             bg-[linear-gradient(to_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
             dark:bg-[linear-gradient(to_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20679.png'),url('/Images/Mask%20group1.png')]
@@ -87,14 +87,14 @@ const Worlflow = () => {
               <h1 className="font-bold text-xl text-gray-700 dark:text-gray-400
               lg:w-[191px] lg:h-[32px] lg:font-[400] lg:text-[26px] lg:leading-[32px]
                xl:w-[298.32px] xl:h-[34px] xl:text-[28px] xl:leading-[34px]
-               2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%] 
+               2xl:w-[319.06px] 2xl:h-[34px] 2xl:text-[30px] 2xl:leading-[100%] lg:mt-40
               ">
                 {HERO_TEXTS.workflowComponent.developer}
               </h1>
               <p className="  text-gray-700 dark:text-gray-400
-              lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px]
-              xl:w-[288.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
-              2xl:w-[319.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
+              lg:w-[233.82px] lg:h-[100px] lg:font-[400] lg:text-[16px] lg:leading-[25px] 
+              xl:w-[270.46px] xl:h-[84px] xl:text-[20px] xl:leading-[28px] 
+              2xl:w-[310.06px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] lg:mt-10
               ">
                 {HERO_TEXTS.workflowComponent.curious}
               </p>
@@ -121,9 +121,9 @@ const Worlflow = () => {
               ">
                  {HERO_TEXTS.workflowComponent.yourWorkflow}
               </h1>
-              <p className="mt-2 lg:w-[443.57px] lg:h-[75px] lg:text-[18px] lg:leading-[25px] lg:font-[400] text-gray-700 dark:text-gray-400
-              xl:w-[565.93px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
-              2xl:w-[500.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
+              <p className="mt-2 lg:w-[443.57px] lg:h-[75px] lg:text-[18px] lg:leading-[25px]  lg:font-[400] text-gray-700 dark:text-gray-400
+              xl:w-[500.93px] xl:h-[84px] xl:text-[20px] xl:leading-[28px]
+              2xl:w-[550.78px] 2xl:h-[90px] 2xl:text-[22px] 2xl:leading-[30px] 
               ">
                  {HERO_TEXTS.workflowComponent.automate}
               </p>
@@ -157,8 +157,8 @@ const Worlflow = () => {
               {HERO_TEXTS.workflowComponent.analyticsReporting}
             </h1>
             <p className="w-[235px] h-[60px] font-[400] text-[12px] leading-[15px] mt-2 dark:text-gray-400 text-gray-700
-            sm:w-[366.51px] sm:h-[60px] sm:text-[15px] sm:leading-[20px]
-            md:w-[427px] md:h-[66px] md:font-[400] md:text-[16px] md:leading-[22px]
+            sm:w-[316.51px] sm:h-[60px] sm:text-[15px] sm:leading-[20px]
+            md:w-[400px] md:h-[66px] md:font-[400] md:text-[16px] md:leading-[22px]
             ">
               {HERO_TEXTS.workflowComponent.generateRealTime}
             </p>
@@ -187,9 +187,9 @@ const Worlflow = () => {
               ">
                 {HERO_TEXTS.workflowComponent.project}
               </h1>
-              <p className="mt-2 w-[147px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
-             sm:w-[200px] sm:h-[80px] sm:text-[15px] sm:leading-[20px]
-              md:w-[233.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
+              <p className="mt-2 w-[140px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
+             sm:w-[190px] sm:h-[80px] sm:text-[15px] sm:leading-[20px]
+              md:w-[220.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
               ">
                 {HERO_TEXTS.workflowComponent.organize}
               </p>
@@ -217,9 +217,9 @@ const Worlflow = () => {
               ">
                 {HERO_TEXTS.workflowComponent.developer}
               </h1>
-              <p className="mt-2 w-[140px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
-              sm:w-[200px] sm:h-[80px] sm:text-[15px] sm:leading-[20px] sm:mt-10
-              md:w-[233.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
+              <p className="mt-2 w-[130px] h-[80px] font-[400] text-[14px] leading-[20px] dark:text-gray-400 text-gray-700
+              sm:w-[190px] sm:h-[80px] sm:text-[15px] sm:leading-[20px] sm:mt-10
+              md:w-[225.82px] md:h-[66px] md:text-[16px] md:leading-[22px]
               ">
                 {HERO_TEXTS.workflowComponent.curious}
               </p>
@@ -234,13 +234,15 @@ const Worlflow = () => {
             w-[350px] h-[219px] rounded-[25px] border-[2px]
             sm:w-[558px] sm:h-[266px] sm:top-[-0.73px] sm:left-[-0.61px] sm:rounded-[15px] sm:border[3px]
             md:w-[650px] md:h-[309px] md:rounded-[18px] md:border-[2.2px] 
-            bg-no-repeat 
+            bg-no-repeat
+            bg-[length:100%_100%,250px_120px]
+            bg-[position:100%_50%]
             bg-[radial-gradient(circle_at_bottom,rgba(33,164,164,0.6),rgba(0,0,0,0.2)),url('/Images/Group%20212.png')]
             dark:bg-[radial-gradient(circle_at_bottom,rgba(33,164,164,0.35),rgba(0,0,0,0.5)),url('/Images/Group%20212.png')]
           "
           style={{
-            backgroundPosition: "bottom,right bottom",
-            backgroundSize: "100%,60%,"
+            backgroundPosition: "center, bottom",
+            backgroundSize: "20%,80%,"
           }}
         >
           <div className="w-60 flex flex-col -mt-20 ">
@@ -251,7 +253,7 @@ const Worlflow = () => {
             ">
               {HERO_TEXTS.workflowComponent.yourWorkflow}
             </h1>
-            <p className="mt-2 w-[235px] h-[60px] font-[400] text-[12px] leading-[15px] dark:text-gray-400 text-gray-700
+            <p className="mt-2 w-[250px] h-[60px] font-[400] text-[12px] leading-[15px] dark:text-gray-400 text-gray-700
              sm:w-[366.51px] sm:h-[60px] sm:text-[15px] sm:leading-[20px]
               md:w-[427px] md:h-[66px] md:font-[400] md:text-[16px] md:leading-[22px]
             ">
